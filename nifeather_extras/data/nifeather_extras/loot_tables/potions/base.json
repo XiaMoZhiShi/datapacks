@@ -1,0 +1,31 @@
+{
+    "pools":
+    [
+        {
+            "rolls": 1,
+            "entries":
+            [
+                {
+                    "type": "loot_table",
+                    "name": "nifeather_extras:potions/misc"
+                },
+                {
+                    "type": "loot_table",
+                    "name": "nifeather_extras:potions/mining"
+                },
+                {
+                    "type": "loot_table",
+                    "name": "nifeather_extras:potions/luck_unluck"
+                },
+                {
+                    "type": "loot_table",
+                    "name": "nifeather_extras:potions/disguise"
+                },
+                {
+                    "type": "loot_table",
+                    "name": "nifeather_extras:potions/experience"
+                }
+            ]
+        }
+    ]
+}

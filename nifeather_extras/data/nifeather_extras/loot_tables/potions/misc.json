@@ -1,0 +1,86 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries":
+            [    
+                {
+                    "type": "item",
+                    "name": "potion",
+                    "functions":
+                    [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NiFeatherItem: 1b, CustomPotionEffects: [{Id: 29, Duration: 400, ShowIcon: true}], CustomPotionColor:42742}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name":
+                            {
+                                "text": "潮涌药水",
+                                "italic": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "potion",
+                    "functions":
+                    [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NiFeatherItem: 1b, CustomPotionEffects: [{Id: 21, Duration: 3600, ShowIcon: true}], CustomPotionColor: 14024844}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name":
+                            {
+                                "text": "生命药水",
+                                "italic": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "potion",
+                    "functions":
+                    [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NiFeatherItem: 1b, CustomPotionEffects: [{Id: 31, Duration: 1200, ShowIcon: true}], CustomPotionColor: 12763842}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name":
+                            {
+                                "text": "灾厄药水",
+                                "italic": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "potion",
+                    "functions":
+                    [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NiFeatherItem: 1b, CustomPotionEffects: [{Id: 23, Amplifier: 4, ShowIcon: true}, {Id: 23, Amplifier: 4, ShowIcon: true}, {Id: 23, Amplifier: 4, ShowIcon: true}, {Id: 23, Amplifier: 4, ShowIcon: true}], CustomPotionColor: 12449280}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name":
+                            {
+                                "text": "饱和药水",
+                                "italic": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

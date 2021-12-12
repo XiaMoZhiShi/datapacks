@@ -1,0 +1,22 @@
+{
+    "parent": "nifeather_extras:display/root",
+    "display": {
+        "icon": {
+            "item": "cake"
+        },
+        "title": "猜猜我是谁",
+        "description":
+        [
+            {
+                "text": "喝下混乱药水并让其发挥作用"
+            }
+        ]
+    },
+    "criteria":
+    {
+        "eat":
+        {
+            "trigger": "impossible"
+        }
+    }
+}

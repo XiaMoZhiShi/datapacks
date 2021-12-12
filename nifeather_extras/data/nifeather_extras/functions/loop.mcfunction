@@ -1,0 +1,1 @@
+execute as @a[scores={nife_ods_timer=0..}] run function nifeather_extras:utils/impersonate_timer

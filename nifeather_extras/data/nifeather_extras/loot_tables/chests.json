@@ -1,0 +1,338 @@
+{
+    "pools":
+    [
+        {
+            "rolls": 1,
+            "entries":
+            [
+                {
+                    "type": "item",
+                    "name": "chest",
+                    "weight": 1,
+                    "functions":
+                    [
+			            {
+			                "function": "set_nbt",
+			                "tag": "{NiFeatherItem: 1b}"
+			            },
+                        {
+                            "function": "set_loot_table",
+                            "name": "minecraft:chests/shipwreck_treasure"
+                        },
+                        {
+                            "function": "set_name",
+                            "name":
+                            {
+                                "text": "湿漉漉的箱子",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":
+                            [
+                                {
+                                    "text": "像是从某处沉船飘过来的。",
+                                    "italic": false,
+                                    "color": "gray"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "chest",
+                    "quality": -1,
+                    "weight": 1,
+                    "functions":
+                    [
+			            {
+			                "function": "set_nbt",
+			                "tag": "{NiFeatherItem: 1b}"
+			            },
+                        {
+                            "function": "set_loot_table",
+                            "name": "chests/shipwreck_supply"
+                        },
+                        {
+                            "function": "set_name",
+                            "name":
+                            {
+                                "text": "长满苔藓的箱子",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":
+                            [
+                                {
+                                    "text": "像是从某处沉船飘过来的。",
+                                    "italic": false,
+                                    "color": "gray"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "chest",
+                    "weight": 1,
+                    "functions":
+                    [
+			            {
+			                "function": "set_nbt",
+			                "tag": "{NiFeatherItem: 1b}"
+			            },
+                        {
+                            "function": "set_loot_table",
+                            "name": "chests/ruined_portal"
+                        },
+                        {
+                            "function": "set_name",
+                            "name":
+                            {
+                                "text": "带有黑曜石碎片的箱子",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":
+                            [
+                                {
+                                    "text": "或许是从某处海底传送门遗迹飘来的？",
+                                    "italic": false,
+                                    "color": "gray"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "chest",
+                    "weight": 1,
+                    "functions":
+                    [
+			            {
+			                "function": "set_nbt",
+			                "tag": "{NiFeatherItem: 1b}"
+			            },
+                        {
+                            "function": "set_loot_table",
+                            "name": "chests/pillager_outpost"
+                        },
+                        {
+                            "function": "set_name",
+                            "name":
+                            {
+                                "text": "沾染不详气息的箱子",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":
+                            [
+                                {
+                                    "text": "是谁把他落在水底了？",
+                                    "italic": false,
+                                    "color": "gray"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "chest",
+                    "weight": 1,
+                    "functions":
+                    [
+			            {
+			                "function": "set_nbt",
+			                "tag": "{NiFeatherItem: 1b}"
+			            },
+                        {
+                            "function": "set_loot_table",
+                            "name": "chests/stronghold_crossing"
+                        },
+                        {
+                            "function": "set_name",
+                            "name":
+                            {
+                                "text": "神秘的箱子",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":
+                            [
+                                {
+                                    "text": "摸上去冷冰冰的",
+                                    "italic": false,
+                                    "color": "gray"
+                                },
+                                {
+                                    "text": "就像是在某个角落放久了一样",
+                                    "color": "gray",
+                                    "italic": false
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "chest",
+                    "quality": 1,
+                    "weight": 1,
+                    "functions":
+                    [
+			            {
+			                "function": "set_nbt",
+			                "tag": "{NiFeatherItem: 1b}"
+			            },
+                        {
+                            "function": "set_loot_table",
+                            "name": "chests/bastion_bridge"
+                        },
+                        {
+                            "function": "set_name",
+                            "name":
+                            {
+                                "text": "印有猪灵图案的箱子",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":
+                            [
+                                {
+                                    "text": "简简单单的猪鼻图案",
+                                    "italic": false,
+                                    "color": "gray"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "chest",
+                    "quality": -2,
+                    "weight": 1,
+                    "functions":
+                    [
+			            {
+			                "function": "set_nbt",
+			                "tag": "{NiFeatherItem: 1b}"
+			            },
+                        {
+                            "function": "set_loot_table",
+                            "name": "chests/abandoned_mineshaft"
+                        },
+                        {
+                            "function": "set_name",
+                            "name":
+                            {
+                                "text": "带有煤迹的箱子",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":
+                            [
+                                {
+                                    "text": "像是被某位矿工带到地面上来的",
+                                    "italic": false,
+                                    "color": "gray"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "chest",
+                    "weight": 1,
+                    "quality": 1,
+                    "functions":
+                    [
+			            {
+			                "function": "set_nbt",
+			                "tag": "{NiFeatherItem: 1b}"
+			            },
+                        {
+                            "function": "set_loot_table",
+                            "name": "chests/bastion_treasure"
+                        },
+                        {
+                            "function": "set_name",
+                            "name":
+                            {
+                                "text": "印有猪灵蛮兵图案的箱子",
+                                "italic": false,
+                                "color": "light_purple"
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":
+                            [
+                                {
+                                    "text": "甚至用金子镶了个边",
+                                    "italic": false,
+                                    "color": "gray"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "chest",
+                    "quality": 1,
+                    "weight": 1,
+                    "functions":
+                    [
+			            {
+			                "function": "set_nbt",
+			                "tag": "{NiFeatherItem: 1b}"
+			            },
+                        {
+                            "function": "set_loot_table",
+                            "name": "nifeather_extras:player_head"
+                        },
+                        {
+                            "function": "set_name",
+                            "name":
+                            {
+                                "text": "散发着奇怪气息的箱子",
+                                "color": "yellow",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":
+                            [
+                                {
+                                    "text": "会跟随持有者改变其给人的感觉",
+                                    "italic": false,
+                                    "color": "gray"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

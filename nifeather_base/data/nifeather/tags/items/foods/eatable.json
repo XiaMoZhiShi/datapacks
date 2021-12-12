@@ -1,0 +1,21 @@
+{
+    "values":
+    [
+        "mushroom_stew",
+        "golden_apple",
+        "enchanted_golden_apple",
+        "cookie",
+        "beetroot_soup",
+        "rabbit_stew",
+        "honey_bottle",
+        "pumpkin_pie",
+        "rotten_flesh",
+        "spider_eye",
+        "#nifeather:foods/fish_raw",
+        "#nifeather:foods/fish_cooked",
+        "#nifeather:foods/meats_raw",
+        "#nifeather:foods/meats_cooked",
+        "#nifeather:foods/crops",
+        "#nifeather:foods/seafood"
+    ]
+}

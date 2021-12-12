@@ -1,0 +1,21 @@
+{
+    "criteria":
+    {
+        "potion0":
+        {
+            "trigger": "consume_item",
+            "conditions":
+            {
+                "item":
+                {
+                    "nbt": "{NiFeather_IsExperinceBottle: true}",
+                    "items": [ "potion" ]
+                }
+            }
+        }
+    },
+    "rewards":
+    {
+        "function": "nifeather_extras:events/drink_experience_potion/run"
+    }
+}

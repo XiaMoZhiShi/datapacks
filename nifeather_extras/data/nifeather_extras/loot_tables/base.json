@@ -1,0 +1,29 @@
+{
+    "type": "fishing",
+    "pools":
+    [
+        {
+            "rolls": 1,
+            "entries":
+            [
+                {
+                    "type": "loot_table",
+                    "weight": 3,
+                    "quality": 1,
+                    "name": "nifeather_extras:potions/base"
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 2,
+                    "name": "nifeather_extras:chests",
+                    "quality": 1
+                },
+                {
+                    "type": "empty",
+                    "quality": -2,
+                    "weight": 95
+                }
+            ]
+        }
+    ]
+}

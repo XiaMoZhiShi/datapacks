@@ -1,0 +1,1 @@
+execute if score attack nife_stats > #0 nife_stats run function nifeather:secret/attack_run

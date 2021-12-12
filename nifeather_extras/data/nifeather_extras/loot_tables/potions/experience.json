@@ -1,0 +1,54 @@
+{
+    "pools":
+    [
+        {
+            "rolls": 1,
+            "entries":
+            [   
+                {
+                    "type": "item",
+                    "name": "potion",
+                    "functions":
+                    [
+                        {
+                            "function": "set_name",
+                            "name":
+                            {
+                                "text": "经验药水",
+                                "italic": false,
+                                "color": "white"
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{HideFlags:32, NiFeatherItem: 1b, Enchantments:[{}], NiFeather_IsExperinceBottle: true, CustomPotionColor: 11271423}"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":
+                            [
+                                {
+                                    "text": "missingno",
+                                    "color": "blue",
+                                    "italic": false
+                                },
+                                {
+                                    "text": ""
+                                },
+                                {
+                                    "text": "当生效后：",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "随机掉落1-100点经验",
+                                    "color": "blue",
+                                    "italic": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

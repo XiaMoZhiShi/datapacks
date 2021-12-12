@@ -1,0 +1,21 @@
+{
+    "criteria":
+    {
+        "eat":
+        {
+            "trigger": "consume_item",
+            "conditions":
+            {
+                "item":
+                {
+                    "items": [ "potion" ],
+                    "nbt": "{IMakeSwap: 1b, NiFeatherItem: 1b, SwapPower: 1}"
+                }
+            }
+        }
+    },
+    "rewards":
+    {
+        "function": "nifeather_extras:events/drink_swap/power/1/detect"
+    }
+}

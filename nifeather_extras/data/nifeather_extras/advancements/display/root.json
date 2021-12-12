@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:air"
+        },
+        "title": "",
+        "description": "",
+        "background": "minecraft:textures/gui/advancements/backgrounds/husbandry.png",
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "criteria":
+    {
+        "tick":
+        {
+            "trigger": "tick"
+        }
+    }
+}

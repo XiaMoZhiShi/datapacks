@@ -1,0 +1,14 @@
+{
+    "condition" : "minecraft:location_check",
+    "predicate" :
+    {
+        "position": 
+        {
+            "y":
+            {
+                "min": 257
+            }
+        }
+    },
+    "entity" : "this"
+}

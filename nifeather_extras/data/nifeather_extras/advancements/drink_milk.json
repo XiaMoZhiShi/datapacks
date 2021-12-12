@@ -1,0 +1,20 @@
+{
+    "criteria":
+    {
+        "eat":
+        {
+            "trigger": "consume_item",
+            "conditions":
+            {
+                "item":
+                {
+                    "items": [ "milk_bucket" ]
+                }
+            }
+        }
+    },
+    "rewards":
+    {
+        "function": "nifeather_extras:events/drink_swap/on_drink_milk"
+    }
+}
