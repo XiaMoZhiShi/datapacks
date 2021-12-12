@@ -19,10 +19,6 @@
                 },
                 {
                     "type": "loot_table",
-                    "name": "nifeather_extras:potions/disguise"
-                },
-                {
-                    "type": "loot_table",
                     "name": "nifeather_extras:potions/experience"
                 }
             ]
