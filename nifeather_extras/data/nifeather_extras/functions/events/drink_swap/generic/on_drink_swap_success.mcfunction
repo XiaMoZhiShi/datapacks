@@ -1,1 +1,0 @@
-advancement grant @s only nifeather_extras:drink_swap_display

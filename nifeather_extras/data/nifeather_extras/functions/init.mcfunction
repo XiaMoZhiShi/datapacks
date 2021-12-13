@@ -1,6 +1,3 @@
-scoreboard players set #LoadedImpersonate nife_stats -1
-function nifeather_extras:utils/impersonate_check
-
 scoreboard objectives add nife_ods_timer dummy
 scoreboard objectives add nife_ods_rng dummy
 

@@ -8,20 +8,19 @@
             [
                 {
                     "type": "loot_table",
-                    "weight": 3,
-                    "quality": 1,
+                    "weight": 1,
                     "name": "nifeather_extras:potions/base"
                 },
                 {
                     "type": "loot_table",
-                    "weight": 2,
+                    "weight": 1,
                     "name": "nifeather_extras:chests",
-                    "quality": 1
+                    "quality": 2
                 },
                 {
                     "type": "empty",
                     "quality": -2,
-                    "weight": 95
+                    "weight": 98
                 }
             ]
         }
