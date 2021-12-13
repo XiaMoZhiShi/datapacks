@@ -16,6 +16,7 @@
 			                "tag": "{NiFeatherItem: 1b}"
 			            },
                         {
+                            "type": "chest",
                             "function": "set_loot_table",
                             "name": "minecraft:chests/shipwreck_treasure"
                         },
@@ -52,6 +53,7 @@
 			                "tag": "{NiFeatherItem: 1b}"
 			            },
                         {
+                            "type": "chest",
                             "function": "set_loot_table",
                             "name": "chests/shipwreck_supply"
                         },
@@ -87,6 +89,7 @@
 			                "tag": "{NiFeatherItem: 1b}"
 			            },
                         {
+                            "type": "chest",
                             "function": "set_loot_table",
                             "name": "chests/ruined_portal"
                         },
@@ -122,6 +125,7 @@
 			                "tag": "{NiFeatherItem: 1b}"
 			            },
                         {
+                            "type": "chest",
                             "function": "set_loot_table",
                             "name": "chests/pillager_outpost"
                         },
@@ -157,6 +161,7 @@
 			                "tag": "{NiFeatherItem: 1b}"
 			            },
                         {
+                            "type": "chest",
                             "function": "set_loot_table",
                             "name": "chests/stronghold_crossing"
                         },
@@ -198,6 +203,7 @@
 			                "tag": "{NiFeatherItem: 1b}"
 			            },
                         {
+                            "type": "chest",
                             "function": "set_loot_table",
                             "name": "chests/bastion_bridge"
                         },
@@ -234,6 +240,7 @@
 			                "tag": "{NiFeatherItem: 1b}"
 			            },
                         {
+                            "type": "chest",
                             "function": "set_loot_table",
                             "name": "chests/abandoned_mineshaft"
                         },
@@ -270,6 +277,7 @@
 			                "tag": "{NiFeatherItem: 1b}"
 			            },
                         {
+                            "type": "chest",
                             "function": "set_loot_table",
                             "name": "chests/bastion_treasure"
                         },
@@ -307,6 +315,7 @@
 			                "tag": "{NiFeatherItem: 1b}"
 			            },
                         {
+                            "type": "chest",
                             "function": "set_loot_table",
                             "name": "nifeather_extras:player_head"
                         },

@@ -1,5 +1,5 @@
 {
-    "parent": "nifeather_extras:root",
+    "parent": "nifeather_extras:display/root",
     "display": {
         "icon": {
             "item": "potion",
