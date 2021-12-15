@@ -1,0 +1,44 @@
+{
+  "parent": "xmzs:real_root",
+  "display": {
+    "icon": {
+      "item": "lead"
+    },
+    "hidden": false,
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "山羊与冲撞",
+        {
+          "translate": "xmzs.advancements.alk.17Root.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "被山羊顶飞。\n欢迎来到1.17",
+        {
+          "translate": "xmzs.advancements.alk.17Root.desc"
+        }
+      ]
+    },
+    "frame": "challenge"
+  },
+  "frame": "challenge",
+  "criteria": {
+    "example": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:goat"
+          },
+          "taken": {
+            "min": 0
+          }
+        }
+      }
+    }
+  }
+}

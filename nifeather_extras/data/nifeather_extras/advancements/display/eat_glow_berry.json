@@ -1,0 +1,25 @@
+{
+    "parent": "nifeather_extras:display/root",
+    "display": {
+        "icon": {
+            "item": "glow_berries"
+        },
+        "title": "向我看齐！",
+        "description": "我宣布个事儿！",
+        "hidden": true
+    },
+    "criteria":
+    {
+        "eat":
+        {
+            "trigger": "consume_item",
+            "conditions":
+            {
+                "item":
+                {
+                    "items": [ "glow_berries" ]
+                }
+            }
+        }
+    }
+}

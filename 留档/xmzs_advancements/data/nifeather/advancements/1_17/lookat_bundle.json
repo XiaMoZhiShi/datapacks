@@ -1,0 +1,38 @@
+{
+  "parent": "nifeather:1_17/lookat_dripstone",
+  "display": {
+    "icon": {
+      "item": "minecraft:spyglass"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "这是收纳袋吗？",
+        {
+          "translate": "nifeather.advancements.alk.17.lookatItem_generic.title",
+          "with":
+          [
+            {"translate": "item.minecraft.bundle"}
+          ]
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "灵魂二问",
+        {
+          "translate": "nifeather.advancements.alk.17.lookat_bundle.desc"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria":
+  {
+    "removed":{"trigger": "impossible"}
+  }
+}

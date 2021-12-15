@@ -1,0 +1,34 @@
+{
+  "parent": "nifeather:1_17/lookat_lin",
+  "display": {
+    "icon": {
+      "item": "minecraft:spyglass"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "那是阿狸吗？",
+        {
+          "translate": "nifeather.advancements.alk.17.lookat_ali.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "透过望远镜观察某人",
+        {
+          "translate": "nifeather.advancements.alk.17.lookat_generic.desc"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria":
+  {
+    "removed":{"trigger": "impossible"}
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "parent": "nifeather:1_17_root",
+  "display": {
+    "icon": {
+      "item": "leather_boots"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "短跑冠军",
+        {
+          "translate": "nifeather.advancements.alk.17.run.stage0.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "疾跑一定距离",
+        {
+          "translate": "nifeather.advancements.alk.17.run.desc",
+          "with":
+          [
+            "1",
+            {"translate": "nifeather.units.kmeter"}
+          ]
+        }
+      ]
+    },
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "automatic": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards":
+  {
+    "experience": 10,
+    "function": "nifeather:challenge/states/run0"
+  }
+}

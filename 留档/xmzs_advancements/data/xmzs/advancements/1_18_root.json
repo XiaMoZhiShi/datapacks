@@ -1,0 +1,105 @@
+{
+  "parent": "xmzs:real_root",
+  "display": {
+    "icon": {
+      "item": "sculk_sensor"
+    },
+    "hidden": false,
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "地洞山崖",
+        {
+          "translate": "xmzs.advancements.alk.18Root.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "前往子世界，抵达0层以下的洞穴发掘深板岩，并前往覆雪群系用炼药锅获得细雪。\n欢迎来到1.18",
+        {
+          "translate": "xmzs.advancements.alk.18Root.desc"
+        }
+      ]
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "frame": "challenge"
+  },
+  "frame": "challenge",
+  "criteria": {
+    "enter_down": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "dimension": "xmzs:subworld",
+        "position": {
+          "y":
+          {
+            "max": -1
+          }
+        }
+      }
+    },
+    "deepslate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:deepslate"
+            ]
+          }
+        ]
+      }
+    },
+    "cobbled_deepslate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:cobbled_deepslate"
+            ]
+          }
+        ]
+      }
+    },
+    "powder_snow":
+    {
+      "trigger": "inventory_changed",
+      "conditions":
+      {
+        "items": [
+          {
+            "items": [
+              "minecraft:powder_snow_bucket"
+            ]
+          }
+        ]
+      }
+    },
+    "dimension":
+    {
+      "trigger": "changed_dimension",
+      "conditions": 
+      {
+        "to": "xmzs:subworld"
+      }
+    }
+  },
+  "requirements":[
+    [
+      "enter_down"
+    ],
+    [
+      "deepslate",
+      "cobbled_deepslate"
+    ],
+    [
+      "powder_snow"
+    ],
+    [
+      "dimension"
+    ]
+  ]
+}

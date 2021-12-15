@@ -1,0 +1,44 @@
+{
+  "parent": "xmzs:1_17/find_amethyst",
+  "display": {
+    "icon": {
+      "item": "minecraft:copper_ingot"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "他能导电吗？",
+        {
+          "translate": "xmzs.advancements.alk.17.findCopper.title"
+        }
+      ]
+    },
+    "description":{
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "获得铜锭",
+        {
+          "translate": "xmzs.advancements.alk.17.findCopper.desc"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "deepslate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:copper_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

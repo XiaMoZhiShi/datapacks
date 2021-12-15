@@ -1,5 +1,5 @@
 {
-    "parent": "nifeather_extras:display/root",
+    "parent": "nifeather_extras:display/get_potion",
     "display": {
         "icon": {
             "item": "player_head"

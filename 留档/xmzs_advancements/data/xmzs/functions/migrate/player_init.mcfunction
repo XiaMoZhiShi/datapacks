@@ -1,0 +1,2 @@
+execute if entity @s[tag=!firstJoinProcessed] run scoreboard players operation @s xmzs_migrate_lv = #migrateTarget xmzs_migrate_lv
+execute if entity @s[tag=firstJoinProcessed] run scoreboard players set @s xmzs_migrate_lv 0

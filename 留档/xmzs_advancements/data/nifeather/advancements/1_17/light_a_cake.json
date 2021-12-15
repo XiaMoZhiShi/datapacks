@@ -1,0 +1,34 @@
+{
+  "parent": "nifeather:1_17/light_it_up",
+  "display": {
+    "icon": {
+      "item": "minecraft:cake"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "生日快乐！",
+        {
+          "translate": "nifeather.advancements.alk.17.lightACake.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "点亮一个带有蜡烛的蛋糕。\n说不定会发生什么事？",
+        {
+          "translate": "nifeather.advancements.alk.17.lightACake.desc"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria":
+  {
+    "removed":{"trigger": "impossible"}
+  }
+}

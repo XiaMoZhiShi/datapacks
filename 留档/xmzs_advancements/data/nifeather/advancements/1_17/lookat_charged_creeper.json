@@ -1,0 +1,34 @@
+{
+  "parent": "nifeather:1_17/lookat_creeper",
+  "display": {
+    "icon": {
+      "item": "minecraft:creeper_head"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "那是闪电吗？",
+        {
+          "translate": "nifeather.advancements.alk.17.lookat_charged_creeper.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "透过望远镜观察闪电苦力怕",
+        {
+          "translate": "nifeather.advancements.alk.17.lookat_charged_creeper.desc"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria":
+  {
+    "removed":{"trigger": "impossible"}
+  }
+}

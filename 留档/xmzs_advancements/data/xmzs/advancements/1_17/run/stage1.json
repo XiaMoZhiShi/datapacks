@@ -1,0 +1,42 @@
+{
+  "parent": "xmzs:1_17/run/stage0",
+  "display": {
+    "icon": {
+      "item": "iron_boots"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "长跑达人",
+        {
+          "translate": "xmzs.advancements.alk.17.run.stage1.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "疾跑一定距离",
+        {
+          "translate": "xmzs.advancements.alk.17.run.desc",
+          "with":
+          [
+            "5",
+            {"translate": "xmzs.units.kmeter"}
+          ]
+        }
+      ]
+    },
+    "frame": "goal",
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "automatic": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 500,
+    "function": "xmzs:challenge/states/run1"
+  }
+}

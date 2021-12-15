@@ -1,0 +1,52 @@
+{
+  "parent": "xmzs:1_17_root",
+  "display": {
+    "icon": {
+      "item": "minecraft:candle"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "点亮它！",
+        {
+          "translate": "xmzs.advancements.alk.17.lightItUp.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "点亮一个蜡烛",
+        {
+          "translate": "xmzs.advancements.alk.17.lightItUp.desc"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "light_it_up": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": {
+          "block": {
+            "tag": "minecraft:candles"
+          }
+        },
+        "item": {
+          "items": [
+            "minecraft:flint_and_steel"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "light_it_up"
+    ]
+  ]
+}

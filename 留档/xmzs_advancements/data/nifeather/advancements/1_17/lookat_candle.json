@@ -1,0 +1,38 @@
+{
+  "parent": "nifeather:1_17/lookat_bundle",
+  "display": {
+    "icon": {
+      "item": "minecraft:spyglass"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "这是蜡烛吗？",
+        {
+          "translate": "nifeather.advancements.alk.17.lookatItem_generic.title",
+          "with":
+          [
+            {"translate": "block.minecraft.candle"}
+          ]
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "灵魂三文",
+        {
+          "translate": "nifeather.advancements.alk.17.lookat_candle.desc"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria":
+  {
+    "removed":{"trigger": "impossible"}
+  }
+}

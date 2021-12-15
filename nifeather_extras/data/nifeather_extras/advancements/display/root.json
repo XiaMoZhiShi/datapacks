@@ -1,11 +1,11 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:air"
+            "item": "minecraft:sculk_sensor"
         },
-        "title": "",
-        "description": "",
-        "background": "minecraft:textures/gui/advancements/backgrounds/husbandry.png",
+        "title": "LLin",
+        "description": "owo这是什么",
+        "background": "minecraft:textures/block/hay_block_side.png",
         "announce_to_chat": false,
         "show_toast": false
     },

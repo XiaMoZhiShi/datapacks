@@ -1,0 +1,47 @@
+{
+  "parent": "nifeather:1_17/swim/stage1",
+  "display": {
+    "icon": {
+      "item": "conduit",
+      "nbt": "{Enchantments:[{id:\"minecraft:efficiency\", lvl:1}]}"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "向着深海",
+        {
+          "translate": "nifeather.advancements.alk.17.swim.stage2.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "游泳一定距离",
+        {
+          "translate": "nifeather.advancements.alk.17.swim.desc",
+          "with":
+          [
+            "3",
+            {"translate": "nifeather.units.kmeter"}
+          ]
+        }
+      ]
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "announce_to_chat": true,
+    "frame": "challenge"
+  },
+  "criteria": {
+    "automatic": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "loot": [
+      "nifeather:netherite_block"
+    ],
+    "experience": 2000,
+    "function": "nifeather:challenge/states/swim2"
+  }
+}

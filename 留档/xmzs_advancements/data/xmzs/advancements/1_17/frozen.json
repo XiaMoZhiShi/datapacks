@@ -1,0 +1,38 @@
+{
+    "parent": "xmzs:1_17_root",
+    "display": {
+      "icon": {
+        "item": "powder_snow_bucket"
+      },
+      "hidden": false,
+      "title": {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "冰冻状态！",
+          {
+            "translate": "xmzs.advancements.alk.17.frozen.title"
+          }
+        ]
+      },
+      "description": {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "步入细雪",
+          {
+            "translate": "xmzs.advancements.alk.17.frozen.desc"
+          }
+        ]
+      }
+    },
+    "frame": "challenge",
+    "criteria": {
+        "get_in_powder_snow":
+        {
+          "trigger": "enter_block",
+          "conditions":
+          {
+            "block": "minecraft:powder_snow"
+          }
+        }
+    }
+  }

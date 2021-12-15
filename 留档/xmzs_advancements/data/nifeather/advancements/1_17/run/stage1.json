@@ -1,0 +1,42 @@
+{
+  "parent": "nifeather:1_17/run/stage0",
+  "display": {
+    "icon": {
+      "item": "iron_boots"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "长跑达人",
+        {
+          "translate": "nifeather.advancements.alk.17.run.stage1.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "疾跑一定距离",
+        {
+          "translate": "nifeather.advancements.alk.17.run.desc",
+          "with":
+          [
+            "5",
+            {"translate": "nifeather.units.kmeter"}
+          ]
+        }
+      ]
+    },
+    "frame": "goal",
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "automatic": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 500,
+    "function": "nifeather:challenge/states/run1"
+  }
+}

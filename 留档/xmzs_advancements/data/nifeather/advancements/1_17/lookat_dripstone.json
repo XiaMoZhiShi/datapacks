@@ -1,0 +1,38 @@
+{
+  "parent": "nifeather:1_17/lookat_lin",
+  "display": {
+    "icon": {
+      "item": "minecraft:spyglass"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "这是滴水石锥吗？",
+        {
+          "translate": "nifeather.advancements.alk.17.lookatItem_generic.title",
+          "with":
+          [
+            {"translate": "block.minecraft.pointed_dripstone"}
+          ]
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "灵魂一问",
+        {
+          "translate": "nifeather.advancements.alk.17.lookat_dripstone.desc"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria":
+  {
+    "removed":{"trigger": "impossible"}
+  }
+}

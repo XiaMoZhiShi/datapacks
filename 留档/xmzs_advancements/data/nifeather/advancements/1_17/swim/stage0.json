@@ -1,0 +1,42 @@
+{
+  "parent": "nifeather:1_17_root",
+  "display": {
+    "icon": {
+      "item": "water_bucket"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "游泳爱好者",
+        {
+          "translate": "nifeather.advancements.alk.17.swim.stage0.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "游泳一定距离",
+        {
+          "translate": "nifeather.advancements.alk.17.swim.desc",
+          "with":
+          [
+            "500",
+            {"translate": "nifeather.units.meter"}
+          ]
+        }
+      ]
+    },
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "automatic": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards":
+  {
+    "experience": 10,
+    "function": "nifeather:challenge/states/swim0"
+  }
+}
