@@ -2,6 +2,6 @@
     "condition": "location_check",
     "predicate":
     {
-        "dimension": "nifeather:subworld"
+        "dimension": "nifeather_extras:limbo"
     }
 }

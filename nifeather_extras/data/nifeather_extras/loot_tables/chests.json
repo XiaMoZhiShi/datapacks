@@ -279,13 +279,13 @@
                         {
                             "type": "chest",
                             "function": "set_loot_table",
-                            "name": "chests/bastion_treasure"
+                            "name": "nifeather_extras:chest_random/boot"
                         },
                         {
                             "function": "set_name",
                             "name":
                             {
-                                "text": "印有猪灵蛮兵图案的箱子",
+                                "text": "神秘箱子",
                                 "italic": false,
                                 "color": "light_purple"
                             }
@@ -295,7 +295,7 @@
                             "lore":
                             [
                                 {
-                                    "text": "甚至用金子镶了个边",
+                                    "text": "里面会有什么？",
                                     "italic": false,
                                     "color": "gray"
                                 }

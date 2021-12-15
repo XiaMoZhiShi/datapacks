@@ -1,0 +1,14 @@
+{
+    "condition": "location_check",
+    "predicate":
+    {
+        "dimension": "nifeather_extras:limbo",
+        "light":
+        {
+            "light":
+            {
+                "max": 6
+            }
+        }
+    }
+}

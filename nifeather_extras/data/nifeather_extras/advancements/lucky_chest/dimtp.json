@@ -1,0 +1,17 @@
+{
+    "criteria":
+    {
+        "potion0":
+        {
+            "trigger": "player_generates_container_loot",
+            "conditions":
+            {
+                "loot_table": "nifeather_extras:chest_random/dimension_tp"
+            }
+        }
+    },
+    "rewards":
+    {
+        "function": "nifeather_extras:events/lucky_chest/dimtp/boot"
+    }
+}
