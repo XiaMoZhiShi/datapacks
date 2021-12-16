@@ -16,18 +16,6 @@
                             "name": "nifeather_extras:chest_random/nothing"
                         }
                     ]
-                },
-                {
-                    "type": "item",
-                    "name": "chest",
-                    "functions":
-                    [
-                        {
-                            "function": "set_loot_table",
-                            "type": "chest",
-                            "name": "nifeather_extras:chest_random/dimension_tp"
-                        }
-                    ]
                 }
             ]
         }
