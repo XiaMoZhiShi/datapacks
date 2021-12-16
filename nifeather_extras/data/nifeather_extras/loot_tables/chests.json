@@ -163,13 +163,14 @@
                         {
                             "type": "chest",
                             "function": "set_loot_table",
-                            "name": "chests/stronghold_crossing"
+                            "name": "nifeather_extras:chest_random/boot"
                         },
                         {
                             "function": "set_name",
                             "name":
                             {
                                 "text": "神秘的箱子",
+                                "color": "light_purple",
                                 "italic": false
                             }
                         },
@@ -178,14 +179,9 @@
                             "lore":
                             [
                                 {
-                                    "text": "摸上去冷冰冰的",
+                                    "text": "不知从何处飘过来的",
                                     "italic": false,
                                     "color": "gray"
-                                },
-                                {
-                                    "text": "就像是在某个角落放久了一样",
-                                    "color": "gray",
-                                    "italic": false
                                 }
                             ]
                         }
@@ -258,44 +254,6 @@
                             [
                                 {
                                     "text": "像是被某位矿工带到地面上来的",
-                                    "italic": false,
-                                    "color": "gray"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "chest",
-                    "weight": 1,
-                    "quality": 1,
-                    "functions":
-                    [
-			            {
-			                "function": "set_nbt",
-			                "tag": "{NiFeatherItem: 1b}"
-			            },
-                        {
-                            "type": "chest",
-                            "function": "set_loot_table",
-                            "name": "nifeather_extras:chest_random/boot"
-                        },
-                        {
-                            "function": "set_name",
-                            "name":
-                            {
-                                "text": "神秘箱子",
-                                "italic": false,
-                                "color": "light_purple"
-                            }
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore":
-                            [
-                                {
-                                    "text": "里面会有什么？",
                                     "italic": false,
                                     "color": "gray"
                                 }
