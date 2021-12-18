@@ -3,13 +3,21 @@
   "generator": {
     "type": "minecraft:flat",
     "settings": {
-      "biome": "minecraft:plains",
+      "biome": "nifeather_extras:limbo_0",
       "lakes": true,
       "features": true,
       "layers": [
         {
+          "block": "minecraft:light",
+          "height": 1
+        },
+        {
+          "block": "minecraft:barrier",
+          "height": 1
+        },
+        {
           "block": "minecraft:water",
-          "height": 63
+          "height": 61
         },
         {
           "block": "minecraft:grass_block",
