@@ -14,10 +14,14 @@
       {
           "options":
           {
-              "type": "minecraft:block_marker",
-              "value": "red_wool"
+             "type": "minecraft:block_marker",
+             "value":
+             {
+                "Name": "minecraft:gray_concrete",
+                "Properties": {}
+             }
           },
-          "probability": 0.5
+          "probability": 0.0008
       }
     },
     "spawners": {
