@@ -17,7 +17,7 @@
              "type": "minecraft:block_marker",
              "value":
              {
-                "Name": "minecraft:gray_concrete",
+                "Name": "minecraft:light_gray_concrete",
                 "Properties": {}
              }
           },
