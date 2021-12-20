@@ -25,7 +25,7 @@
                         {
                             "function": "set_loot_table",
                             "type": "chest",
-                            "name": "nifeather_extras:chest_random/dimtp"
+                            "name": "nifeather_extras:chest_random/dimension_tp"
                         }
                     ]
                 },
