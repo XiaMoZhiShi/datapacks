@@ -26,6 +26,25 @@
                             "function": "set_loot_table",
                             "type": "chest",
                             "name": "nifeather_extras:chest_random/dimension_tp"
+                        },
+                        {
+                            "function": "set_name",
+                            "name":
+                            [
+                                {
+                                    "translate": "%1$s%3427656$s",
+                                    "with": [
+                                        {
+                                            "translate": "block.minecraft.chest"
+                                        },
+                                        {
+                                            "text": "brt3m6 ofr xrt iefsoj e34ssojzwu",
+                                            "font": "xmzs:char"
+                                        }
+                                    ],
+                                    "italic": false
+                                }
+                            ]
                         }
                     ]
                 },
