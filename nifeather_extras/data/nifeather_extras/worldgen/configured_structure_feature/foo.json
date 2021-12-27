@@ -1,0 +1,8 @@
+{
+    "config": {
+      "start_pool": "nifeather_extras:bar",
+      "size": 6
+    },
+    "type": "minecraft:bastion_remnant",
+    "name": "nifeather_extras:foo"
+}

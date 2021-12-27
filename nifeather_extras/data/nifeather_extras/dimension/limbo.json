@@ -3,7 +3,7 @@
   "generator": {
     "type": "minecraft:flat",
     "settings": {
-      "biome": "nifeather_extras:limbo_0",
+      "biome": "nifeather_extras:border",
       "lakes": true,
       "features": true,
       "layers": [
