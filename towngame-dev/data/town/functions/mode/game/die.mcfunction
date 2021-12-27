@@ -1,0 +1,1 @@
+function town:mode/switch_lobby

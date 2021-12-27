@@ -1,0 +1,1 @@
+scoreboard players set value town.gameStatus 0

@@ -20,11 +20,11 @@ scoreboard players set #6 nife_stats 6
 
 function nifeather:loadmsg
 
+function #nifeather:init
+
 function nifeather:scheduler/1t
 function nifeather:scheduler/2t
 function nifeather:scheduler/5t
 function nifeather:scheduler/1s
 function nifeather:scheduler/2s
 function nifeather:scheduler/4s
-
-function #nifeather:init
