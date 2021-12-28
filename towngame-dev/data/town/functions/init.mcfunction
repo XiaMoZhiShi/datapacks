@@ -10,10 +10,13 @@ scoreboard objectives add town.gameStatus dummy
 #declare objective town.mode.lobby.queue 大厅队列
 scoreboard objectives add town.mode.lobby.queue dummy
 
+#declare objective town.mode.game.stage 游戏阶段数据
+scoreboard objectives add town.mode.game.stage dummy
+
 #declare objective town.clock 游戏主时钟
 scoreboard objectives add town.clock dummy
 
-#declare objective town.defines 一些定义
+#declare objective town.defines 一些定义/设置
 scoreboard objectives add town.defines dummy
 
 #declare entity 1s 1s
@@ -34,5 +37,8 @@ scoreboard players set 60sDemical town.defines 60
 
 #declare bossbar town:lobby 大厅bossbar
 bossbar add town:lobby {"text": "LOBBY BOSSBAR"}
+
+#declare bossbar town:game 游戏bossbar
+bossbar add town:game {"text": "GAME BOSSBAR"}
 
 #endregion 创建并初始化Bossbar对象

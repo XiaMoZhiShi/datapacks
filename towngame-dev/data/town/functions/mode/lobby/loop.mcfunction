@@ -15,18 +15,7 @@ execute unless score playersCurrent town.mode.lobby.queue >= playersStart town.m
 execute if score playersCurrent town.mode.lobby.queue >= playersStart town.mode.lobby.queue run bossbar set town:lobby color green
 
 #队列时间
-scoreboard players add queueTime town.clock 1
-
-#declare entity queueTimeSecond 队列时间(显示)(秒)
-scoreboard players operation queueTimeSecond town.clock = queueTime town.clock
-scoreboard players operation queueTimeSecond town.clock /= 1s town.defines
-scoreboard players operation queueTimeSecond town.clock %= 60sDemical town.defines
-
-#declare entity queueTimeMinute 队列时间(显示)(秒)
-scoreboard players operation queueTimeMinute town.clock = queueTime town.clock
-scoreboard players operation queueTimeMinute town.clock /= 1min town.defines
-
-bossbar set town:lobby name [ { "text": "", "bold": true, "color": "#abcdef" }, "当前玩家: ", { "score": { "objective": "town.mode.lobby.queue", "name": "playersCurrent" } }, " / ", { "score": { "objective": "town.mode.lobby.queue", "name": "playersMax" } }, " | ", "当前等待时间: ", {"score": { "objective": "town.clock", "name": "queueTimeMinute" }, "extra":["分"] }, {"score": { "objective": "town.clock", "name": "queueTimeSecond" }, "extra":["秒"] }, " | ", {"text": "倒计时: ", "extra":[ {"score": { "objective": "town.clock", "name": "queueCountDownSecond" }}, ".", {"score": { "objective": "town.clock", "name": "queueCountDownMiliSec" }} ]} ]
+bossbar set town:lobby name [ { "text": "", "bold": true, "color": "#83b9b8" }, "当前玩家: ", { "score": { "objective": "town.mode.lobby.queue", "name": "playersCurrent" } }, " / ", { "score": { "objective": "town.mode.lobby.queue", "name": "playersMax" } }, " | ", "当前等待时间: ", {"score": { "objective": "town.clock", "name": "queueTimeMinuteDisplay" }, "extra":["分"] }, {"score": { "objective": "town.clock", "name": "queueTimeSecondDisplay" }, "extra":["秒"] }, " | ", {"text": "倒计时: ", "extra":[ {"score": { "objective": "town.clock", "name": "queueCountDownSecondDisplay" }}, ".", {"score": { "objective": "town.clock", "name": "queueCountDownMiliSecDisplay" }} ]} ]
 
 #endregion 更新Bossbar town:lobby
 

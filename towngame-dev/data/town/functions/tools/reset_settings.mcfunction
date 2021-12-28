@@ -21,4 +21,7 @@ scoreboard players set playersMax town.mode.lobby.queue 5
 #declare entity countdownSecond 倒计时秒数
 scoreboard players set countdownSecond town.defines 10
 
+#declare entity gameCountdownSecond 游戏阶段倒计时秒数
+scoreboard players set gameCountdownSecond town.defines 90
+
 #endregion 创建并初始化记分板对象

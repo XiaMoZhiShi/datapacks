@@ -1,0 +1,1 @@
+execute if entity @s[tag=town.inGame] run function town:mode/game/events/player/on_death

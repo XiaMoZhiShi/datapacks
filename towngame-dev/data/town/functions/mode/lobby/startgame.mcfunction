@@ -1,4 +1,6 @@
 #清空队列
+#declare tag town.inGame 游戏中玩家
+tag @a[tag=town.inQueue] add town.inGame
 tag @a[tag=town.inQueue] remove town.inQueue
 scoreboard players set playersCurrent town.mode.lobby.queue 0
 

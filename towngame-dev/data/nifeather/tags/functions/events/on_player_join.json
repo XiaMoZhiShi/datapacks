@@ -1,5 +1,6 @@
 {
     "replace": false,
     "values": [
+        "town:mode/game/events/external/on_player_join"
     ]
 }
