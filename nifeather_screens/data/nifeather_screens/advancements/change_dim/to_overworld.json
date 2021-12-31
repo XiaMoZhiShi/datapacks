@@ -1,0 +1,21 @@
+{
+    "criteria":
+    {
+        "to_overworld":
+        {
+            "trigger": "changed_dimension",
+            "conditions":
+            {
+                "to": "minecraft:overworld"
+            }
+        }
+    },
+    "requirements":
+    [
+        ["to_overworld"]
+    ],
+    "rewards":
+    {
+        "function": "nifeather_screens:events/dimension_travel/to_overworld"
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:overworld",
+    "type": "nifeather_extras:villages",
     "generator": {
       "type": "minecraft:flat",
       "settings": {
