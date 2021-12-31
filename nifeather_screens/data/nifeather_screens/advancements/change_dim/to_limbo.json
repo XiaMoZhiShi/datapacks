@@ -1,0 +1,21 @@
+{
+    "criteria":
+    {
+        "to_lmb":
+        {
+            "trigger": "changed_dimension",
+            "conditions":
+            {
+                "to": "nifeather_extras:limbo"
+            }
+        }
+    },
+    "requirements":
+    [
+        ["to_lmb"]
+    ],
+    "rewards":
+    {
+        "function": "nifeather_screens:events/dimension_travel/to_limbo"
+    }
+}
