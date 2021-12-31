@@ -1,2 +1,2 @@
 function nifeather:screens/push/black
-title @s times 5 20000 0
+title @s times 5 65536 0
