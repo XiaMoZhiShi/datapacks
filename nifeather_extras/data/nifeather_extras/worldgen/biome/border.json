@@ -11,6 +11,12 @@
     "water_fog_color": 16777215,
     "grass_color": 16777215,
     "foliage_color": 16777215,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 4500,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
     "particle":
     {
       "options":
@@ -177,14 +183,14 @@
       "minecraft:patch_tall_grass_2",
       "minecraft:trees_plains",
       "minecraft:trees_savanna",
-      "minecraft:trees_snowy",
-      "minecraft:trees_taiga",
+      "nifeather_extras:trees_taiga_modified",
       "minecraft:flower_plains",
       "minecraft:patch_grass_plain",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_pumpkin",
-      "nifeather_extras:lamp"
+      "nifeather_extras:lamp",
+      "nifeather_extras:rock"
     ],
     []
   ],
