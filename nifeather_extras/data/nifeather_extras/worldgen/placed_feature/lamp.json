@@ -1,0 +1,13 @@
+{
+  "feature": "nifeather_extras:configured_lamp",
+  "placement": [
+    {
+      "chance": 192,
+      "type": "minecraft:rarity_filter"
+    },
+    {
+      "heightmap": "MOTION_BLOCKING",
+      "type": "minecraft:heightmap"
+    }
+  ]
+}
