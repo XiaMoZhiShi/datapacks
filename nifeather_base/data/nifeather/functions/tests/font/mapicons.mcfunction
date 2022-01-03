@@ -1,0 +1,2 @@
+tellraw @s {"text": "\ue000\ue001\ue002\ue003\ue004\ue005\ue006\ue007\ue008\ue009\ue00a\ue00b\ue00c\ue00d\ue00e\ue00f", "font": "xmzs:mapicons"}
+tellraw @s {"text": "\ue010\ue011\ue012\ue013\ue014\ue015\ue016\ue017\ue018\ue019\ue01a", "font": "xmzs:mapicons"}
