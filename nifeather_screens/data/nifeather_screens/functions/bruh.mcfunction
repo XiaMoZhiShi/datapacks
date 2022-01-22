@@ -1,1 +1,1 @@
-title @s title {"translate": "%1$s%3427655$s", "with": ["", ["", {"text": "W", "font": "xmzs:mask", "color": "#333333"}, {"translate": "offset.-512", "font": "space:default", "color": "white", "with": [{"text": "J", "font": "xmzs:char", "color": "white"}]}]]}
+title @s title {"translate": "%1$s%3$s", "with": ["", ["", {"text": "W", "font": "xmzs:mask", "color": "#333333"}, {"translate": "offset.-512", "font": "space:default", "color": "white", "with": [{"text": "J", "font": "xmzs:char", "color": "white"}]}], ""]}

@@ -8,36 +8,33 @@
         "title":[
             "",
             {
-                "translate": "%1$s%3427656$s",
+                "translate": "%1$s%3$s",
                 "with": [
-                    {
-                        "text": "欢迎来到",
-                        "extra": [
-                            {
-                                "text": "3nek12j",
-                                "obfuscated": true
-                            }
-                        ]
-                    },
+                    "????? ???? ????? ???????",
                     {
                         "text": "hello from world 3nek12j",
                         "font": "xmzs:char"
-                    }
+                    },
+                    ""
                 ],
                 "italic": false
             }
         ],
         "description":
         [
-            "",{
-                "translate": "%1$s%3427656$s",
+            "",
+            {
+                "translate": "%1$s%3$s",
                 "with": [
                     {
-                        "text": "打开神秘箱子，结果被传送到未知的维度"
+                        "text": "打开神秘箱子，被传送到未知的维度"
                     },
                     {
                         "text": "dev urandom tr dc a z 0 9 head c48",
                         "font": "xmzs:char"
+                    },
+                    {
+                        "text": "打开神秘箱子，被传送到未知的维度"
                     }
                 ],
                 "italic": false
