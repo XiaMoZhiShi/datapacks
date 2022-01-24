@@ -5,6 +5,6 @@ execute unless entity @s[tag=screen_died] run title @s title {"translate": "%1$s
 
 execute unless entity @s[tag=screen_died] run title @s subtitle {"translate": "%1$s%3$s", "with": ["", {"text": "等待区块加载...", "color": "#ffffff"}, ""]}
 
-effect give @s resistance 3 255 true
+effect give @s resistance 5 255 true
 
 tag @s add displayingTeleportScreen
