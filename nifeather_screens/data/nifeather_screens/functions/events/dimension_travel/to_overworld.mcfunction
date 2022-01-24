@@ -9,4 +9,5 @@ execute unless entity @s[tag=screen_died] if predicate nifeather:weather/thunder
 execute unless entity @s[tag=screen_died] if predicate nifeather:is_night run title @s subtitle {"translate": "%1$s%3$s", "with": ["", [{"translate": "createWorld.customize.preset.overworld", "color": "#ffffff"}], ""]}
 
 effect give @s resistance 3 255 true
+tag @s add suspendTeleportScreen
 advancement revoke @s only nifeather_screens:change_dim/to_overworld

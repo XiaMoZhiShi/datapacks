@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "nifeather_screens:on_player_respawn"
+        "nifeather_screens:events/on_player_respawn"
     ]
 }

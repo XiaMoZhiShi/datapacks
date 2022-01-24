@@ -30,6 +30,14 @@
 #declare objective nife_deaths private:判断玩家是否死亡
 #declare objective nife_quits private:用于触发玩家加入事件
 
+#declare objective nife_last_x 玩家上一刻的X坐标
+#declare objective nife_last_z 玩家上一刻的Z坐标
+
+#declare objective nife_new_x 玩家这一刻的X坐标
+#declare objective nife_new_z 玩家这一刻的Z坐标
+
+#declare objective nife_position_delta 差值
+
 #declare entity #1km 1千米|nife_stats:100000
 #declare entity #1m 1米|nife_stats:100
 #declare entity #-1 处理返回值等所用|nife_stats:-1
@@ -40,5 +48,7 @@
 #declare entity #4 数字|nife_stats:4
 #declare entity #5 数字|nife_stats:5
 #declare entity #6 数字|nife_stats:6
+
+#declare entity trigger 触发值|nief_position_delta
 
 tellraw @s [{"text": "哇", "color": "#175bfb"}, {"text": "哦", "color": "#266afb"}, {"text": "，", "color": "#3579fb"}, {"text": "这","color": "#4488fb"}, {"text": "里", "color": "#5397fb"}, {"text": "什", "color": "#62a7fc", "bold": true}, {"text": "么", "color": "#71b6fc", "bold": true}, {"text": "都", "color": "#80c5fc"}, {"text": "没", "color": "#8fd4fc"}, {"text": "有", "color": "#9ee3fc"}, {"text": "！", "color": "#adf3fd"}]
