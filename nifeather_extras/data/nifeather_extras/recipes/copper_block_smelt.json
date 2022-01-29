@@ -2,7 +2,7 @@
   "type": "minecraft:smelting",
   "group": "copper_block",
   "ingredient": {
-    "item": "minecraft:raw_copper"
+    "item": "minecraft:raw_copper_block"
   },
   "result": "minecraft:copper_block",
   "experience": 6.3,
