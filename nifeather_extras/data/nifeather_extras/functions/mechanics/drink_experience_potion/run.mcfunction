@@ -1,5 +1,5 @@
 summon experience_orb ~ ~ ~ {Value: 100, Count: 1, Motion: [0.1, 0.5, 0.1]}
-advancement revoke @s only nifeather_extras:drink_experience_potion
+advancement revoke @s only nifeather_extras:mechanics/drink_experience_potion
 
 #Value
 loot spawn ~ ~ ~ loot nifeather:rng/1-10

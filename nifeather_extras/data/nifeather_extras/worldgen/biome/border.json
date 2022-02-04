@@ -72,6 +72,12 @@
         "maxCount": 4
       },
       {
+        "type": "minecraft:hoglin",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
         "type": "minecraft:stray",
         "weight": 100,
         "minCount": 4,

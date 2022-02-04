@@ -12,6 +12,6 @@
     },
     "rewards":
     {
-        "function": "nifeather_extras:events/lucky_chest/dimtp/boot"
+        "function": "nifeather_extras:mechanics/lucky_chest/dimtp/boot"
     }
 }

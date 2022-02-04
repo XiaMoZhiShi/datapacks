@@ -16,6 +16,6 @@
     },
     "rewards":
     {
-        "function": "nifeather_extras:events/drink_experience_potion/run"
+        "function": "nifeather_extras:mechanics/drink_experience_potion/run"
     }
 }

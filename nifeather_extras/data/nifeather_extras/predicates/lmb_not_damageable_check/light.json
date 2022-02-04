@@ -1,13 +1,13 @@
 {
     "condition": "location_check",
+    "entity": "this",
     "predicate":
     {
-        "dimension": "nifeather_extras:limbo",
         "light":
         {
             "light":
             {
-                "max": 6
+                "min": 7
             }
         }
     }

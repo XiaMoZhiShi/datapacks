@@ -1,20 +1,21 @@
 {
     "criteria":
     {
-        "eat":
+        "potion0":
         {
             "trigger": "consume_item",
             "conditions":
             {
                 "item":
                 {
-                    "items": [ "milk_bucket" ]
+                    "nbt": "{NiFeather_IsLimboPotion: true}",
+                    "items": [ "potion" ]
                 }
             }
         }
     },
     "rewards":
     {
-        "function": "nifeather_extras:events/drink_swap/on_drink_milk"
+        "function": "nifeather_extras:mechanics/drink_lmb_potion/run"
     }
 }
