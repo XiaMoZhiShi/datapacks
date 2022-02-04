@@ -1,6 +1,6 @@
 execute unless predicate nifeather_extras:lmb_not_damageable_check/block unless predicate nifeather_extras:lmb_not_damageable_check/light unless predicate nifeather_extras:lmb_not_damageable_check/effect run tag @s add lmb_dmg
 
-execute if entity @s[tag=lmb_dmg] run function nifeather_extras:limbo/apply_attribute
+execute if entity @s[tag=lmb_dmg] if predicate nifeather_extras:in_limbo run function nifeather_extras:limbo/apply_attribute
 
 execute unless entity @s[tag=lmb_dmg] run function nifeather_extras:limbo/undo_attribute
 
