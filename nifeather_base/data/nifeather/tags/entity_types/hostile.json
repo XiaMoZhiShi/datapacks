@@ -1,0 +1,29 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:creeper",
+        "minecraft:ender_dragon",
+        "minecraft:enderman",
+        "minecraft:endermite",
+        "minecraft:wither",
+        "minecraft:wither_skeleton",
+        "minecraft:zombie_villager",
+        "minecraft:zombified_piglin",
+        "minecraft:piglin",
+        "minecraft:slime",
+        "minecraft:shulker",
+        "minecraft:zombie",
+        "minecraft:phantom",
+        "minecraft:cave_spider",
+        "minecraft:spider",
+        "minecraft:drowned",
+        "minecraft:elder_guardian",
+        "minecraft:guardian",
+        "minecraft:ghast",
+        "minecraft:husk",
+        "minecraft:silverfish",
+        "minecraft:vex",
+        "#minecraft:raiders",
+        "#minecraft:skeletons"
+    ]
+}

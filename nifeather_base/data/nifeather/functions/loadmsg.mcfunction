@@ -1,0 +1,4 @@
+tellraw @a[tag=admin] {"translate": "text.nifeather.log","with": [{"translate": "text.nifeather.onload"}]}
+tellraw @a[tag=admin] {"translate": "text.nifeather.log", "with": [{"translate": "text.nifeather.attributeLine", "with": [{"translate": "text.nifeather.attributeLine.currentVersion"}, {"text": "2021.724.0", "bold": true, "color": "gold"}]}]}
+tellraw @a[tag=admin] {"translate": "text.nifeather.log", "with": [{"translate": "text.nifeather.attributeLine", "with": [{"translate": "text.nifeather.attributeLine.resourcePackVersion"}, {"translate": "text.nifeather.VERSION", "bold": true, "color": "aqua"}]}]}
+tellraw @a[tag=admin] {"translate": "text.nifeather.log", "with": [{"translate": "text.nifeather.attributeLine", "with": [{"translate": "text.nifeather.attributeLine.translators", "with": [{"translate": "language.name"}]}, {"translate": "text.nifeather.TRANSLATORS", "bold": true}]}]}

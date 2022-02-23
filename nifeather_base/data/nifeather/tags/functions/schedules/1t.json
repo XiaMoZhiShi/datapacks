@@ -1,0 +1,9 @@
+{
+    "values":
+    [
+        "nifeather:events/playerjoin_detect",
+        "nifeather:events/player_respawn_detect",
+        "nifeather:events/playerdeath_detect",
+        "nifeather:events/playerteleport_detect"
+    ]
+}

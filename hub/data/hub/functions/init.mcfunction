@@ -1,0 +1,2 @@
+scoreboard objectives add xmzs_arrow_finalize_timer dummy
+#declare objective xmzs_arrow_finalize_timer 箭矢回收动画计时
