@@ -1,1 +1,0 @@
-execute if entity @s[scores={nife_elytraFly=3000000.., nife_waterSwim=300000.., nife_runDistance=1500000..}] run advancement grant @s only xmzs:1_17/triathlon

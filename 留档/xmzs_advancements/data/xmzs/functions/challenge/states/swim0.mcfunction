@@ -1,1 +1,0 @@
-attribute @s generic.max_health modifier add 1000000-0000-0000-0000-000000000020 "swim0" 1 add

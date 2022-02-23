@@ -1,7 +1,0 @@
-{
-    "condition": "location_check",
-    "predicate":
-    {
-        "dimension": "nifeather_extras:limbo"
-    }
-}
