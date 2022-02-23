@@ -1,4 +1,6 @@
 execute unless entity @s[tag=no_anim] if entity @s[tag=isCrit] run summon arrow ~ ~ ~ {Tags:["xmzs_arrow_finalize_anim"], NoGravity: 1b, Motion:[0.0, 1.0, 0.0], crit: 1b}
+execute if entity @s[tag=no_forst] run tag @e[type=arrow, sort=nearest, limit=2] add no_forst
+
 data modify entity @e[type=arrow, limit=1, sort=nearest, tag=xmzs_arrow_finalize_anim] Owner merge from entity @s Owner
 #declare tag xmzs_arrow_finalize_anim sds
 
