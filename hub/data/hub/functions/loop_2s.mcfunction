@@ -1,1 +1,1 @@
-#effect give @a resistance 6 255 true
+effect give @a resistance 6 255 true
