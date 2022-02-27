@@ -4,11 +4,11 @@
     "type": "minecraft:flat",
     "settings": {
       "biome": "minecraft:plains",
-      "lakes": true,
-      "features": true,
+      "lakes": false,
+      "features": false,
       "layers": [
         {
-          "block": "minecraft:air",
+          "block": "minecraft:bedrock",
           "height": 1
         }
       ],
