@@ -10,9 +10,9 @@
             {
                 "translate": "%1$s%3$s",
                 "with": [
-                    "????? ???? ????? ???????",
+                    "??????? ?? ?????",
                     {
-                        "text": "hello from world 3nek12j",
+                        "text": "welcome to limbo",
                         "font": "xmzs:char"
                     },
                     ""
@@ -34,7 +34,7 @@
                         "font": "xmzs:char"
                     },
                     {
-                        "text": "打开神秘箱子，被传送到未知的维度"
+                        "text": ""
                     }
                 ],
                 "italic": false

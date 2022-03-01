@@ -1,0 +1,41 @@
+{
+    "pools":
+    [
+        {
+            "rolls": 4,
+            "entries":
+            [
+                {
+                    "type": "item",
+                    "name": "wheat",
+                    "functions":
+                    [
+                        {
+                            "function": "set_count",
+                            "count":
+                            {
+                                "max": 4,
+                                "min": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "wheat_seeds",
+                    "functions":
+                    [
+                        {
+                            "function": "set_count",
+                            "count":
+                            {
+                                "max": 3,
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

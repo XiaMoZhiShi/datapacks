@@ -188,15 +188,8 @@
       "minecraft:patch_grass_plain",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "minecraft:patch_pumpkin",
-      "nifeather_extras:lamp",
-      "nifeather_extras:rock"
+      "minecraft:patch_pumpkin"
     ],
     []
-  ],
-  "starts":
-  [
-    "Broken in 1.18",
-    "详细信息：https://bugs.mojang.com/browse/MC-241288"
   ]
 }

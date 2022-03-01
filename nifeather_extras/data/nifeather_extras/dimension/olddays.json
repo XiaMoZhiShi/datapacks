@@ -22,11 +22,6 @@
         ],
         "structures": {
           "structures": {
-            "minecraft:village": {
-              "spacing": 6,
-              "separation": 4,
-              "salt": 0
-            }
           }
         }
       }

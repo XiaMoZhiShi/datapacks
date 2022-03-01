@@ -1,0 +1,14 @@
+{
+    "structures": [
+      {
+        "structure": "nifeather_extras:lmb_exits",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "salt": 84785208,
+      "spacing": 48,
+      "separation": 32,
+      "type": "minecraft:random_spread"
+    }
+  }

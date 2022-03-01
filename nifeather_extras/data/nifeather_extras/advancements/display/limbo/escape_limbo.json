@@ -1,0 +1,36 @@
+{
+    "parent": "nifeather_extras:display/limbo/enter_limbo",
+    "display": {
+        "icon": {
+            "item": "grass_block"
+        },
+        "title":[
+            "",
+            {
+                "translate": "%1$s%3$s",
+                "with": [
+                    "??? ??? ???? ????",
+                    {
+                        "text": "see you next time",
+                        "font": "xmzs:char"
+                    },
+                    ""
+                ],
+                "italic": false
+            }
+        ],
+        "description":
+        [
+            "",
+            "成功返回主世界"
+        ],
+        "hidden": false
+    },
+    "criteria":
+    {
+        "come_out":
+        {
+            "trigger": "impossible"
+        }
+    }
+}
