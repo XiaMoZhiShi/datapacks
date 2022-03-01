@@ -2,11 +2,16 @@
     "type": "nifeather_extras:villages",
     "generator": {
       "type": "minecraft:flat",
-      "settings": {
-        "biome": "minecraft:plains",
+      "settings":
+      {
+        "biome": "nifeather_extras:plains_modified",
         "lakes": true,
         "features": true,
         "layers": [
+          {
+            "block": "minecraft:air",
+            "height": 59
+          },
           {
             "block": "minecraft:bedrock",
             "height": 1
@@ -19,11 +24,7 @@
             "block": "minecraft:grass_block",
             "height": 1
           }
-        ],
-        "structures": {
-          "structures": {
-          }
-        }
+        ]
       }
     }
   }

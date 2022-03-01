@@ -23,11 +23,7 @@
           "block": "minecraft:grass_block",
           "height": 1
         }
-      ],
-      "structures": {
-        "structures": {
-        }
-      }
+      ]
     }
   }
 }
