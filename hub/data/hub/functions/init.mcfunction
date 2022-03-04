@@ -3,3 +3,6 @@ scoreboard objectives add xmzs_arrow_finalize_timer dummy
 
 scoreboard objectives add xmzs_find_water_retries dummy
 #declare objective xmzs_find_water_retries 水面查找次数
+
+scoreboard objectives add xmzs_hub_trigger trigger
+#declare objective xmzs_hub_trigger 大厅触发器

@@ -14,3 +14,5 @@ scoreboard players add @e[tag=from_finalize] xmzs_arrow_finalize_timer 1
 kill @e[tag=from_finalize, scores={xmzs_arrow_finalize_timer=5..}]
 
 execute as @e[type=tnt] at @s run function hub:block_tnt
+
+execute as @a[scores={xmzs_hub_trigger=1..}] run function hub:tp_to_spawn
