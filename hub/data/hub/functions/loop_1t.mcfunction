@@ -12,3 +12,5 @@ execute as @e[tag=xmzs_arrow_finalize_anim] at @s run function hub:arrow_finaliz
 
 scoreboard players add @e[tag=from_finalize] xmzs_arrow_finalize_timer 1
 kill @e[tag=from_finalize, scores={xmzs_arrow_finalize_timer=5..}]
+
+execute as @e[type=tnt] at @s run function hub:block_tnt
