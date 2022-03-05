@@ -1,0 +1,16 @@
+{
+    "criteria":
+    {
+        "mm":
+        {
+            "trigger": "entity_hurt_player",
+            "conditions":
+            {
+            }
+        }
+    },
+    "rewards":
+    {
+        "function": "hub:sprinit_timer/on_take_dmg"
+    }
+}

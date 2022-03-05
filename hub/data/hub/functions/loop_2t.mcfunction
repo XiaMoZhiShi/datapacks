@@ -1,1 +1,0 @@
-execute as @a run function hub:sprinit_timer/player_loop

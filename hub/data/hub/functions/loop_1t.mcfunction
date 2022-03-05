@@ -17,5 +17,4 @@ execute as @e[type=tnt] at @s run function hub:block_tnt
 
 execute as @a[scores={xmzs_hub_trigger=1..}] run function hub:tp_to_spawn
 
-scoreboard players add @a[predicate=nifeather:entity_properties/is_sprinting,scores={xmzs_sprinit_timer=..179}] xmzs_sprinit_timer 1
-scoreboard players remove @a[predicate=nifeather:entity_properties/not_sprinting, scores={xmzs_sprinit_timer=1..}] xmzs_sprinit_timer 1
+execute as @a at @s run function hub:sprinit_timer/playerloop_boot
