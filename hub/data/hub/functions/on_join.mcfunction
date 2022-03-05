@@ -3,3 +3,4 @@ clear @s
 loot give @s loot hub:on_join
 clear @s dirt
 function hub:tp_to_spawn
+scoreboard players enable @s xmzs_hub_trigger
