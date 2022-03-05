@@ -1,0 +1,14 @@
+{
+    "structures": [
+      {
+        "structure": "nifeather_extras:lmb_house",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "salt": 56437031,
+      "spacing": 32,
+      "separation": 24,
+      "type": "minecraft:random_spread"
+    }
+  }

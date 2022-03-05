@@ -1,0 +1,10 @@
+{
+    "config": {
+      "start_pool": "nifeather_extras:lmb/lamps_cross",
+      "size": 6
+    },
+    "biomes": "#nifeather_extras:lmb_biomes",
+    "adapt_noise": false,
+    "spawn_overrides": {},
+    "type": "minecraft:village"
+  }

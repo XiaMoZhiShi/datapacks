@@ -1,0 +1,14 @@
+{
+    "structures": [
+      {
+        "structure": "nifeather_extras:lmb_lamp_cross",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "salt": 10387312,
+      "spacing": 8,
+      "separation": 4,
+      "type": "minecraft:random_spread"
+    }
+  }
