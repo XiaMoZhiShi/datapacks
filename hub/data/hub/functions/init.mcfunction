@@ -6,3 +6,6 @@ scoreboard objectives add xmzs_find_water_retries dummy
 
 scoreboard objectives add xmzs_hub_trigger trigger
 #declare objective xmzs_hub_trigger 大厅触发器
+
+scoreboard objectives add xmzs_sprinit_timer dummy
+#declare objective xmzs_sprinit_timer 疾跑计时器

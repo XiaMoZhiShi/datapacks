@@ -8,10 +8,9 @@
             {
                 "damage":
                 {
-                    "direct_entity":
+                    "source_entity":
                     {
-                        "type": "arrow",
-                        "nbt": "{crit: 1b}"
+                        "type": "player"
                     }
                 }
             }
@@ -19,6 +18,6 @@
     },
     "rewards":
     {
-        "function": "hub:player_arrow"
+        "function": "hub:sprinit_timer/on_hit_by_player"
     }
 }
