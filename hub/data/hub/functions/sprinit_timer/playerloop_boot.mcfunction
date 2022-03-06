@@ -1,3 +1,3 @@
-execute unless block ~ ~-0.1 ~ air run function hub:sprinit_timer/onground_loop
+execute if entity @s[nbt={OnGround: 1b}] run function hub:sprinit_timer/onground_loop
 
 function hub:sprinit_timer/always_loop
