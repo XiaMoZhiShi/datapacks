@@ -1,0 +1,64 @@
+{
+    "pools":
+    [
+        {
+            "rolls": 1,
+            "entries":
+            [
+                {
+                    "type": "item",
+                    "name": "minecraft:diamond_boots",
+                    "functions":
+                    [
+                        {
+                            "function": "set_name",
+                            "name":
+                            {
+                                "text": "切换疾行加速",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":
+                            [
+                                {
+                                    "text": "启用后, 疾跑时速度将逐渐增加",
+                                    "color": "#dddddd",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "并在受到伤害时重置",
+                                    "color": "#dddddd",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{sel: 11, menu: 1b}"
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "conditions":
+                            [
+                                {
+                                    "condition": "entity_properties",
+                                    "entity": "this",
+                                    "predicate":
+                                    {
+                                        "nbt": "{Tags:['enabledSprinit']}"
+                                    }
+                                }
+                            ],
+                            "enchantments":
+                            {
+                                "efficiency": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

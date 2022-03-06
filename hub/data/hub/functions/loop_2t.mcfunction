@@ -1,0 +1,1 @@
+execute as @a[scores={xmzs_enderchest_opened=1..}] run function hub:events/on_enderchest_open

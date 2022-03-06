@@ -1,0 +1,65 @@
+{
+    "pools":
+    [
+        {
+            "rolls": 1,
+            "entries":
+            [
+                {
+                    "type": "item",
+                    "name": "minecraft:arrow",
+                    "functions":
+                    [
+                        {
+                            "function": "set_name",
+                            "name":
+                            {
+                                "text": "切换霜华矢",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":
+                            [
+                                {
+                                    "text": "启用后, 将为射出去的蓄力箭添加特殊效果",
+                                    "color": "#dddddd",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "/// 选项暂不可用 ///",
+                                    "color": "gold",
+                                    "bold": true,
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{sel: 13, menu: 1b}"
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "conditions":
+                            [
+                                {
+                                    "condition": "entity_properties",
+                                    "entity": "this",
+                                    "predicate":
+                                    {
+                                        "nbt": "{Tags:['enabledForst']}"
+                                    }
+                                }
+                            ],
+                            "enchantments":
+                            {
+                                "efficiency": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
