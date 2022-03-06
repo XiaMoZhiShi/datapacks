@@ -11,11 +11,7 @@
           "block": "minecraft:bedrock",
           "height": 1
         }
-      ],
-      "structures": {
-        "structures": {
-        }
-      }
+      ]
     }
   }
 }
