@@ -20,3 +20,6 @@ execute as @a[scores={xmzs_hub_trigger=1..}] run function hub:tp_to_spawn
 execute as @a[tag=enabledSprinit] at @s run function hub:sprinit_timer/playerloop_boot
 
 execute as @a[tag=tickEnderChest] run function hub:egui/screens/loop_boot
+
+#掉落物立刻捡起
+execute as @e[type=item] run data modify entity @s PickupDelay set value 0
