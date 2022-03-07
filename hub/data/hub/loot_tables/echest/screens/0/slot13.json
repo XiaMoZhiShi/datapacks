@@ -7,14 +7,25 @@
             [
                 {
                     "type": "item",
-                    "name": "minecraft:arrow",
+                    "name": "minecraft:ender_eye",
+                    "conditions":
+                    [
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate":
+                            {
+                                "nbt": "{Tags:['enabledSprinit']}"
+                            }
+                        }
+                    ],
                     "functions":
                     [
                         {
                             "function": "set_name",
                             "name":
                             {
-                                "text": "切换霜华矢",
+                                "text": "切换疾行蓄力显示",
                                 "italic": false
                             }
                         },
@@ -23,21 +34,15 @@
                             "lore":
                             [
                                 {
-                                    "text": "启用后, 将为射出去的蓄力箭添加特殊效果",
+                                    "text": "启用后, 将在经验条上方显示当前疾行蓄力状态",
                                     "color": "#dddddd",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "/// 选项暂不可用 ///",
-                                    "color": "gold",
-                                    "bold": true,
                                     "italic": false
                                 }
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{sel: 13, menu: 1b}"
+                            "tag": "{sel: 13, menu: 1b, HideFlags: 1}"
                         },
                         {
                             "function": "set_enchantments",
@@ -48,7 +53,7 @@
                                     "entity": "this",
                                     "predicate":
                                     {
-                                        "nbt": "{Tags:['enabledForst']}"
+                                        "nbt": "{Tags:['enabledSubtitle']}"
                                     }
                                 }
                             ],
@@ -57,6 +62,27 @@
                                 "efficiency": 1
                             }
                         }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries":
+            [
+                {
+                    "type": "item",
+                    "name": "minecraft:air",
+                    "conditions":
+                    [
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate":
+                            {
+                                "nbt": "{Tags:['disabledSprinit']}"
+                            }
+                        } 
                     ]
                 }
             ]

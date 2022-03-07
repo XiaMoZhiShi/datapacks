@@ -36,7 +36,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{sel: 11, menu: 1b}"
+                            "tag": "{sel: 11, menu: 1b, HideFlags: 1}"
                         },
                         {
                             "function": "set_enchantments",
