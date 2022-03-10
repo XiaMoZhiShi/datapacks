@@ -1,5 +1,5 @@
 function nifeather:screens/push/instant_push_black
-title @s times 0 20 5
+title @s times 0 60 5
 
 execute if entity @s if predicate nifeather_screens:in_overworld run function nifeather_screens:events/dimension_travel/to_overworld
 execute if entity @s if predicate nifeather_screens:in_nether run function nifeather_screens:events/dimension_travel/to_nether
