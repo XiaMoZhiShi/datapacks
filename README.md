@@ -23,6 +23,8 @@
 
 **对结构、地形生成的修改不会影响现有区块。**
 
+**Incendium在服务器上可能会出现问题，请参阅[官方文档](https://stardustlabs.miraheze.org/wiki/Troubleshooting#Server)**
+
 ## 第三方数据包集成
 
 此分支集成了以下内容，以提供更好的服务器体验：
