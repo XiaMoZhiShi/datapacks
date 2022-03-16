@@ -1,0 +1,17 @@
+{
+    "criteria":
+    {
+        "switch":
+        {
+            "trigger": "changed_dimension",
+            "conditions": 
+            {
+                "to": "nifeather:hub"
+            }
+        }       
+    },
+    "rewards":
+    {
+        "function": "hub:events/dimswitch/to_hub"
+    }
+}

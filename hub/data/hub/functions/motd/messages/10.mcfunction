@@ -1,0 +1,2 @@
+tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"死亡回归次数上限是40，加血上限则是20"}]}
+tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"请合理利用金苹果哦"}]}

@@ -1,0 +1,1 @@
+tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"除了这10条提示，还有一些文本需要略微", "extra":[{"text":"特殊一点", "color":"#964B00", "clickEvent": {"action": "suggest_command", "value": "/trigger"}}, "的方式才能触发"]}]}

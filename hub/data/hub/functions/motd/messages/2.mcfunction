@@ -1,0 +1,6 @@
+tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"使用", "extra":[{"text":" /linkaccount ", "color": "white", "clickEvent": {"action": "suggest_command", "value": "/linkaccount 基岩版玩家名"}, "hoverEvent": {"action": "show_text", "value": "点此补全"}}, "可以将", "您的Java版帐号和基岩版帐号连接起来"]}]}
+tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"连接时, ", "extra":["基岩和Java帐号都必须在服务器中"]}]}
+tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"若要撤销连接, 使用 ", "extra":[{"text":"/unlinkaccount", "color": "white", "clickEvent": {"action": "suggest_command", "value": "/unlinkaccount"}, "hoverEvent": {"action": "show_text", "value": "点此补全"}}]}]}
+tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"如果你激活了帐号验证, 请在连接前解除验证, 否则基岩端将无法登入!", "color":"#ffff00"}]}
+#tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"激活帐号验证的同时也可以在Tab栏中显示玩家皮肤!"}]}
+#tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"不要在绑定了基岩版的帐号上尝试!", "color":"#ffff00"}]}

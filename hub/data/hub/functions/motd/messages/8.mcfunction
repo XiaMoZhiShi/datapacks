@@ -1,0 +1,2 @@
+tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"你知道诸如 ''、'' 这些字符是可以在游戏中打出来的吗？"}]}
+tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"详情请参阅群内公告或", "extra":[{"text":"点击这里", "color":"white", "clickEvent": {"action": "open_url", "value":"https://github.com/XiaMoZhiShi/xmzs-resources#%E8%B5%84%E6%BA%90%E5%8C%85%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7%E7%94%A8%E6%B3%95"}}]}]}

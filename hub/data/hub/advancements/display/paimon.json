@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:music_disc_blocks"
+        },
+        "title": "…你其实听得见吧？",
+        "description": "派蒙也会累的"
+    },
+    "criteria":
+    {
+        "c":
+        {
+            "trigger": "impossible"
+        }
+    }
+}

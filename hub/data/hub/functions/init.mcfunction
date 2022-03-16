@@ -21,3 +21,6 @@ scoreboard objectives add xmzs_egui_issel dummy
 
 scoreboard objectives add xmzs_enderchest_opened minecraft.custom:open_enderchest
 #declare objective xmzs_enderchest_opened 是否打开了末影箱
+
+scoreboard objectives add xmzs_hub_motd dummy
+#declare objective xmzs_hub_motd 今日消息(序号)

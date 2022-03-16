@@ -15,9 +15,10 @@ kill @e[tag=from_finalize, scores={xmzs_arrow_finalize_timer=5..}]
 
 execute as @e[type=tnt] at @s run function hub:block_tnt
 
-execute as @a[scores={xmzs_hub_trigger=1..}] run function hub:tp_to_spawn
+execute as @a[scores={xmzs_hub_trigger=1..}] at @s run function hub:events/ontrigger
 
-execute as @a[tag=enabledSprinit] at @s run function hub:sprinit_timer/playerloop_boot
+#疾行加速
+execute in nifeather:hub as @a[tag=enabledSprinit, distance=0..] at @s run function hub:sprinit_timer/playerloop_boot
 
 execute as @a[tag=tickEnderChest] run function hub:egui/screens/loop_boot
 
