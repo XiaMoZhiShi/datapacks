@@ -32,3 +32,8 @@
 * [Starmute的Terralith](https://www.planetminecraft.com/data-pack/terralith-overworld-evolved-100-biomes-caves-and-more/)
 * [GentlemanRevvnar的Pillager Stronghold](https://www.planetminecraft.com/data-pack/pillager-stronghold-1-16-5-worldgen-no-structure-replacement/)
 * [GentlemanRevvnar的1.18.2 Improved Desert Village Structure Datapack](https://www.planetminecraft.com/data-pack/1-14-x-improved-desert-village-datapack/)
+* [Hoponopono的Hopo Better Mineshafts "8 Types of Mineshafts"](https://www.planetminecraft.com/data-pack/better-mineshafts/)
+* [Hoponopono的Hopo Better Underwater Ruins "Drowned Cities and Cave Structures"](https://www.planetminecraft.com/data-pack/better-underwater-ruins-underwater-cities-and-cave-structures/)
+* [Ercerus的Balloons](https://www.planetminecraft.com/data-pack/ballons/)
+* [Splatus的Splatus's Mountain Villages](https://www.planetminecraft.com/data-pack/splatus-s-mountain-villages-v1-0-1-18-2/)
+* [Kubek727的Towns & Towers - Structure Overhaul](https://www.planetminecraft.com/data-pack/towns-amp-towers-structure-overhaul/)
