@@ -1,0 +1,6 @@
+{
+    "replaces": false,
+    "values": [
+        "nifeather_3lives:events/onrespawn_run"
+    ]
+}

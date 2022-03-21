@@ -1,0 +1,14 @@
+{
+    "condition": "location_check",
+    "entity": "this",
+    "predicate":
+    {
+        "light":
+        {
+            "light":
+            {
+                "max": 4
+            }
+        }
+    }
+}

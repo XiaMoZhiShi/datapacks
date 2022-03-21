@@ -1,0 +1,1 @@
+execute as @a[scores={nife_gapple_eat=1..}] at @s run function nifeather_3lives:events/on_goldenapple_eat_run
