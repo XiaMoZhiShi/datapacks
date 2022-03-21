@@ -1,2 +1,2 @@
-tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"死亡回归次数上限是40，加血上限则是20"}]}
-tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"请合理利用金苹果哦"}]}
+tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"每次重生后都会随机获得一个伴随这条命而来的buff或debuff"}]}
+tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"当你用完了所有的生命，就只能等待大晚上一道雷正好霹在你的附近了"}]}
