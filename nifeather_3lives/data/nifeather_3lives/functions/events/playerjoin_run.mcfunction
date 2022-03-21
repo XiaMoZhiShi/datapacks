@@ -5,7 +5,7 @@ execute if entity @s[tag=!3livesinit] run function nifeather_3lives:reset_lives
 tellraw @s ["", {"translate": "text.hub.hint", "with":["\uE33C", {"text": "欢迎回来，您目前剩余", "extra":[{"score":{"objective": "nife_lives", "name": "*"}}, "条生命"]}]}]
 
 #Workaround: 旧重生插件修改最大生命base值导致相关功能异常
-attribute @s[tag=!old_impl_workaround] minecraft:generic.max_health base set 20
+execute if entity @s[tag=!old_impl_workaround] run function nifeather_3lives:old_impl_workdround
 tag @s add old_impl_workaround
 
 #tellraw @s [{"text":"欢迎回来, ", "color": "gold", "bold": true, "hoverEvent": {"action": "show_text", "contents": ["owo"] }}, {"selector":"@s", "color": "gold"}, "!"]
