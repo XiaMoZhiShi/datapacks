@@ -8,6 +8,8 @@ tellraw @s ["", {"translate": "text.hub.hint", "with":["\uE33C", {"text": "欢�
 execute if entity @s[tag=!old_impl_workaround] run function nifeather_3lives:old_impl_workdround
 tag @s add old_impl_workaround
 
+function nifeather_3lives:join_hint
+
 #tellraw @s [{"text":"欢迎回来, ", "color": "gold", "bold": true, "hoverEvent": {"action": "show_text", "contents": ["owo"] }}, {"selector":"@s", "color": "gold"}, "!"]
 
 #第一次游玩？

@@ -1,6 +1,8 @@
 scoreboard objectives add nife_lives dummy
-scoreboard objectives modify nife_lives rendertype hearts
-scoreboard objectives setdisplay list nife_lives
+#scoreboard objectives modify nife_lives rendertype hearts
+#scoreboard objectives setdisplay list nife_lives
+scoreboard objectives add n3l_random dummy
+#declare objective n3l_random 随机数储存
 
 scoreboard objectives add nife_gapple_eat minecraft.used:minecraft.golden_apple
 
