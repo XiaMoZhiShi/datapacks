@@ -1,1 +1,1 @@
-execute if predicate nifeather_3lives:light_check if predicate nifeather_3lives:is_night run effect give @s blindness 5 255 true
+execute if predicate nifeather_3lives:light_check if predicate nifeather:is_night run effect give @s blindness 5 255 true
