@@ -12,7 +12,7 @@
                     [
                         {
                             "function": "set_nbt",
-                            "tag": "{NType: 1}"
+                            "tag": "{N3L: 1b, NType: 1}"
                         }
                     ]
                 },
@@ -23,7 +23,7 @@
                     [
                         {
                             "function": "set_nbt",
-                            "tag": "{NType: 2}"
+                            "tag": "{N3L: 1b, NType: 2}"
                         }
                     ]
                 },
@@ -34,7 +34,7 @@
                     [
                         {
                             "function": "set_nbt",
-                            "tag": "{NType: 3}"
+                            "tag": "{N3L: 1b, NType: 3}"
                         }
                     ]
                 },
@@ -45,7 +45,7 @@
                     [
                         {
                             "function": "set_nbt",
-                            "tag": "{NType: 4}"
+                            "tag": "{N3L: 1b, NType: 4}"
                         }
                     ]
                 },
@@ -56,7 +56,7 @@
                     [
                         {
                             "function": "set_nbt",
-                            "tag": "{NType: 5}"
+                            "tag": "{N3L: 1b, NType: 5}"
                         }
                     ]
                 },
@@ -67,7 +67,7 @@
                     [
                         {
                             "function": "set_nbt",
-                            "tag": "{NType: 6}"
+                            "tag": "{N3L: 1b, NType: 6}"
                         }
                     ]
                 },
@@ -78,7 +78,7 @@
                     [
                         {
                             "function": "set_nbt",
-                            "tag": "{NType: 7}"
+                            "tag": "{N3L: 1b, NType: 7}"
                         }
                     ]
                 },
@@ -89,7 +89,7 @@
                     [
                         {
                             "function": "set_nbt",
-                            "tag": "{NType: 8}"
+                            "tag": "{N3L: 1b, NType: 8}"
                         }
                     ]
                 },
@@ -100,7 +100,7 @@
                     [
                         {
                             "function": "set_nbt",
-                            "tag": "{NType: 9}"
+                            "tag": "{N3L: 1b, NType: 9}"
                         }
                     ]
                 },
@@ -111,7 +111,7 @@
                     [
                         {
                             "function": "set_nbt",
-                            "tag": "{NType: 10}"
+                            "tag": "{N3L: 1b, NType: 10}"
                         }
                     ]
                 },
@@ -122,7 +122,7 @@
                     [
                         {
                             "function": "set_nbt",
-                            "tag": "{NType: 11}"
+                            "tag": "{N3L: 1b, NType: 11}"
                         }
                     ]
                 },
@@ -133,7 +133,7 @@
                     [
                         {
                             "function": "set_nbt",
-                            "tag": "{NType: 12}"
+                            "tag": "{N3L: 1b, NType: 12}"
                         }
                     ]
                 },
@@ -144,7 +144,7 @@
                     [
                         {
                             "function": "set_nbt",
-                            "tag": "{NType: 13}"
+                            "tag": "{N3L: 1b, NType: 13}"
                         }
                     ]
                 }

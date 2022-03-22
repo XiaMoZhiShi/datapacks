@@ -1,4 +1,4 @@
-execute if score debug nife_stats matches 1 run tellraw @a[tag=admin] [{"text": "[DEBUG] ", "color": "gray"}, "SelectNewDeathEvent: ", {"selector": "@s"}]
+execute if score debug nife_stats matches 1 run tellraw @a[tag=admin] [{"text": "[调试] ", "color": "gray"}, "SelectNewDeathEvent: ", {"selector": "@s"}]
 
 #随机事件
 loot spawn ~ ~ ~ loot nifeather_3lives:respawn_random_event
@@ -6,7 +6,7 @@ loot spawn ~ ~ ~ loot nifeather_3lives:respawn_random_event
 scoreboard players set @s n3l_random -1
 
 execute store result score @s n3l_random run data get entity @e[type=item, sort=nearest, limit=1] Item.tag.NType
-data merge entity @e[type=item, sort=nearest, limit=1] {PickupDelay: 0}
+kill @e[type=item, nbt={Item:{tag:{N3L: 1b}}}, sort=nearest, limit=1]
 
 execute if score @s n3l_random matches 0 run function nifeather_3lives:deathevents/events/0_no_event
 execute if score @s n3l_random matches 1 run function nifeather_3lives:deathevents/events/1_explode_on_death
