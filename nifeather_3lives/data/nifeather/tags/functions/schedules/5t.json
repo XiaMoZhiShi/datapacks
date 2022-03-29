@@ -2,7 +2,6 @@
     "replace": false,
     "values":
     [
-        "nifeather_3lives:particles/specators_survival_ambient",
-        "nifeather_3lives:events/on_goldenapple_eat_detect"
+        "nifeather_3lives:particles/specators_survival_ambient"
     ]
 }

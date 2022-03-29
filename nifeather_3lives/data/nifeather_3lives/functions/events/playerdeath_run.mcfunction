@@ -4,7 +4,6 @@ scoreboard players remove @s nife_lives 1
 execute if entity @s[tag=nife_curing, scores={nife_lives=0..}] run scoreboard players set @s nife_lives 0
 
 execute if score @s nife_lives matches ..0 run function nifeather_3lives:events/on_specator_death
-execute if score @s nife_lives > #illegalLivesLevel nife_lives run function nifeather_3lives:attributes/lives/illegal
 
 #公告
 execute if score @s nife_lives matches 1.. run tellraw @s ["", {"text":"你还剩下"}, {"score": {"name": "@s", "objective": "nife_lives"}}, {"text":"次机会。"}]

@@ -30,20 +30,15 @@
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 85,
+          "weight": 82,
           "quality": -1,
           "name": "minecraft:gameplay/fishing/fish"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "bonus_rolls": 0.0,
-      "entries":
-      [
+        },
         {
           "type": "loot_table",
           "name": "nifeather_extras:base",
+          "weight": 3,
+          "quality": 1,
           "conditions": [
             {
               "condition": "minecraft:entity_properties",

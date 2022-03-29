@@ -1,0 +1,20 @@
+{
+    "criteria":
+    {
+        "onhooked":
+        {
+            "trigger": "fishing_rod_hooked",
+            "conditions":
+            {
+                "item":
+                {
+                    "nbt": "{NiFeatherItem: 1b, 3LReroll: 1b}"
+                }
+            }
+        }
+    },
+    "rewards":
+    {
+        "function": "nifeather_3lives:reroll/item_replace_boot"
+    }
+}

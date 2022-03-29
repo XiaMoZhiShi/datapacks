@@ -1,0 +1,21 @@
+{
+    "criteria":
+    {
+        "consume":
+        {
+            "trigger": "consume_item",
+            "conditions":
+            {
+                "item":
+                {
+                    "nbt": "{3LRerollP: 1b}",
+                    "items": ["dried_kelp"]
+                }
+            }
+        }
+    },
+    "rewards":
+    {
+        "function": "nifeather_3lives:reroll/player_boot"
+    }
+}

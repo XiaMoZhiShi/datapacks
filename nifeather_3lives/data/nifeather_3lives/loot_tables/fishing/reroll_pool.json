@@ -1,0 +1,59 @@
+{
+    "pools":
+    [
+        {
+            "rolls": 1,
+            "entries":
+            [
+                {
+                    "type": "item",
+                    "name": "dried_kelp",
+                    "functions":
+                    [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NiFeatherItem: 1b, 3LRerollP: 1b}"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":
+                            [
+                                {"text":"正常情况下钓鱼是不会出现干海带的", "color": "#dddddd", "italic": false},
+                                {"text":"所以...", "color": "#dddddd", "italic": false},
+                                {"text":"你知道该怎么办吧owo", "color": "#dddddd", "italic": false},
+                                "",
+                                {"translate": "potion.whenDrank", "italic": false},
+                                {"text":"以消耗一条生命为代价", "color": "#dddddd", "italic": false},
+                                {"text":"清除现有的重生事件", "color": "#dddddd", "italic": false},
+                                {"text":"并重新获取一次", "color": "#dddddd", "italic": false}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "golden_apple",
+                    "functions":
+                    [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NiFeatherItem: 1b, 3LRerollP: 1b}"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":
+                            [
+                                {"text":"正常情况下钓鱼是不会出现金苹果的", "color": "#dddddd", "italic": false},
+                                {"text":"所以...", "color": "#dddddd", "italic": false},
+                                {"text":"你知道该怎么办吧owo", "color": "#dddddd", "italic": false},
+                                "",
+                                {"translate": "potion.whenDrank", "italic": false},
+                                {"text":"增加一条生命", "color": "#dddddd", "italic": false}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

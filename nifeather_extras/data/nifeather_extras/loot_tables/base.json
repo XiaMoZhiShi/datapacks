@@ -8,19 +8,30 @@
             [
                 {
                     "type": "loot_table",
-                    "weight": 1,
+                    "weight": 20,
+                    "quality": -2,
                     "name": "nifeather_extras:potions/base"
                 },
                 {
                     "type": "loot_table",
-                    "weight": 1,
+                    "weight": 20,
                     "name": "nifeather_extras:chests",
                     "quality": 2
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries":
+            [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 80
                 },
                 {
-                    "type": "empty",
-                    "quality": -2,
-                    "weight": 98
+                    "type": "loot_table",
+                    "name": "nifeather_3lives:fishing/reroll_boot",
+                    "weight": 20
                 }
             ]
         }

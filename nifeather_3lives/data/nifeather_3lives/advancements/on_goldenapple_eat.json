@@ -1,0 +1,20 @@
+{
+    "criteria":
+    {
+        "consume":
+        {
+            "trigger": "consume_item",
+            "conditions":
+            {
+                "item":
+                {
+                    "items": ["golden_apple"]
+                }
+            }
+        }
+    },
+    "rewards":
+    {
+        "function": "nifeather_3lives:events/on_goldenapple_eat_run"
+    }
+}
