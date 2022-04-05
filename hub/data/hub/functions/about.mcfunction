@@ -1,6 +1,6 @@
 tellraw @s " "
 tellraw @s {"translate": "text.hub.hint", "color": "#dddddd", "with":[ "", ["开发团队（按首字母排序）："] ]}
-tellraw @s {"translate": "text.hub.hint", "color": "#dddddd", "with":[ "", {"translate":"%1$s%3$s", "with":["laozhengali Pardofelis(Icalingua) Ningxue0(EXzombiEmu) CaCl2(GaoZiSen)", {"text":"- 0 6 7", "font": "xmzs:badge"}, ""]} ]}
+tellraw @s {"translate": "text.hub.hint", "color": "#dddddd", "with":[ "", {"translate":"%1$s%3$s", "with":["CaCl2(GaoZiSen) laozhengali Ningxue0(EXzombiEmu) Pardofelis(Icalingua)", {"text":"7 - 6 0", "font": "xmzs:badge"}, ""]} ]}
 tellraw @s {"translate": "text.hub.hint", "color": "#dddddd", "with":[]}
 tellraw @s {"translate": "text.hub.hint", "color": "#dddddd", "with":[ "", ["企划、玩法开发："] ]}
 tellraw @s {"translate": "text.hub.hint", "color": "#dddddd", "with":[ "", {"translate":"%1$s%3$s", "with":["laozhengali Pardofelis(Icalingua)", {"text":"- 0", "font": "xmzs:badge"}, ""]} ]}
