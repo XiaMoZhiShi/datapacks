@@ -1,0 +1,3 @@
+[submodule "xiamo_teams"]
+	path = xiamo_teams
+	url = https://github.com/XiaMoZhiShi/Teams
