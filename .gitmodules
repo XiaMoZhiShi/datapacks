@@ -1,3 +1,6 @@
 [submodule "xiamo_teams"]
 	path = xiamo_teams
 	url = https://github.com/XiaMoZhiShi/Teams
+[submodule "nifeather_base"]
+	path = nifeather_base
+	url = https://github.com/XiaMoZhiShi/NiFeatherBase
