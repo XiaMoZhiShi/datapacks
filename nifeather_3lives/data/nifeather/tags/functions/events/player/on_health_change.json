@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values":
+    [
+        "nifeather_3lives:events/player/health/on_change"
+    ]
+}

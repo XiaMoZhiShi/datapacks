@@ -15,6 +15,6 @@
     },
     "rewards":
     {
-        "function": "nifeather_3lives:reroll/item_replace_boot"
+        "function": "nifeather_3lives:events/player/reroll/onhooked/boot"
     }
 }

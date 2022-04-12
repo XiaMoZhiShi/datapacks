@@ -5,6 +5,7 @@
         "#nifeather_extras:glasses",
         "#nifeather_extras:glass_panes",
         "minecraft:sea_lantern",
-        "minecraft:glowstone"
+        "minecraft:glowstone",
+        "minecraft:glass"
     ]
 }

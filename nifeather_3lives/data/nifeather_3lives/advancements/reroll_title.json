@@ -9,13 +9,13 @@
                 "item":
                 {
                     "nbt": "{3LRerollP: 1b}",
-                    "items": ["golden_apple"]
+                    "items": ["dried_kelp"]
                 }
             }
         }
     },
     "rewards":
     {
-        "function": "nifeather_3lives:events/player/reroll/live_increase/boot"
+        "function": "nifeather_3lives:events/player/reroll/on_activate"
     }
 }

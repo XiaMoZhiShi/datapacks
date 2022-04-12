@@ -2,7 +2,19 @@ scoreboard objectives add nife_lives dummy
 #scoreboard objectives modify nife_lives rendertype hearts
 #scoreboard objectives setdisplay list nife_lives
 scoreboard objectives add n3l_random dummy
-#declare objective n3l_random 随机数储存
+#declare objective n3l_random 主事件随机数储存
+
+scoreboard objectives add n3l_subrandom dummy
+#declare objective n3l_subrandom 子事件随机数储存
+
+scoreboard objectives add n3l_patchlevel dummy
+#declare objective n3l_patchlevel 玩家补丁等级
+
+scoreboard objectives add n3l_se_clock dummy
+#declare objective n3l_se_clock se时钟
+
+scoreboard objectives add n3l_monsters_nearby dummy
+#declare objective n3l_monsters_nearby 周围的怪物数量
 
 #scoreboard objectives add nife_gapple_eat minecraft.used:minecraft.golden_apple
 

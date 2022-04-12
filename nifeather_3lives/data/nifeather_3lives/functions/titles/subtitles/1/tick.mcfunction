@@ -1,0 +1,1 @@
+execute if score @s n3l_se_clock matches ..0 run function nifeather_3lives:titles/subtitles/1/endtick

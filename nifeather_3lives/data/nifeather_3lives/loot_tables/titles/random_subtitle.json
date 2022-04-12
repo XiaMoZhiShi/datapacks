@@ -1,0 +1,44 @@
+{
+    "pools":
+    [
+        {
+            "rolls": 1,
+            "entries":
+            [
+                {
+                    "type": "item",
+                    "name": "minecraft:bread",
+                    "functions":
+                    [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{N3L: 1b, NType: 0}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:bread",
+                    "functions":
+                    [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{N3L: 1b, NType: 1}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:bread",
+                    "functions":
+                    [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{N3L: 1b, NType: 2}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

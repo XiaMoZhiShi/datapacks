@@ -1,0 +1,2 @@
+function nifeather_3lives:tools/reset_subtitles
+function nifeather_3lives:tools/reset_maintitles

@@ -1,6 +1,6 @@
 {
     "replaces": false,
     "values": [
-        "nifeather_3lives:events/playerdeath_run"
+        "nifeather_3lives:events/player/death/on_death"
     ]
 }

@@ -24,7 +24,7 @@
                                 "",
                                 {"translate": "potion.whenDrank", "italic": false},
                                 {"text":"以消耗一条生命为代价", "color": "#dddddd", "italic": false},
-                                {"text":"清除现有的重生事件", "color": "#dddddd", "italic": false},
+                                {"text":"清除现有的主副词条", "color": "#dddddd", "italic": false},
                                 {"text":"并重新获取一次", "color": "#dddddd", "italic": false}
                             ]
                         }
