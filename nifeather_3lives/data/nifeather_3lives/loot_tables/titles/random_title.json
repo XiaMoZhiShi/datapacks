@@ -2,7 +2,11 @@
     "pools":
     [
         {
-            "rolls": 1,
+            "rolls":
+            {
+                "min": 1,
+                "max": 14
+            },
             "entries":
             [
                 {
@@ -11,140 +15,8 @@
                     "functions":
                     [
                         {
-                            "function": "set_nbt",
-                            "tag": "{N3L: 1b, NType: 1}"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:bread",
-                    "functions":
-                    [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{N3L: 1b, NType: 2}"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:bread",
-                    "functions":
-                    [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{N3L: 1b, NType: 3}"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:bread",
-                    "functions":
-                    [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{N3L: 1b, NType: 4}"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:bread",
-                    "functions":
-                    [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{N3L: 1b, NType: 5}"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:bread",
-                    "functions":
-                    [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{N3L: 1b, NType: 6}"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:bread",
-                    "functions":
-                    [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{N3L: 1b, NType: 7}"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:bread",
-                    "functions":
-                    [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{N3L: 1b, NType: 8}"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:bread",
-                    "functions":
-                    [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{N3L: 1b, NType: 9}"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:bread",
-                    "functions":
-                    [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{N3L: 1b, NType: 10}"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:bread",
-                    "functions":
-                    [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{N3L: 1b, NType: 11}"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:bread",
-                    "functions":
-                    [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{N3L: 1b, NType: 12}"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:bread",
-                    "functions":
-                    [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{N3L: 1b, NType: 13}"
+                            "function": "set_count",
+                            "count": 0
                         }
                     ]
                 }

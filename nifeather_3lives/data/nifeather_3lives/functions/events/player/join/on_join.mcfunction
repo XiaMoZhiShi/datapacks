@@ -1,6 +1,6 @@
 execute if score debug nife_stats matches 1 run tellraw @a[tag=admin] [{"text": "[调试] ", "color": "gray"}, "OnPlayerJoin: ", {"selector": "@s"}]
 
-execute if entity @s[tag=!3livesinit] run function nifeather_3lives:reset_lives
+execute if entity @s[tag=!3livesinit] run function nifeather_3lives:tools/reset_lives
 
 tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE33C", {"text": "欢迎回来，您目前剩余", "extra":[{"score":{"objective": "nife_lives", "name": "*"}}, "条生命"]}]}]
 

@@ -23,8 +23,10 @@ scoreboard players set #2 nife_lives 2
 scoreboard players set #0 nife_lives 0
 execute unless score #minimumTRespawn nife_lives matches -2147483648..2147483647 run scoreboard players set #minimumTRespawn nife_lives -10
 execute unless score #illegalLivesLevel nife_lives matches -2147483648..2147483647 run scoreboard players set #illegalLivesLevel nife_lives 10
+execute unless score #weatherChance nife_stats matches -2147483648..2147483647 run scoreboard players set #weatherChance nife_stats 4
 
 #define entity #illegalLivesLevel 非法生命值，越过这个值将会强行重置(nife_lives)
 #define entity #minimumTRespawn 最小生命值, 低于此值将无法通过雷电重生
+#define entity #weatherChance 探测到旁观者后改变天气到雷雨的几率
 
-execute as @a[tag=!3livesinit] run function nifeather_3lives:events/playerjoin_run
+#function nifeather_3lives:misc/weather_modify/detect
