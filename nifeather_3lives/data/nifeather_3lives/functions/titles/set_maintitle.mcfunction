@@ -4,6 +4,7 @@ function nifeather_3lives:tools/reset_maintitles
 scoreboard players set @s n3l_random -1
 
 execute store result score @s n3l_random run loot spawn ~ ~ ~ loot nifeather_3lives:titles/random_title
+kill @e[type=item, nbt={Item:{tag:{NeedKill: 1b}}}, sort=nearest, limit=1]
 
 execute if score @s n3l_random matches 1 run function nifeather_3lives:titles/maintitles/0_no_event
 execute if score @s n3l_random matches 2 run function nifeather_3lives:titles/maintitles/1_explode_on_death

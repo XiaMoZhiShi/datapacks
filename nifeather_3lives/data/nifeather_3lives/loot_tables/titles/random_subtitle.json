@@ -16,7 +16,11 @@
                     [
                         {
                             "function": "set_count",
-                            "count": 0
+                            "count": 1
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NeedKill:1b}"
                         }
                     ]
                 }

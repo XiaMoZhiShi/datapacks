@@ -3,6 +3,8 @@ advancement revoke @s only nifeather_extras:mechanics/drink_experience_potion
 
 #Value
 execute store result entity @e[distance=..1, sort=nearest, type=experience_orb, limit=1] Value int 1 run loot spawn ~ ~ ~ loot nifeather:rng/1-10
+kill @e[type=item, nbt={Item:{tag:{NeedKill: 1b}}}, sort=nearest, limit=1]
 
 #Count
 execute store result entity @e[distance=..1, sort=nearest, type=experience_orb, limit=1] Count int 1 run loot spawn ~ ~ ~ loot nifeather:rng/1-10
+kill @e[type=item, nbt={Item:{tag:{NeedKill: 1b}}}, sort=nearest, limit=1]
