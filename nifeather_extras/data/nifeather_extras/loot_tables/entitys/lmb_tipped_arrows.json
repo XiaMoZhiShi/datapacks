@@ -1,16 +1,13 @@
 {
-    "pools":
-    [
+    "pools": [
         {
             "bonus_rolls": 0,
             "rolls": 1,
-            "entries":
-            [
+            "entries": [
                 {
                     "type": "item",
                     "name": "tipped_arrow",
-                    "functions":
-                    [
+                    "functions": [
                         {
                             "function": "set_potion",
                             "id": "slow_falling"
@@ -20,8 +17,7 @@
                 {
                     "type": "item",
                     "name": "tipped_arrow",
-                    "functions":
-                    [
+                    "functions": [
                         {
                             "function": "set_potion",
                             "id": "strong_poison"
@@ -31,8 +27,7 @@
                 {
                     "type": "item",
                     "name": "tipped_arrow",
-                    "functions":
-                    [
+                    "functions": [
                         {
                             "function": "set_potion",
                             "id": "strong_leaping"
@@ -42,8 +37,7 @@
                 {
                     "type": "item",
                     "name": "tipped_arrow",
-                    "functions":
-                    [
+                    "functions": [
                         {
                             "function": "set_potion",
                             "id": "swiftness"
@@ -53,8 +47,7 @@
                 {
                     "type": "item",
                     "name": "tipped_arrow",
-                    "functions":
-                    [
+                    "functions": [
                         {
                             "function": "set_potion",
                             "id": "strong_healing"
@@ -64,8 +57,7 @@
                 {
                     "type": "item",
                     "name": "tipped_arrow",
-                    "functions":
-                    [
+                    "functions": [
                         {
                             "function": "set_potion",
                             "id": "strong_harming"
@@ -75,8 +67,7 @@
                 {
                     "type": "item",
                     "name": "tipped_arrow",
-                    "functions":
-                    [
+                    "functions": [
                         {
                             "function": "set_potion",
                             "id": "strong_turtle_master"

@@ -1,20 +1,17 @@
 {
-    "criteria":
-    {
-        "eat":
-        {
+    "criteria": {
+        "eat": {
             "trigger": "consume_item",
-            "conditions":
-            {
-                "item":
-                {
-                    "items": [ "glow_berries" ]
+            "conditions": {
+                "item": {
+                    "items": [
+                        "glow_berries"
+                    ]
                 }
             }
         }
     },
-    "rewards":
-    {
+    "rewards": {
         "function": "nifeather_extras:mechanics/on_glowberries_eat"
     }
 }

@@ -1,21 +1,18 @@
 {
-    "pools":
-    [
+    "pools": [
         {
             "rolls": 1,
-            "entries":
-            [
+            "entries": [
                 {
                     "type": "item",
                     "name": "chest",
                     "weight": 1,
                     "quality": 1,
-                    "functions":
-                    [
-			            {
-			                "function": "set_nbt",
-			                "tag": "{NiFeatherItem: 1b}"
-			            },
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NiFeatherItem: 1b}"
+                        },
                         {
                             "type": "chest",
                             "function": "set_loot_table",
@@ -23,8 +20,7 @@
                         },
                         {
                             "function": "set_name",
-                            "name":
-                            {
+                            "name": {
                                 "text": "印有猪灵蛮兵图案的箱子",
                                 "italic": false,
                                 "color": "light_purple"
@@ -32,8 +28,7 @@
                         },
                         {
                             "function": "set_lore",
-                            "lore":
-                            [
+                            "lore": [
                                 {
                                     "text": "甚至用金子镶了个边",
                                     "italic": false,

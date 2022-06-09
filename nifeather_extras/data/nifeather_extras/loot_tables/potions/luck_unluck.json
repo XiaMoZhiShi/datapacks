@@ -1,23 +1,19 @@
 {
-    "pools":
-    [
+    "pools": [
         {
             "rolls": 1,
-            "entries":
-            [
+            "entries": [
                 {
                     "type": "item",
                     "name": "potion",
-                    "functions":
-                    [
+                    "functions": [
                         {
                             "function": "set_nbt",
                             "tag": "{NiFeatherItem: 1b, CustomPotionEffects: [{Id: 26, Duration: 3600, ShowIcon: true}], CustomPotionColor: 2424625}"
                         },
                         {
                             "function": "set_name",
-                            "name":
-                            {
+                            "name": {
                                 "text": "幸运药水",
                                 "italic": false
                             }
@@ -27,16 +23,14 @@
                 {
                     "type": "item",
                     "name": "potion",
-                    "functions":
-                    [
+                    "functions": [
                         {
                             "function": "set_nbt",
                             "tag": "{NiFeatherItem: 1b, CustomPotionEffects: [{Id: 26, Duration: 1800, Amplifier: 1, ShowIcon: true}], CustomPotionColor: 2424625}"
                         },
                         {
                             "function": "set_name",
-                            "name":
-                            {
+                            "name": {
                                 "text": "幸运药水",
                                 "italic": false
                             }
@@ -46,16 +40,14 @@
                 {
                     "type": "item",
                     "name": "potion",
-                    "functions":
-                    [
+                    "functions": [
                         {
                             "function": "set_nbt",
                             "tag": "{NiFeatherItem: 1b, CustomPotionEffects: [{Id: 27, Duration: 600, ShowIcon: true}], CustomPotionColor: 12288520}"
                         },
                         {
                             "function": "set_name",
-                            "name":
-                            {
+                            "name": {
                                 "text": "霉运药水",
                                 "italic": false
                             }

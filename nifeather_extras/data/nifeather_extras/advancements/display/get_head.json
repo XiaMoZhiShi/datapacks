@@ -8,13 +8,10 @@
         "description": "打开散发着奇怪气息的箱子",
         "hidden": true
     },
-    "criteria":
-    {
-        "potion0":
-        {
+    "criteria": {
+        "potion0": {
             "trigger": "player_generates_container_loot",
-            "conditions":
-            {
+            "conditions": {
                 "loot_table": "nifeather_extras:player_head"
             }
         }

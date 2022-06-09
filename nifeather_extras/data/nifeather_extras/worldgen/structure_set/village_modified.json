@@ -1,14 +1,14 @@
 {
-    "structures": [
-      {
-        "structure": "nifeather_extras:village_modified",
-        "weight": 1
-      }
-    ],
-    "placement": {
-      "salt": 0,
-      "spacing": 6,
-      "separation": 4,
-      "type": "minecraft:random_spread"
+  "structures": [
+    {
+      "structure": "nifeather_extras:village_modified",
+      "weight": 1
     }
+  ],
+  "placement": {
+    "salt": 0,
+    "spacing": 6,
+    "separation": 4,
+    "type": "minecraft:random_spread"
   }
+}

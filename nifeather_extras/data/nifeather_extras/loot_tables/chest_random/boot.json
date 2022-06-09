@@ -1,15 +1,12 @@
 {
-    "pools":
-    [
+    "pools": [
         {
             "rolls": 1,
-            "entries":
-            [
+            "entries": [
                 {
                     "type": "item",
                     "name": "chest",
-                    "functions":
-                    [
+                    "functions": [
                         {
                             "function": "set_loot_table",
                             "type": "chest",
@@ -20,8 +17,7 @@
                 {
                     "type": "item",
                     "name": "chest",
-                    "functions":
-                    [
+                    "functions": [
                         {
                             "function": "set_loot_table",
                             "type": "chest",
@@ -29,8 +25,7 @@
                         },
                         {
                             "function": "set_name",
-                            "name":
-                            [
+                            "name": [
                                 {
                                     "translate": "%1$s%3427655$s",
                                     "with": [
@@ -51,8 +46,7 @@
                 {
                     "type": "item",
                     "name": "chest",
-                    "functions":
-                    [
+                    "functions": [
                         {
                             "function": "set_loot_table",
                             "type": "chest",

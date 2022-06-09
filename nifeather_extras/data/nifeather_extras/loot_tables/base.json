@@ -1,11 +1,9 @@
 {
     "type": "fishing",
-    "pools":
-    [
+    "pools": [
         {
             "rolls": 1,
-            "entries":
-            [
+            "entries": [
                 {
                     "type": "loot_table",
                     "weight": 20,
@@ -22,8 +20,7 @@
         },
         {
             "rolls": 1,
-            "entries":
-            [
+            "entries": [
                 {
                     "type": "minecraft:empty",
                     "weight": 80

@@ -1,23 +1,19 @@
 {
-    "pools":
-    [
+    "pools": [
         {
             "rolls": 1,
-            "entries":
-            [
+            "entries": [
                 {
                     "type": "item",
                     "name": "minecraft:dead_bush",
-                    "functions":
-                    [
+                    "functions": [
                         {
                             "function": "set_nbt",
                             "tag": "{NiFeatherItem: 1b}"
                         },
                         {
                             "function": "set_name",
-                            "name":
-                            [
+                            "name": [
                                 {
                                     "text": "",
                                     "italic": false

@@ -8,16 +8,14 @@
         "description": "我宣布个事儿！",
         "hidden": true
     },
-    "criteria":
-    {
-        "eat":
-        {
+    "criteria": {
+        "eat": {
             "trigger": "consume_item",
-            "conditions":
-            {
-                "item":
-                {
-                    "items": [ "glow_berries" ]
+            "conditions": {
+                "item": {
+                    "items": [
+                        "glow_berries"
+                    ]
                 }
             }
         }

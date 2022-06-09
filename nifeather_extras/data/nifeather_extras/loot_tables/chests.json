@@ -1,20 +1,17 @@
 {
-    "pools":
-    [
+    "pools": [
         {
             "rolls": 1,
-            "entries":
-            [
+            "entries": [
                 {
                     "type": "item",
                     "name": "chest",
                     "weight": 1,
-                    "functions":
-                    [
-			            {
-			                "function": "set_nbt",
-			                "tag": "{NiFeatherItem: 1b}"
-			            },
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NiFeatherItem: 1b}"
+                        },
                         {
                             "type": "chest",
                             "function": "set_loot_table",
@@ -22,16 +19,14 @@
                         },
                         {
                             "function": "set_name",
-                            "name":
-                            {
+                            "name": {
                                 "text": "湿漉漉的箱子",
                                 "italic": false
                             }
                         },
                         {
                             "function": "set_lore",
-                            "lore":
-                            [
+                            "lore": [
                                 {
                                     "text": "像是从某处沉船飘过来的。",
                                     "italic": false,
@@ -46,12 +41,11 @@
                     "name": "chest",
                     "quality": -1,
                     "weight": 1,
-                    "functions":
-                    [
-			            {
-			                "function": "set_nbt",
-			                "tag": "{NiFeatherItem: 1b}"
-			            },
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NiFeatherItem: 1b}"
+                        },
                         {
                             "type": "chest",
                             "function": "set_loot_table",
@@ -59,16 +53,14 @@
                         },
                         {
                             "function": "set_name",
-                            "name":
-                            {
+                            "name": {
                                 "text": "长满苔藓的箱子",
                                 "italic": false
                             }
                         },
                         {
                             "function": "set_lore",
-                            "lore":
-                            [
+                            "lore": [
                                 {
                                     "text": "像是从某处沉船飘过来的。",
                                     "italic": false,
@@ -82,12 +74,11 @@
                     "type": "item",
                     "name": "chest",
                     "weight": 1,
-                    "functions":
-                    [
-			            {
-			                "function": "set_nbt",
-			                "tag": "{NiFeatherItem: 1b}"
-			            },
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NiFeatherItem: 1b}"
+                        },
                         {
                             "type": "chest",
                             "function": "set_loot_table",
@@ -95,16 +86,14 @@
                         },
                         {
                             "function": "set_name",
-                            "name":
-                            {
+                            "name": {
                                 "text": "带有黑曜石碎片的箱子",
                                 "italic": false
                             }
                         },
                         {
                             "function": "set_lore",
-                            "lore":
-                            [
+                            "lore": [
                                 {
                                     "text": "或许是从某处海底传送门遗迹飘来的？",
                                     "italic": false,
@@ -118,12 +107,11 @@
                     "type": "item",
                     "name": "chest",
                     "weight": 1,
-                    "functions":
-                    [
-			            {
-			                "function": "set_nbt",
-			                "tag": "{NiFeatherItem: 1b}"
-			            },
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NiFeatherItem: 1b}"
+                        },
                         {
                             "type": "chest",
                             "function": "set_loot_table",
@@ -131,16 +119,14 @@
                         },
                         {
                             "function": "set_name",
-                            "name":
-                            {
+                            "name": {
                                 "text": "沾染不详气息的箱子",
                                 "italic": false
                             }
                         },
                         {
                             "function": "set_lore",
-                            "lore":
-                            [
+                            "lore": [
                                 {
                                     "text": "是谁把他落在水底了？",
                                     "italic": false,
@@ -154,12 +140,11 @@
                     "type": "item",
                     "name": "chest",
                     "weight": 1,
-                    "functions":
-                    [
-			            {
-			                "function": "set_nbt",
-			                "tag": "{NiFeatherItem: 1b}"
-			            },
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NiFeatherItem: 1b}"
+                        },
                         {
                             "type": "chest",
                             "function": "set_loot_table",
@@ -167,8 +152,7 @@
                         },
                         {
                             "function": "set_name",
-                            "name":
-                            {
+                            "name": {
                                 "text": "神秘的箱子",
                                 "color": "light_purple",
                                 "italic": false
@@ -176,8 +160,7 @@
                         },
                         {
                             "function": "set_lore",
-                            "lore":
-                            [
+                            "lore": [
                                 {
                                     "text": "不知从何处飘过来的",
                                     "italic": false,
@@ -192,12 +175,11 @@
                     "name": "chest",
                     "quality": 1,
                     "weight": 1,
-                    "functions":
-                    [
-			            {
-			                "function": "set_nbt",
-			                "tag": "{NiFeatherItem: 1b}"
-			            },
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NiFeatherItem: 1b}"
+                        },
                         {
                             "type": "chest",
                             "function": "set_loot_table",
@@ -205,16 +187,14 @@
                         },
                         {
                             "function": "set_name",
-                            "name":
-                            {
+                            "name": {
                                 "text": "印有猪灵图案的箱子",
                                 "italic": false
                             }
                         },
                         {
                             "function": "set_lore",
-                            "lore":
-                            [
+                            "lore": [
                                 {
                                     "text": "简简单单的猪鼻图案",
                                     "italic": false,
@@ -229,12 +209,11 @@
                     "name": "chest",
                     "quality": -2,
                     "weight": 1,
-                    "functions":
-                    [
-			            {
-			                "function": "set_nbt",
-			                "tag": "{NiFeatherItem: 1b}"
-			            },
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NiFeatherItem: 1b}"
+                        },
                         {
                             "type": "chest",
                             "function": "set_loot_table",
@@ -242,16 +221,14 @@
                         },
                         {
                             "function": "set_name",
-                            "name":
-                            {
+                            "name": {
                                 "text": "带有煤迹的箱子",
                                 "italic": false
                             }
                         },
                         {
                             "function": "set_lore",
-                            "lore":
-                            [
+                            "lore": [
                                 {
                                     "text": "像是被某位矿工带到地面上来的",
                                     "italic": false,
@@ -266,12 +243,11 @@
                     "name": "chest",
                     "quality": 1,
                     "weight": 1,
-                    "functions":
-                    [
-			            {
-			                "function": "set_nbt",
-			                "tag": "{NiFeatherItem: 1b}"
-			            },
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NiFeatherItem: 1b}"
+                        },
                         {
                             "type": "chest",
                             "function": "set_loot_table",
@@ -279,8 +255,7 @@
                         },
                         {
                             "function": "set_name",
-                            "name":
-                            {
+                            "name": {
                                 "text": "散发着奇怪气息的箱子",
                                 "color": "yellow",
                                 "italic": false
@@ -288,8 +263,7 @@
                         },
                         {
                             "function": "set_lore",
-                            "lore":
-                            [
+                            "lore": [
                                 {
                                     "text": "会跟随持有者改变其给人的感觉",
                                     "italic": false,

@@ -1,14 +1,14 @@
 {
-    "structures": [
-      {
-        "structure": "nifeather_extras:lmb_lamp",
-        "weight": 1
-      }
-    ],
-    "placement": {
-      "salt": 10387312,
-      "spacing": 12,
-      "separation": 8,
-      "type": "minecraft:random_spread"
+  "structures": [
+    {
+      "structure": "nifeather_extras:lmb_lamp",
+      "weight": 1
     }
+  ],
+  "placement": {
+    "salt": 10387312,
+    "spacing": 12,
+    "separation": 8,
+    "type": "minecraft:random_spread"
   }
+}

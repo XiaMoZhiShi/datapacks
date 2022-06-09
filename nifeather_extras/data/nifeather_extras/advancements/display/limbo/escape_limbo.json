@@ -4,7 +4,7 @@
         "icon": {
             "item": "grass_block"
         },
-        "title":[
+        "title": [
             "",
             {
                 "translate": "%1$s%3$s",
@@ -19,8 +19,7 @@
                 "italic": false
             }
         ],
-        "description":
-        [
+        "description": [
             "",
             {
                 "translate": "%1$s%3$s",
@@ -37,18 +36,14 @@
         ],
         "hidden": false
     },
-    "criteria":
-    {
-        "in":
-        {
+    "criteria": {
+        "in": {
             "trigger": "changed_dimension",
-            "conditions":
-            {
+            "conditions": {
                 "to": "nifeather_extras:limbo"
             }
         },
-        "out":
-        {
+        "out": {
             "trigger": "impossible"
         }
     }

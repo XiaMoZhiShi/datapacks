@@ -1,7 +1,6 @@
 {
     "replace": false,
-    "values":
-    [
+    "values": [
         "#nifeather_extras:glasses",
         "#nifeather_extras:glass_panes",
         "minecraft:sea_lantern",

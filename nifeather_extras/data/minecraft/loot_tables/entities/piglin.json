@@ -1,23 +1,19 @@
 {
   "type": "minecraft:entity",
-  "pools":
-  [
+  "pools": [
     {
       "rolls": 1,
       "bonus_rolls": 0,
-      "entries":
-      [
+      "entries": [
         {
           "type": "loot_table",
           "name": "nifeather_extras:entitys/lmb_common"
         }
       ],
-      "conditions":
-      [
+      "conditions": [
         {
           "condition": "location_check",
-          "predicate":
-          {
+          "predicate": {
             "biome": "nifeather_extras:border"
           }
         }

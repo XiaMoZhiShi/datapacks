@@ -9,10 +9,8 @@
         "announce_to_chat": false,
         "show_toast": false
     },
-    "criteria":
-    {
-        "tick":
-        {
+    "criteria": {
+        "tick": {
             "trigger": "tick"
         }
     }
