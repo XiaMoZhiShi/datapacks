@@ -26,18 +26,10 @@
                         {
                             "function": "set_name",
                             "name": [
+                                "",
                                 {
-                                    "translate": "%1$s%3427655$s",
-                                    "with": [
-                                        {
-                                            "translate": "block.minecraft.chest"
-                                        },
-                                        {
-                                            "text": "brt3m6 ofr xrt iefsoj e34ssojzwu",
-                                            "font": "xmzs:char"
-                                        }
-                                    ],
-                                    "italic": false
+                                    "text": "brt3m6 ofr xrt iefsoj e34ssojzwu",
+                                    "font": "xmzs:char"
                                 }
                             ]
                         }

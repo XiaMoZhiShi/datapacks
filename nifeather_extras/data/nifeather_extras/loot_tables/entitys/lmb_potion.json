@@ -17,18 +17,8 @@
                             "name": [
                                 "",
                                 {
-                                    "translate": "%1$s%3$s",
-                                    "italic": false,
-                                    "with": [
-                                        {
-                                            "text": "L5xPaLBP"
-                                        },
-                                        {
-                                            "text": "l5xpalbp",
-                                            "font": "xmzs:char"
-                                        },
-                                        ""
-                                    ]
+                                    "text": "l5xpalbp",
+                                    "font": "xmzs:char"
                                 }
                             ]
                         },
