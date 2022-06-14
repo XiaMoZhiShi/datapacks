@@ -6,15 +6,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "weight": 20,
-                    "quality": -2,
                     "name": "nifeather_extras:potions/base"
-                },
-                {
-                    "type": "loot_table",
-                    "weight": 20,
-                    "name": "nifeather_extras:chests",
-                    "quality": 2
                 }
             ]
         },
