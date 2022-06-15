@@ -1,1 +1,0 @@
-tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"如果可以，请尽可能使用Java版游玩"}]}

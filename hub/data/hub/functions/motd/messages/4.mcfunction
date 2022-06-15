@@ -1,2 +1,0 @@
-tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"一般情况下，每个服务器的聊天消息是互相独立的"}]}
-tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"但", "extra":[{"text":" /msg ", "color": "white", "clickEvent": {"action": "suggest_command", "value": "/msg"}, "hoverEvent": {"action": "show_text", "value": "点此补全"}}, "是可以跨服使用的"]}]}
