@@ -24,16 +24,31 @@ scoreboard objectives add n3l_armorLevel dummy
 scoreboard objectives add n3l_lastDeathTime dummy
 #declare objective n3l_lastDeathTime 记录玩家死亡时间
 
+scoreboard objectives add n3l_respawnTimeRemain dummy
+#declare objective n3l_respawnTimeRemain 剩余时间
+
+scoreboard objectives add n3l_rTRDisplaySecond dummy
+#declare objective n3l_rTRDisplaySecond 剩余时间显示
+
+scoreboard objectives add n3l_rTRDisplayMinute dummy
+#declare objective n3l_rTRDisplayMinute 剩余时间显示
+
+scoreboard objectives add n3l_rTRDisplayHour dummy
+#declare objective n3l_rTRDisplayHour 剩余时间显示
+
+
 #scoreboard objectives add nife_gapple_eat minecraft.used:minecraft.golden_apple
 
 scoreboard players set #4 n3l_lives 4
 scoreboard players set #2 n3l_lives 2
 scoreboard players set #0 n3l_lives 0
-execute unless score #minimumTRespawn n3l_lives matches -2147483648..2147483647 run scoreboard players set #minimumTRespawn n3l_lives -10
-execute unless score #weatherChance nife_stats matches -2147483648..2147483647 run scoreboard players set #weatherChance nife_stats 4
 
-#define entity #illegalLivesLevel （已过时，新方法请见functions/events/player/armor/*/boot.mcfunction）非法生命值，越过这个值将会强行重置(n3l_lives)
-#define entity #minimumTRespawn 最小生命值, 低于此值将无法通过雷电重生
-#define entity #weatherChance 探测到旁观者后改变天气到雷雨的几率
+scoreboard players set #n3l_ticksPerSec nife_stats 20
+scoreboard players set #n3l_ticksPerMin nife_stats 1200
+scoreboard players set #n3l_ticksPerHr nife_stats 72000
+scoreboard players set #n3l_secsPerMin nife_stats 60
+scoreboard players set #n3l_minsPerHr nife_stats 60
 
-#function nifeather_3lives:misc/weather_modify/detect
+execute unless score #n3l_respawnTick nife_stats matches -2147483648..2147483647 run scoreboard players set #n3l_respawnTick nife_stats 216000
+
+#define entity #n3l_respawnTick 重生等待时间
