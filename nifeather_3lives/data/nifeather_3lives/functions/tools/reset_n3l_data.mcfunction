@@ -2,7 +2,7 @@ function nifeather_3lives:tools/reset_lives
 function nifeather_3lives:tools/revoke_all_armor
 function nifeather_3lives:misc/respawn_timer/player_dorespawn
 
-tag @s remove 3livesinit
+tag @s remove n3l_init_done
 scoreboard players reset @s n3l_patchlevel
 scoreboard players reset @s n3l_maxLives
 scoreboard players reset @s n3l_lastDeathTime

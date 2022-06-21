@@ -14,10 +14,10 @@ tag @s remove n3l_applyingPatch
 #endregion 补丁
 
 #重置生命
-execute if entity @s[tag=!3livesinit] run function nifeather_3lives:tools/reset_lives
+execute if entity @s[tag=!n3l_init_done] run function nifeather_3lives:tools/reset_lives
 
 tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE33C", {"text": "欢迎回来，您目前剩余", "extra":[{"score":{"objective": "n3l_lives", "name": "@s"}},"(最多",{"score":{"objective": "n3l_maxLives", "name": "@s"}}, ")条生命"]}]}]
 
 function nifeather_3lives:events/player/join/hint
 
-tag @s add 3livesinit
+tag @s add n3l_init_done
