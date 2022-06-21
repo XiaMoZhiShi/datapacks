@@ -1,10 +1,16 @@
 function nifeather_3lives:tools/reset_lives
 function nifeather_3lives:tools/revoke_all_armor
+function nifeather_3lives:misc/respawn_timer/player_dorespawn
 
 tag @s remove 3livesinit
 scoreboard players reset @s n3l_patchlevel
 scoreboard players reset @s n3l_maxLives
 scoreboard players reset @s n3l_lastDeathTime
+
+tag @s remove n3l_specator
+tag @s remove n3l_respawnedonce
+
+execute if entity @s[gamemode=spectator] run gamemode survival @s
 
 execute if entity @s[tag=all] run advancement revoke @s only story/obtain_armor
 execute if entity @s[tag=all] run advancement revoke @s only story/shiny_gear
