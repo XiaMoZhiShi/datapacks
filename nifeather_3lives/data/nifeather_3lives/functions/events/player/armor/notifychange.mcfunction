@@ -1,0 +1,2 @@
+tellraw @s {"translate":"text.hub.hint", "with":["小提示", "因为装备等级的提升，你的重生规则也发生了一些更改。"]}
+tellraw @s {"translate":"text.hub.hint", "with":["小提示", {"text":"现在你的最大生命值为", "extra":[{"score":{"objective":"n3l_maxLives","name":"@s"}}]}]}

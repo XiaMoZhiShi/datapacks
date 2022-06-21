@@ -1,0 +1,17 @@
+{
+    "criteria":
+    {
+        "tick":
+        {
+            "trigger": "tick"
+        }
+    },
+    "requirements":
+    [
+        ["tick"]
+    ],
+    "rewards":
+    {
+        "function": "nifeather_3lives:events/player/armor/init/boot"
+    }
+}

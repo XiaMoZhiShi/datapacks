@@ -9,3 +9,5 @@ effect give @s resistance 3 255
 particle minecraft:happy_villager ~ ~0.9 ~ 1 0.9 1 1 100
 playsound entity.villager.celebrate player @s ~ ~ ~
 tag @s remove nife_curing
+
+function nifeather_3lives:titles/set_titles

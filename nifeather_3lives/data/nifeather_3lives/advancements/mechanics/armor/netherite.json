@@ -1,0 +1,48 @@
+{
+    "criteria":
+    {
+        "boot":
+        {
+            "trigger": "inventory_changed",
+            "conditions":
+            {
+                "items": [ {"items": [ "netherite_boots" ]} ]
+            }
+        },
+        "chestplate":
+        {
+            "trigger": "inventory_changed",
+            "conditions":
+            {
+                "items": [ {"items": [ "netherite_chestplate" ]} ]
+            }
+        },
+        "leggings":
+        {
+            "trigger": "inventory_changed",
+            "conditions":
+            {
+                "items": [ {"items": [ "netherite_leggings" ]} ]
+            }
+        },
+        "helmet":
+        {
+            "trigger": "inventory_changed",
+            "conditions":
+            {
+                "items": [ {"items": [ "netherite_helmet" ]} ]
+            }
+        }
+    },
+    "requirements":
+    [
+        ["boot"],
+        ["chestplate"],
+        ["leggings"],
+        ["helmet"]
+    ],
+    "rewards":
+    {
+        "function": "nifeather_3lives:events/player/armor/netherite/boot"
+    }
+}
