@@ -3,7 +3,7 @@ execute if score debug nife_stats matches 1 run tellraw @a[tag=admin] [{"text": 
 execute if score @s n3l_lives > @s n3l_maxLives run scoreboard players operation @s n3l_lives = @s n3l_maxLives
 
 scoreboard players remove @s n3l_lives 1
-execute if entity @s[tag=nife_curing, scores={n3l_lives=0..}] run scoreboard players set @s n3l_lives 0
+execute if entity @s[tag=n3l_curing, scores={n3l_lives=0..}] run scoreboard players set @s n3l_lives 0
 execute if entity @s[scores={n3l_lives=..0}] run scoreboard players set @s n3l_lives 0
 
 scoreboard players operation @s n3l_lastDeathTime = clock nife_stats

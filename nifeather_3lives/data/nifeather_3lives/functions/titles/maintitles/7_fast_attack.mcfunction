@@ -3,4 +3,4 @@ tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE3
 tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE360", "就和没有阻力一样"]}]
 tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE360", "攻击速度 +30%"]}]
 
-attribute @s generic.attack_speed modifier add 0-0-0-7-0 "nife_fast_attack" 0.3 multiply
+attribute @s generic.attack_speed modifier add 0-0-0-7-0 "n3l_fast_attack" 0.3 multiply

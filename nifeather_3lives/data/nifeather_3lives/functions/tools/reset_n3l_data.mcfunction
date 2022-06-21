@@ -15,7 +15,7 @@ execute if entity @s[gamemode=spectator] run gamemode survival @s
 execute if entity @s[tag=all] run advancement revoke @s only story/obtain_armor
 execute if entity @s[tag=all] run advancement revoke @s only story/shiny_gear
 execute if entity @s[tag=all] run advancement revoke @s only nether/netherite_armor
-tellraw @s {"translate":"text.hub.hint", "with":["N3L", "因为有all标签，将一并重置原版盔甲进度"]}
+execute if entity @s[tag=all] run tellraw @s {"translate":"text.hub.hint", "with":["N3L", "因为有all标签，将一并重置原版盔甲进度"]}
 
 tag @s remove all
 

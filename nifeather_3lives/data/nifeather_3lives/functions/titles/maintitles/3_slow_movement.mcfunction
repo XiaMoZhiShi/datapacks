@@ -3,4 +3,4 @@ tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE3
 tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE372", "是运动过度了吗？"]}]
 tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE372", "移动速度 -20%"]}]
 
-attribute @s generic.movement_speed modifier add 0-0-0-3-0 "nife_slow_movement" -0.2 multiply
+attribute @s generic.movement_speed modifier add 0-0-0-3-0 "n3l_slow_movement" -0.2 multiply
