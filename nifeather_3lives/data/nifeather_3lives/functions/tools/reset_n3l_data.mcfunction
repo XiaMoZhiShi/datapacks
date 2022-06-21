@@ -4,6 +4,7 @@ function nifeather_3lives:tools/revoke_all_armor
 tag @s remove 3livesinit
 scoreboard players reset @s n3l_patchlevel
 scoreboard players reset @s n3l_maxLives
+scoreboard players reset @s n3l_lastDeathTime
 
 execute if entity @s[tag=all] run advancement revoke @s only story/obtain_armor
 execute if entity @s[tag=all] run advancement revoke @s only story/shiny_gear

@@ -1,6 +1,5 @@
 scoreboard objectives add nife_lives dummy
-#scoreboard objectives modify nife_lives rendertype hearts
-#scoreboard objectives setdisplay list nife_lives
+
 scoreboard objectives add n3l_random dummy
 #declare objective n3l_random 主事件随机数储存
 
@@ -21,6 +20,9 @@ scoreboard objectives add n3l_maxLives dummy
 
 scoreboard objectives add n3l_armorLevel dummy
 #declare objective n3l_armorLevel 玩家盔甲等级
+
+scoreboard objectives add n3l_lastDeathTime dummy
+#declare objective n3l_lastDeathTime 记录玩家死亡时间
 
 #scoreboard objectives add nife_gapple_eat minecraft.used:minecraft.golden_apple
 
