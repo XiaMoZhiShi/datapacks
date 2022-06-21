@@ -3,4 +3,4 @@ tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE3
 tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE355", "就像刚刚那一切都没有发生一样"]}]
 tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE355", "本次重生不消耗次数"]}]
 
-scoreboard players add @s nife_lives 1
+scoreboard players add @s n3l_lives 1

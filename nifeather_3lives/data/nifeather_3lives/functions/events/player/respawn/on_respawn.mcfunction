@@ -4,7 +4,7 @@ function nifeather_3lives:tools/reset_attributes
 
 #属性应用
 gamemode survival @s
-execute if score @s nife_lives <= #0 nife_lives run function nifeather_3lives:events/player/respawn/types/ran_out_of_lives
+execute if score @s n3l_lives <= #0 n3l_lives run function nifeather_3lives:events/player/respawn/types/ran_out_of_lives
 
 title @s times 0 5 5
 
