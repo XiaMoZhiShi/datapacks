@@ -1,45 +1,24 @@
 {
     "criteria":
     {
-        "boot":
+        "full_armor":
         {
             "trigger": "inventory_changed",
             "conditions":
             {
-                "items": [ {"items": [ "netherite_boots" ]} ]
-            }
-        },
-        "chestplate":
-        {
-            "trigger": "inventory_changed",
-            "conditions":
-            {
-                "items": [ {"items": [ "netherite_chestplate" ]} ]
-            }
-        },
-        "leggings":
-        {
-            "trigger": "inventory_changed",
-            "conditions":
-            {
-                "items": [ {"items": [ "netherite_leggings" ]} ]
-            }
-        },
-        "helmet":
-        {
-            "trigger": "inventory_changed",
-            "conditions":
-            {
-                "items": [ {"items": [ "netherite_helmet" ]} ]
+                "items":
+                [
+                    {"items": [ "netherite_boots" ]},
+                    {"items": [ "netherite_chestplate" ]},
+                    {"items": [ "netherite_leggings" ]},
+                    {"items": [ "netherite_helmet" ]}
+                ]
             }
         }
     },
     "requirements":
     [
-        ["boot"],
-        ["chestplate"],
-        ["leggings"],
-        ["helmet"]
+        ["full_armor"]
     ],
     "rewards":
     {

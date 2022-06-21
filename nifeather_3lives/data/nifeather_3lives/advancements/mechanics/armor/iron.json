@@ -1,42 +1,18 @@
 {
     "criteria":
     {
-        "boot":
+        "any":
         {
             "trigger": "inventory_changed",
             "conditions":
             {
-                "items": [ {"items": [ "iron_boots" ]} ]
-            }
-        },
-        "chestplate":
-        {
-            "trigger": "inventory_changed",
-            "conditions":
-            {
-                "items": [ {"items": [ "iron_chestplate" ]} ]
-            }
-        },
-        "leggings":
-        {
-            "trigger": "inventory_changed",
-            "conditions":
-            {
-                "items": [ {"items": [ "iron_leggings" ]} ]
-            }
-        },
-        "helmet":
-        {
-            "trigger": "inventory_changed",
-            "conditions":
-            {
-                "items": [ {"items": [ "iron_helmet" ]} ]
+                "items": [ {"items": [ "iron_boots", "iron_helmet" , "iron_leggings", "iron_chestplate"]} ]
             }
         }
     },
     "requirements":
     [
-        ["boot", "chestplate", "leggings", "helmet"]
+        ["any"]
     ],
     "rewards":
     {
