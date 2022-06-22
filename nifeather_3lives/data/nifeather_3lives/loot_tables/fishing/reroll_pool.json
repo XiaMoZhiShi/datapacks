@@ -5,6 +5,64 @@
             "rolls": 1,
             "entries":
             [
+                {
+                    "type": "item",
+                    "name": "golden_apple",
+                    "functions":
+                    [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NiFeatherItem: 1b, 3LRerollP: 2}"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":
+                            [
+                                {"translate": "potion.whenDrank", "italic": false},
+                                {"text":"以消耗一条生命为代价", "color": "#dddddd", "italic": false},
+                                {"text":"清除现有的主副词条", "color": "#dddddd", "italic": false},
+                                {"text":"并重新获取一次", "color": "#dddddd", "italic": false}
+                            ]
+                        },
+                        {
+                            "function": "set_name",
+                            "name":
+                            {
+                                "text": "怪异的金苹果",
+                                "color": "green",
+                                "italic": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "golden_apple",
+                    "functions":
+                    [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NiFeatherItem: 1b, 3LRerollP: 1}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name":
+                            {
+                                "text": "奇特的金苹果",
+                                "color": "green",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":
+                            [
+                                {"translate": "potion.whenDrank", "italic": false},
+                                {"text":"增加一条生命", "color": "#dddddd", "italic": false}
+                            ]
+                        }
+                    ]
+                }
             ]
         }
     ]

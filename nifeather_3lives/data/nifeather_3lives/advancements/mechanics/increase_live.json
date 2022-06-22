@@ -8,7 +8,7 @@
             {
                 "item":
                 {
-                    "nbt": "{3LRerollP: 1b}",
+                    "nbt": "{3LRerollP: 1}",
                     "items": ["golden_apple"]
                 }
             }

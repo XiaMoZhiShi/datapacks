@@ -8,8 +8,8 @@
             {
                 "item":
                 {
-                    "nbt": "{3LRerollP: 1b}",
-                    "items": ["dried_kelp"]
+                    "nbt": "{3LRerollP: 2}",
+                    "items": ["golden_apple"]
                 }
             }
         }

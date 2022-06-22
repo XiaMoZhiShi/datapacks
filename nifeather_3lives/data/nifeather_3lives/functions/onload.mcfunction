@@ -36,6 +36,9 @@ scoreboard objectives add n3l_rTRDisplayMinute dummy
 scoreboard objectives add n3l_rTRDisplayHour dummy
 #declare objective n3l_rTRDisplayHour 剩余时间显示
 
+scoreboard objectives add n3l_recipeCheckTemp dummy
+#declare objective n3l_recipeCheckTemp 图腾配方相关临时记分板
+
 
 #scoreboard objectives add nife_gapple_eat minecraft.used:minecraft.golden_apple
 
