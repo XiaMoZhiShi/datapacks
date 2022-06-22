@@ -1,0 +1,1 @@
+data modify entity @s Item.tag.RNG set from entity @e[limit=1, sort=random, type=!player] UUID
