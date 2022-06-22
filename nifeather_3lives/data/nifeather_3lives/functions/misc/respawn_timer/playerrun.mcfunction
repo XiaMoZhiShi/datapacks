@@ -40,7 +40,7 @@ execute unless score @s n3l_respawnTimeRemain matches ..1199 if score @s n3l_res
 #execute unless score @s n3l_respawnTimeRemain matches ..0 if score @s n3l_respawnTimeRemain matches ..239 run title @s actionbar        {"translate": "text.hub.hint", "color":"#f0f0f0", "with":["\uE323", "不到一分钟 | 马上就好..."]}
 #execute if score @s n3l_respawnTimeRemain matches ..0 run title @s actionbar                                                             {"translate": "text.hub.hint", "color":"#f0f0f0", "with":["\uE323", "欢迎回来！"]}
 
-execute unless score @s n3l_respawnTimeRemain matches ..1 if score @s n3l_respawnTimeRemain matches ..1199 run title @s actionbar {"translate": "text.hub.hint", "color":"#f0f0f0", "with":["\uE323", "不到一分钟"]}
+execute unless score @s n3l_respawnTimeRemain matches ..0 if score @s n3l_respawnTimeRemain matches ..1199 run title @s actionbar {"translate": "text.hub.hint", "color":"#f0f0f0", "with":["\uE323", "不到一分钟"]}
 execute if score @s n3l_respawnTimeRemain matches ..0 run title @s actionbar                                                        {"translate": "text.hub.hint", "color":"#f0f0f0", "with":["\uE323", "欢迎回来！"]}
 #endregion 更新剩余时间显示
 
