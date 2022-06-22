@@ -1,10 +1,10 @@
 {
     "type": "smithing",
     "base": {
-        "item": "totem_of_undying"
+        "item": "golden_apple"
     },
     "addition": {
-        "item": "golden_apple"
+        "item": "totem_of_undying"
     },
     "result": {
         "item": "knowledge_book"
