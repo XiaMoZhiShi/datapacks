@@ -15,3 +15,4 @@ tellraw @s[tag=!n3l_respawnedonce] ["", {"translate": "text.hub.hint", "color": 
 
 tag @s remove n3l_specator
 tag @s add n3l_respawnedonce
+tag @s add n3l_curing
