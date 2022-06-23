@@ -1,5 +1,5 @@
 #设置最大生命
-scoreboard players set @s n3l_maxLives 20
+scoreboard players set @s n3l_maxLives 15
 
 #设置盔甲等级
 scoreboard players set @s n3l_armorLevel 0
