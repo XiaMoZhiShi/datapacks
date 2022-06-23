@@ -1,8 +1,1 @@
-#设置最大生命
-scoreboard players set @s n3l_maxLives 15
-
-#设置盔甲等级
-scoreboard players set @s n3l_armorLevel 0
-
-#提醒玩家
-execute unless entity @s[tag=n3l_applyingPatch] run function nifeather_3lives:events/player/armor/notifychange
+execute unless score @s n3l_armorLevel matches 0.. run function nifeather_3lives:events/player/armor/init/run
