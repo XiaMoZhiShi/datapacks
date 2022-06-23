@@ -1,4 +1,0 @@
-tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"正在使用正版帐号? 试试看", "extra":[{"text":" /premium ", "color": "white", "clickEvent": {"action": "suggest_command", "value": "/premium"}, "hoverEvent": {"action": "show_text", "value": "点此补全"}}, "吧!"]}]}
-tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"激活帐号验证的同时也可以在Tab栏中显示玩家皮肤!"}]}
-tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"执行", "extra":[{"text":" /unpremium ", "color": "white", "clickEvent": {"action": "suggest_command", "value": "/unpremium"}, "hoverEvent": {"action": "show_text", "value": "点此补全"}}, "可以取消验证"]}]}
-tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"不要在绑定了基岩版的帐号上尝试!", "color":"#ffff00"}]}

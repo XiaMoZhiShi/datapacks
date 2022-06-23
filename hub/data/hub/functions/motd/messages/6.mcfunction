@@ -1,1 +1,0 @@
-tellraw @s {"translate":"text.hub.hint", "color":"#dddddd", "with":[{"text":"小提示"}, {"text":"你知道在大厅双击跳跃可以原地发射吗?"}]}
