@@ -6,9 +6,11 @@ tag @s remove n3l_init_done
 scoreboard players reset @s n3l_patchlevel
 scoreboard players reset @s n3l_maxLives
 scoreboard players reset @s n3l_lastDeathTime
+scoreboard players reset @s n3l_armorLevel
 
 tag @s remove n3l_specator
 tag @s remove n3l_respawnedonce
+tag @s remove n3l_curing
 
 execute if entity @s[gamemode=spectator] run gamemode survival @s
 
