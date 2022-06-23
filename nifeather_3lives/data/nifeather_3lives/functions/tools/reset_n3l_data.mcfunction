@@ -9,6 +9,7 @@ scoreboard players reset @s n3l_lastDeathTime
 scoreboard players reset @s n3l_armorLevel
 
 tag @s remove n3l_specator
+tag @s remove n3l_specator_ready
 tag @s remove n3l_respawnedonce
 tag @s remove n3l_curing
 
