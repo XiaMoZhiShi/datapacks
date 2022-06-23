@@ -1,0 +1,27 @@
+{
+    "criteria":
+    {
+        "full_armor":
+        {
+            "trigger": "inventory_changed",
+            "conditions":
+            {
+                "items":
+                [
+                    {"items": [ "netherite_boots" ]},
+                    {"items": [ "netherite_chestplate" ]},
+                    {"items": [ "netherite_leggings" ]},
+                    {"items": [ "netherite_helmet" ]}
+                ]
+            }
+        }
+    },
+    "requirements":
+    [
+        ["full_armor"]
+    ],
+    "rewards":
+    {
+        "function": "nifeather_3lives:events/player/armor/netherite/boot"
+    }
+}

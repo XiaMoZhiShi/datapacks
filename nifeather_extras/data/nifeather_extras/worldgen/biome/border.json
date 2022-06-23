@@ -2,9 +2,7 @@
   "temperature": 1,
   "downfall": 1,
   "precipitation": "none",
-  "category": "plains",
-  "effects":
-  {
+  "effects": {
     "sky_color": 0,
     "fog_color": 0,
     "water_color": 6513507,
@@ -15,15 +13,12 @@
       "sound": "minecraft:ambient.cave",
       "tick_delay": 4500,
       "block_search_extent": 8,
-      "offset": 2.0
+      "offset": 2
     },
-    "particle":
-    {
-      "options":
-      {
+    "particle": {
+      "options": {
         "type": "minecraft:block_marker",
-        "value":
-        {
+        "value": {
           "Name": "minecraft:light_gray_concrete",
           "Properties": {}
         }
@@ -31,10 +26,8 @@
       "probability": 0.0008
     }
   },
-  "spawners":
-  {
-    "monster":
-    [
+  "spawners": {
+    "monster": [
       {
         "type": "minecraft:spider",
         "weight": 100,
@@ -169,8 +162,7 @@
   },
   "spawn_costs": {},
   "carvers": {},
-  "features":
-  [
+  "features": [
     [],
     [],
     [],

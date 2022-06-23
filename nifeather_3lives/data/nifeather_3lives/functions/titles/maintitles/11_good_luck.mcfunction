@@ -3,5 +3,5 @@ tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE3
 tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE369", "多出去钓鱼吧，说不定能有所好转"]}]
 tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE369", "运气 +1, 并 x200%"]}]
 
-attribute @s generic.luck modifier add 0-0-0-11-0 "nife_good_luck" 1 add
-attribute @s generic.luck modifier add 0-0-0-11-1 "nife_good_luck" 1 multiply
+attribute @s generic.luck modifier add 0-0-0-11-0 "n3l_good_luck" 1 add
+attribute @s generic.luck modifier add 0-0-0-11-1 "n3l_good_luck" 1 multiply

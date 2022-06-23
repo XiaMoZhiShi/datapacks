@@ -3,16 +3,14 @@
         "icon": {
             "item": "minecraft:sculk_sensor"
         },
-        "title": "LLin",
-        "description": "owo这是什么",
+        "title": "夏沫",
+        "description": "",
         "background": "minecraft:textures/block/hay_block_side.png",
         "announce_to_chat": false,
         "show_toast": false
     },
-    "criteria":
-    {
-        "tick":
-        {
+    "criteria": {
+        "tick": {
             "trigger": "tick"
         }
     }

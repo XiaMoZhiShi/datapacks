@@ -4,7 +4,7 @@ function nifeather_3lives:tools/reset_attributes
 
 #属性应用
 gamemode survival @s
-execute if score @s nife_lives <= #0 nife_lives run function nifeather_3lives:events/player/respawn/types/ran_out_of_lives
+execute if score @s n3l_lives <= #0 n3l_lives run function nifeather_3lives:events/player/respawn/types/ran_out_of_lives
 
 title @s times 0 5 5
 
@@ -12,5 +12,5 @@ title @s times 0 5 5
 execute if entity @s[gamemode=!spectator] run function nifeather_3lives:titles/set_titles
 execute if entity @s[gamemode=spectator] run function nifeather_3lives:events/player/respawn/types/spectator_respawn
 
-execute if entity @s[tag=nife_curing] run attribute @s generic.max_health modifier add 0-0-1-0-1 "nife_reduce_health" -0.6 multiply
+execute if entity @s[tag=n3l_curing] run attribute @s generic.max_health modifier add 0-0-1-0-1 "nife_reduce_health" -0.6 multiply
 effect give @s instant_health

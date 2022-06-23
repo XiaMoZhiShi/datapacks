@@ -1,0 +1,17 @@
+{
+    "criteria":
+    {
+        "recipe":
+        {
+            "trigger": "recipe_unlocked",
+            "conditions":
+            {
+                "recipe": "nifeather_3lives:smith_totem"
+            }
+        }
+    },
+    "rewards":
+    {
+        "function": "nifeather_3lives:misc/totem_recipe/on_grant"
+    }
+}

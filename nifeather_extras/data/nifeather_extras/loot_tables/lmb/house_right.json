@@ -1,19 +1,15 @@
 {
-    "pools":
-    [
+    "pools": [
         {
             "rolls": 4,
-            "entries":
-            [
+            "entries": [
                 {
                     "type": "item",
                     "name": "wheat",
-                    "functions":
-                    [
+                    "functions": [
                         {
                             "function": "set_count",
-                            "count":
-                            {
+                            "count": {
                                 "max": 4,
                                 "min": 1
                             }
@@ -23,12 +19,10 @@
                 {
                     "type": "item",
                     "name": "wheat_seeds",
-                    "functions":
-                    [
+                    "functions": [
                         {
                             "function": "set_count",
-                            "count":
-                            {
+                            "count": {
                                 "max": 3,
                                 "min": 1
                             }

@@ -1,24 +1,24 @@
 {
-    "name": "minecraft:village/savanna/terminators",
-    "fallback": "minecraft:empty",
-    "elements": [
-      {
-        "weight": 80,
-        "element": {
-          "location": "nifeather_extras:lmb/exit/to_village",
-          "processors": "minecraft:empty",
-          "projection": "terrain_matching",
-          "element_type": "minecraft:legacy_single_pool_element"
-        }
-      },
-      {
-        "weight": 20,
-        "element": {
-          "location": "nifeather_extras:lmb/exit/to_overworld",
-          "processors": "minecraft:empty",
-          "projection": "terrain_matching",
-          "element_type": "minecraft:legacy_single_pool_element"
-        }
+  "name": "minecraft:village/savanna/terminators",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 80,
+      "element": {
+        "location": "nifeather_extras:lmb/exit/to_village",
+        "processors": "minecraft:empty",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
       }
-    ]
-  }
+    },
+    {
+      "weight": 20,
+      "element": {
+        "location": "nifeather_extras:lmb/exit/to_overworld",
+        "processors": "minecraft:empty",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

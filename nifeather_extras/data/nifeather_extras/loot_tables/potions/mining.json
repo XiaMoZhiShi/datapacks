@@ -1,23 +1,19 @@
 {
-    "pools":
-    [
+    "pools": [
         {
             "rolls": 1,
-            "entries":
-            [
+            "entries": [
                 {
                     "type": "item",
                     "name": "potion",
-                    "functions":
-                    [
+                    "functions": [
                         {
                             "function": "set_nbt",
                             "tag": "{NiFeatherItem: 1b, CustomPotionEffects: [{Id: 4,Duration: 600, ShowIcon: true}], CustomPotionColor: 3145821}"
                         },
                         {
                             "function": "set_name",
-                            "name":
-                            {
+                            "name": {
                                 "text": "疲劳药水",
                                 "italic": false
                             }
@@ -27,16 +23,14 @@
                 {
                     "type": "item",
                     "name": "potion",
-                    "functions":
-                    [
+                    "functions": [
                         {
                             "function": "set_nbt",
                             "tag": "{NiFeatherItem: 1b, CustomPotionEffects: [{Id: 3, Duration: 1800, Amplifier:1}, {Id: 16, Duration: 1800}], CustomPotionColor: 60917}"
                         },
                         {
                             "function": "set_name",
-                            "name":
-                            {
+                            "name": {
                                 "text": "矿工药水",
                                 "italic": false
                             }

@@ -1,1 +1,0 @@
-attribute @s generic.max_health modifier add 1000000-0000-0000-0000-000000000011 "run1" 1 add

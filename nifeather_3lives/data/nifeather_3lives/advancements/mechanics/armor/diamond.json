@@ -1,0 +1,21 @@
+{
+    "criteria":
+    {
+        "any":
+        {
+            "trigger": "inventory_changed",
+            "conditions":
+            {
+                "items": [ {"items": [ "diamond_boots", "diamond_helmet", "diamond_leggings", "diamond_chestplate" ]} ]
+            }
+        }
+    },
+    "requirements":
+    [
+        ["any"]
+    ],
+    "rewards":
+    {
+        "function": "nifeather_3lives:events/player/armor/diamond/boot"
+    }
+}

@@ -1,12 +1,9 @@
 {
     "condition": "location_check",
     "entity": "this",
-    "predicate":
-    {
-        "light":
-        {
-            "light":
-            {
+    "predicate": {
+        "light": {
+            "light": {
                 "min": 7
             }
         }

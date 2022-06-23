@@ -1,12 +1,9 @@
 {
     "condition": "entity_properties",
     "entity": "this",
-    "predicate":
-    {
-        "effects":
-        {
-            "glowing":
-            {
+    "predicate": {
+        "effects": {
+            "glowing": {
                 "visible": true,
                 "amplifier": 2
             }

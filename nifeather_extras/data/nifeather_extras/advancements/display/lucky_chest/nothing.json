@@ -8,13 +8,10 @@
         "description": "打开神秘箱子，但是里面什么也没有",
         "hidden": true
     },
-    "criteria":
-    {
-        "potion0":
-        {
+    "criteria": {
+        "potion0": {
             "trigger": "player_generates_container_loot",
-            "conditions":
-            {
+            "conditions": {
                 "loot_table": "nifeather_extras:chest_random/nothing"
             }
         }

@@ -1,13 +1,10 @@
 {
     "condition": "location_check",
     "entity": "this",
-    "predicate":
-    {
+    "predicate": {
         "dimension": "nifeather_extras:limbo",
-        "block":
-        {
-            "blocks":
-            [
+        "block": {
+            "blocks": [
                 "water"
             ]
         }

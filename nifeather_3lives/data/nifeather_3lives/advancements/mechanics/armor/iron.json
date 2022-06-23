@@ -1,0 +1,21 @@
+{
+    "criteria":
+    {
+        "any":
+        {
+            "trigger": "inventory_changed",
+            "conditions":
+            {
+                "items": [ {"items": [ "iron_boots", "iron_helmet" , "iron_leggings", "iron_chestplate"]} ]
+            }
+        }
+    },
+    "requirements":
+    [
+        ["any"]
+    ],
+    "rewards":
+    {
+        "function": "nifeather_3lives:events/player/armor/iron/boot"
+    }
+}

@@ -8,15 +8,11 @@
         "title": "这是什么？",
         "description": "钓上来不寻常的东西。"
     },
-    "criteria":
-    {
-        "potion0":
-        {
+    "criteria": {
+        "potion0": {
             "trigger": "fishing_rod_hooked",
-            "conditions":
-            {
-                "item":
-                {
+            "conditions": {
+                "item": {
                     "nbt": "{NiFeatherItem: 1b}"
                 }
             }

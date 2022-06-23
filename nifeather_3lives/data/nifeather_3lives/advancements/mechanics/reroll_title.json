@@ -1,0 +1,21 @@
+{
+    "criteria":
+    {
+        "consume":
+        {
+            "trigger": "consume_item",
+            "conditions":
+            {
+                "item":
+                {
+                    "nbt": "{3LRerollP: 2}",
+                    "items": ["golden_apple"]
+                }
+            }
+        }
+    },
+    "rewards":
+    {
+        "function": "nifeather_3lives:events/player/reroll/on_activate"
+    }
+}

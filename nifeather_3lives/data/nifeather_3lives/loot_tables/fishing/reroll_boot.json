@@ -5,17 +5,6 @@
             "rolls": 1,
             "entries":
             [
-                {
-                    "type": "item",
-                    "name": "acacia_boat",
-                    "functions":
-                    [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{NiFeatherItem: 1b, 3LReroll: 1b}"
-                        }
-                    ]
-                }
             ]
         }
     ]

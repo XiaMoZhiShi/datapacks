@@ -1,0 +1,1 @@
+execute unless score @s n3l_armorLevel matches 2.. run function nifeather_3lives:events/player/armor/diamond/run

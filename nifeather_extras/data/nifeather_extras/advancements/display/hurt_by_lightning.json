@@ -1,35 +1,34 @@
 {
-    "parent": "nifeather_extras:display/root",
-    "display": {
-        "icon": {
-            "item": "lightning_rod"
-        },
-        "title": "天雷圣裁",
-        "description":
-        [
-            {
-                "text": "被闪电击中"
-            }
-        ]
+  "parent": "nifeather_extras:display/root",
+  "display": {
+    "icon": {
+      "item": "lightning_rod"
     },
-    "criteria": {
-        "lightning": {
-          "trigger": "minecraft:lightning_strike",
-          "conditions": {
-            "lightning": [
-              {
-                "condition": "minecraft:entity_properties",
-                "predicate": {
-                  "distance": {
-                    "absolute": {
-                      "max": 2.0
-                    }
-                  }
-                },
-                "entity": "this"
+    "title": "天雷圣裁",
+    "description": [
+      {
+        "text": "被闪电击中"
+      }
+    ]
+  },
+  "criteria": {
+    "lightning": {
+      "trigger": "minecraft:lightning_strike",
+      "conditions": {
+        "lightning": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "distance": {
+                "absolute": {
+                  "max": 2
+                }
               }
-            ]
+            },
+            "entity": "this"
           }
-        }
+        ]
+      }
     }
+  }
 }

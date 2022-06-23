@@ -23,12 +23,14 @@
 
 **对结构、地形生成的修改不会影响现有区块。**
 
+<!--
 **Incendium在服务器上可能会出现问题，请参阅[官方文档](https://stardustlabs.miraheze.org/wiki/Troubleshooting#Server)**
-
+-->
 ## 第三方数据包集成
-
 此分支集成了以下内容，以提供更好的服务器体验：
 * [Gamemode4Dev的Gamemode4数据包](https://github.com/Gamemode4Dev/GM4_Datapacks)
+
+<!--
 * [Starmute的Terralith](https://www.planetminecraft.com/data-pack/terralith-overworld-evolved-100-biomes-caves-and-more/)
 * [GentlemanRevvnar的Pillager Stronghold](https://www.planetminecraft.com/data-pack/pillager-stronghold-1-16-5-worldgen-no-structure-replacement/)
 * [GentlemanRevvnar的1.18.2 Improved Desert Village Structure Datapack](https://www.planetminecraft.com/data-pack/1-14-x-improved-desert-village-datapack/)
@@ -37,3 +39,4 @@
 * [Ercerus的Balloons](https://www.planetminecraft.com/data-pack/ballons/)
 * [Splatus的Splatus's Mountain Villages](https://www.planetminecraft.com/data-pack/splatus-s-mountain-villages-v1-0-1-18-2/)
 * [Kubek727的Towns & Towers - Structure Overhaul](https://www.planetminecraft.com/data-pack/towns-amp-towers-structure-overhaul/)
+-->

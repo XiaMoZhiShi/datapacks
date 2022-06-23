@@ -1,7 +1,6 @@
 {
     "condition": "location_check",
-    "predicate":
-    {
+    "predicate": {
         "dimension": "nifeather_extras:olddays"
     }
 }

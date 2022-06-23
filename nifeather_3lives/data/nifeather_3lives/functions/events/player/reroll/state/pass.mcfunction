@@ -1,6 +1,7 @@
-scoreboard players remove @s nife_lives 1
+scoreboard players remove @s n3l_lives 1
 
-execute if score @s nife_lives matches ..0 run function nifeather_3lives:events/on_specator_death
-execute if score @s nife_lives matches ..0 run function nifeather_3lives:events/on_spectator_respawn
+execute if score @s n3l_lives matches ..0 run kill @s
 
-execute unless score @s nife_lives matches ..0 run function nifeather_3lives:titles/set_titles
+execute unless score @s n3l_lives matches ..0 run function nifeather_3lives:titles/set_titles
+
+tellraw @s {"translate": "text.hub.hint","color":"#dddddd", "with":["\uE364", {"text":"你还剩余", "extra":[{"score":{"objective":"n3l_lives","name":"@s"}}, "条生命"]}]}
