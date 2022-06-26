@@ -16,13 +16,13 @@ execute unless score @s n3l_patchlevel matches 2.. run function nifeather_3lives
 tag @s remove n3l_applyingPatch
 #endregion 补丁
 
-tag @s[tag=!n3l_curing, tag=!n3l_curing_ready] add n3l_showActualLives
+#向正在治疗的和旁观玩家隐藏实际生命（治疗进度和生命复用一个记分板）
+tag @s[tag=!n3l_curing, tag=!n3l_curing_ready, tag=!n3l_specator] add n3l_showActualLives
 
 tellraw @s[tag=n3l_showActualLives] ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE33C", {"text": "欢迎回来，您目前剩余", "extra":[{"score":{"objective": "n3l_lives", "name": "@s"}},"(最多",{"score":{"objective": "n3l_maxLives", "name": "@s"}}, ")条生命"]}]}]
 tellraw @s[tag=!n3l_showActualLives] ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE33C", {"text": "欢迎回来，您目前的恢复进度为", "extra":[{"score":{"objective": "n3l_lives", "name": "@s"}},"/10"]}]}]
 
+execute if entity @s[tag=n3l_showActualLives] run function nifeather_3lives:events/player/join/hint
+
 tag @s remove n3l_showActualLives
-
-function nifeather_3lives:events/player/join/hint
-
 tag @s add n3l_init_done
