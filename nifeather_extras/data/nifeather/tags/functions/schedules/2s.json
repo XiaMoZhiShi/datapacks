@@ -2,6 +2,7 @@
     "replace": false,
     "values":
     [
-        "nifeather_extras:limbo/loop_boot"
+        "nifeather_extras:limbo/loop_boot",
+        "nifeather_extras:misc/armor_stand/loop_boot"
     ]
 }
