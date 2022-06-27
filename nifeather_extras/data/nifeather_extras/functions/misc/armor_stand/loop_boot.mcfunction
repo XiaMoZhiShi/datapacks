@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand, tag=!nifeEx_processed] run function nifeather_extras:misc/armor_stand/run
