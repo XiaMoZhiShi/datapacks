@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "elytra",
+      "nbt": "{CustomModelData:3420001,Damage:432}"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "That's Not a Fish!",
+        {
+          "translate": "advancement.gm4.end_fishing_phantom.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Perhaps it's a manta ray",
+        {
+          "translate": "advancement.gm4.end_fishing_phantom.description"
+        }
+      ],
+      "color": "gray"
+    }
+  },
+  "parent": "gm4:end_fishing",
+  "criteria": {
+    "fish_up_phantom": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

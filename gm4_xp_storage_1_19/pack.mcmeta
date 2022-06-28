@@ -1,0 +1,58 @@
+{
+  "pack": {
+    "pack_format": 10,
+    "description": [
+      "XP Storage",
+      "\n",
+      {
+        "text": "Gamemode 4 for 1.19",
+        "color": "#4AA0C7"
+      }
+    ]
+  },
+  "module_name": "XP Storage",
+  "module_id": "xp_storage",
+  "site_description": "Stand on top of an Ender Chest to store Experience, stand below to retrieve it!",
+  "video_link": "https://www.youtube.com/watch?v=hgq-5waSpVU&index=11&list=PLpa6LLAKqMWbXt5VvxCc6H4mwI-qacdGA",
+  "wiki_link": "https://wiki.gm4.co/wiki/XP_Storage",
+  "required_modules": [],
+  "recommended_modules": [],
+  "credits": {
+    "Creator": [
+      {
+        "name": "Sparks",
+        "links": [
+          "https://twitter.com/SparksTheGamer"
+        ]
+      }
+    ],
+    "Updated by": [
+      {
+        "name": "Bloo",
+        "links": [
+          "https://twitter.com/Bloo_dev"
+        ]
+      },
+      {
+        "name": "Sparks",
+        "links": [
+          "https://twitter.com/SparksTheGamer"
+        ]
+      },
+      {
+        "name": "SpecialBuilder32",
+        "links": [
+          "https://twitter.com/SpecialBuilder"
+        ]
+      }
+    ],
+    "Icon Design": [
+      {
+        "name": "Sparks",
+        "links": [
+          "https://twitter.com/SparksTheGamer"
+        ]
+      }
+    ]
+  }
+}
