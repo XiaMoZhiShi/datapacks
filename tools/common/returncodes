@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#一切正常
+#readonly RET_OK=0
+
+#cd进目录失败
+#readonly RET_CD_FAILED=1
+
+#URL文件创建失败
+readonly RET_URLFILE_FAILED=2
+
+#PID锁创建失败
+readonly RET_PLCREATE_FAILED=3
+
+#PID锁内容不一致
+readonly RET_PLREMOVE_PIDMISMATCH=4
+
+#缺少依赖
+readonly RET_DEPENDENCY_MISSING=5
+
+#发生异常
+readonly RET_GENERIC_FAILED=10

@@ -1,0 +1,338 @@
+#!/bin/bash
+set -e;
+
+#应用名，用于区分各个脚本
+declare APPNAME
+
+if [ "${APPNAMENOREADLINK}" == "true" ];then
+    APPNAME="$(basename "$0")"
+else
+    APPNAME="$(basename "$(readlink -f "$0")")"
+fi;
+
+#如果APPNAME是空的，则从basename获取
+if [ -z "${APPNAME}" ];then
+    #尝试realpath
+    APPNAME="$(basename "$(realpath "$(basename "$0")")")"
+
+    #如果还是空的，fallback到basename
+    if [ -z "${APPNAME}" ];then
+        APPNAME="$(basename "$0")"
+    fi
+
+    echo "无法获取 $0 的APPNAME，将后退至${APPNAME}"
+    echo "\$0: $0 | readlink: $(readlink -f "$0") | basename: $(basename "$0") | PWD: ${PWD}"
+fi;
+
+readonly APPNAME
+
+#脚本显示名称，用于在日志中显示
+readonly DISPLAYNAME="${DISPLAYNAME:-$APPNAME}"
+
+#脚本PID
+#请勿改变
+readonly PID="$$"
+
+#应用设置前先source一遍其他的common文件
+APPPATH="$(dirname "$(readlink -f "$0")")"
+readonly APPPATH
+
+cd "${APPPATH}"
+
+source "${APPPATH}"/*.common 2>/dev/null || true
+
+#文件前缀，用来防止和其他软件或脚本冲突
+readonly FILEPREFIX="${FILEPREFIX:-${APPNAME}}" #YuanShenBrowserFix
+
+#打开URL时使用的指令，具体调用是：$OPENCOMMAND <URL>
+readonly OPENCOMMAND="${OPENCOMMAND:-xdg-open}"
+
+#目标用户名，用来防止多用户冲突
+readonly USERNAME="${USERNAME:-$(whoami)}"
+
+#目标URL文件，browserfix会读取其中的信息
+readonly TARGETFILE="${TARGETFILE:-/dev/shm/${FILEPREFIX}-url-${USERNAME}}"
+
+#结束内容，当browserfix读取的内容和这里一致时将退出
+readonly ENDCONTENT="${ENDCONTENT:-die}"
+
+#记录目标，如果非空，则当log被调用时也会向目标位置输出一份一样的日志
+#照理说在这里设置和在外面设置环境变量的效果是一样的，但我更建议设置环境变量
+readonly LOGTARGET="${LOGTARGET:-/dev/shm/${FILEPREFIX}-log-${USERNAME}-${APPNAME}}"
+
+#是否转移日志输出到文件
+readonly LOGTOFILE="${LOGTOFILE:-false}"
+
+#要记录哪些日志到文件，用APPNAME作为判断
+readonly LOGNAMES="${LOGNAMES:-*}"
+
+#是否可以记录日志到文件，通过LOGNAMES判断
+CANLOGTOFILE=false
+
+#脚本PID锁目标，可以用来确保一次只有一个实例
+readonly PIDLOCKTARGET="/dev/shm/${FILEPREFIX}-lock-${APPNAME}"
+
+#是否自动在终端打开脚本
+readonly AUTOTERMINAL="${AUTOTERMINAL:-false}"
+
+#是否为终端
+ISPIPE=false
+
+#是否为GUI（不是tty）
+ISTTY=false
+
+#处理SIGTERM
+trap "handle_term" SIGTERM
+trap "handle_term" SIGINT
+
+#on_term，可以被脚本override
+function on_term()
+{
+    true
+}
+
+function handle_term()
+{
+    if [ "${ISPIPE}" == "false" ];then
+        printf "\033[8D" #回到这一行的开头
+    fi;
+
+    on_term || die "${RET_GENERIC_FAILED}" "脚本执行on_term时出现了问题"
+
+    log "再见！"
+    exit 0
+}
+
+readonly -f handle_term
+
+function log()
+{
+    local level="$1"
+    local lcolor="";
+
+    case "${level}" in
+        "LINFO")
+            lcolor="${C_INFO}"
+            level="INFO"
+            shift
+        ;;
+        "LWARN")
+            lcolor="${C_WARN}"
+            level="WARN"
+            shift
+        ;;
+        "LERRO")
+            lcolor="${C_ERRO}"
+            level="ERRO"
+            shift
+        ;;
+        *)
+            level="INFO"
+            lcolor="${C_INFO}"
+        ;;
+    esac
+
+    local externalMsg="$*";
+    local msg="[$(date "+%Y-%m-%d %H:%M:%S")] [${level}] [${PID}/${DISPLAYNAME}]: ${externalMsg}"
+
+    if [ "${LOGTOFILE}" == "true" ] && [ "${CANLOGTOFILE}" == "true" ];then
+        printf "${msg}\n" >> "${LOGTARGET}" || true;
+    else
+        printf "${lcolor}${msg}${C_RESET}\n"
+    fi
+
+    unset externalMsg
+    unset msg
+}
+
+#让函数只读
+readonly -f log
+
+function die()
+{
+    local ret="$1"
+    local reason="$2"
+    local msg="${DISPLAYNAME}(${APPNAME})无法继续运行，因为：${reason}"
+    log LERRO "${msg}"
+    exit "${ret}" || exit 255
+}
+
+readonly -f die
+
+function checkForPid()
+{
+    kill -s 0 "$1" >/dev/null 2>/dev/null
+    return "$?"
+}
+
+readonly -f checkForPid
+
+function createpid()
+{
+    if [ -f "${PIDLOCKTARGET}" ];then
+        local content
+        content="$(cat "${PIDLOCKTARGET}")"
+
+        #检查pid对应的进程是否存在
+        if checkForPid "${content}";then
+            #如果存在
+            if [ "${content}" == "${PID}" ];then
+                #实例就是本体
+                log LERRO "已经是${DISPLAYNAME}的主实例了"
+            else
+                #存在另一个实例，退出
+                die "${RET_PLCREATE_FAILED}" "已经有另一个${APPNAME}的实例了(PID:${content})"
+            fi;
+        else
+            log LWARN "设置${PIDLOCKTARGET}的进程(PID:${content})不存在？"
+            log LWARN "将写入新值..."
+        fi;
+
+        unset content
+    fi;
+
+    echo "${PID}" > "${PIDLOCKTARGET}"
+}
+
+readonly -f createpid
+
+function removepid()
+{
+    if [ -f "${PIDLOCKTARGET}" ];then
+        local content
+        content="$(cat "${PIDLOCKTARGET}")"
+
+        if [ ! "${content}" == "$PID" ];then
+            #检查对应进程是否存在
+            if checkForPid "${content}";then
+                #如果存在
+                die "${RET_PLREMOVE_PIDMISMATCH}" "${PIDLOCKTARGET}中的PID信息(${content})和当前PID(${PID})不同"
+            fi
+        fi;
+
+        rm "${PIDLOCKTARGET}"
+
+        unset content
+    else
+        log LWARN "未找到PID锁文件(${PIDLOCKTARGET})"
+    fi
+}
+
+readonly -f removepid
+
+#获取returnValues
+function sourceReturnCodes()
+{
+    if [ "$0" == "${BASH_SOURCE}" ];then
+        log "${APPNAME}不能作为脚本执行"
+        exit 255
+    fi;
+
+    local commonPath
+    commonPath="$(dirname "$(readlink -f "${BASH_SOURCE}")")"
+
+    #脚本返回值定义
+    #shellcheck source=returncodes
+    source "${commonPath}/returncodes"
+
+    source "${commonPath}/colors"
+
+    unset commonPath
+    unset sourceReturnCodes
+}
+
+sourceReturnCodes
+
+function checkLogName()
+{
+    if [ "${LOGNAMES}" == "*" ];then
+        CANLOGTOFILE=true;
+    else
+        for n in ${LOGNAMES}; do
+            if [ "${APPNAME}" == "$n" ];then
+                CANLOGTOFILE=true
+                break
+            fi;
+        done;
+    fi;
+
+    readonly CANLOGTOFILE;
+    unset checkLogName;
+}
+
+checkLogName
+
+TERMINAL_EXEC="${TERMINAL_EXEC:-}"
+
+#检查是否为终端或者tty
+function checkTerminal()
+{
+    #检查tty
+    case "$(tty)" in
+        (/dev/tty/[1-9])
+            ISTTY="true"
+            ;;
+        
+        (*)
+            ISTTY="false"
+            ;;
+    esac
+
+    readonly ISTTY;
+
+    #检查终端
+    #https://stackoverflow.com/questions/911168/how-to-detect-if-my-shell-script-is-running-through-a-pipe
+    #目前只需要检查stdout
+    if [ -t 1 ];then
+        ISPIPE=false
+    else
+        ISPIPE=true
+    fi;
+
+    readonly ISPIPE;
+
+    #检查有没有x-terminal-emulator
+    if [ -z "${TERMINAL_EXEC}" ];then
+        if which x-terminal-emulator >/dev/null 2>/dev/null;then
+            TERMINAL_EXEC="x-terminal-emolator -e"
+        elif which gnome-terminal >/dev/null 2>/dev/null;then
+            TERMINAL_EXEC="gnome-terminal --"
+        else
+            if [ "${AUTOTERMINAL}" == "true" ];then
+                die 255 "无法确定新终端开启方式，请手动指定TERMINAL_EXEC环境变量"
+            fi
+        fi
+    fi
+
+    unset checkTerminal
+}
+
+checkTerminal
+
+function checkIfShouldStartInTerminal()
+{
+    if [ "${AUTOTERMINAL}" == true ] && [ "${ISPIPE}" == "true" ] || [ "${AUTOTERMINAL}" == true ] && [ "${ISTTY}" == "true" ];then
+        if [ "${ISTTY}" == "true" ];then
+            die 255 "This script or program cannot run in tty :("
+        elif [ -z "$DISPLAY" ];then
+            echo "没有设置环境变量DISPLAY，没法打开终端:(" >> "${APPNAME}_ERROR"
+            die 255 "没有设置DISPLAY"
+        fi;
+
+        #移除pid以避免相关问题
+        removepid > /dev/null
+        log "正在新终端中启动脚本..."
+        ${TERMINAL_EXEC} "$(readlink -f "${APPNAME}")" "$@" || die 255 "未能在终端中启动脚本"
+        log "启动完成"
+        exit 0
+    fi;
+
+    unset checkIfShouldStartInTerminal
+}
+
+checkIfShouldStartInTerminal "$@"
+
+#初始化LOG文件
+if [ "${LOGTOFILE}" == "true" ];then
+    log "PID为${PID}的${DISPLAYNAME}(${APPNAME})于$(date "+%Y-%m-%d %H:%M:%S")启动"
+fi

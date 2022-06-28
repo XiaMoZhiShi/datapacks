@@ -1,0 +1,10 @@
+#!/bin/bash
+
+readonly C_RESET="\x1B[0m"
+readonly C_GREEN="\x1B[0;32m"
+readonly C_RED="\x1B[0;31m"
+readonly C_YELLOW="\x1B[0;33m"
+
+readonly C_INFO="${C_INFO:-$C_GREEN}"
+readonly C_WARN="${C_WARN:-$C_YELLOW}"
+readonly C_ERRO="${C_ERRO:-$C_RED}"

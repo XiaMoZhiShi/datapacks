@@ -1,0 +1,58 @@
+#!/bin/bash
+DISPLAYNAME="GM4数据包更新"
+source "$(dirname "$(readlink -f "$0")")/common/common"
+
+readonly TARGET_MODULES=(
+    "beehive-inspector"
+    "better-armour-stands"
+    "end-fishing"
+    "holographic-tags"
+    "liquid-tanks"
+    "mending-tanks"
+    "poses-pack"
+    "rope-ladders"
+    "speed-paths"
+    "tunnel-bores"
+    "xp-storage"
+)
+
+readonly MODULES_COUNT="${#TARGET_MODULES[@]}"
+
+readonly MCVERSION="1.19"
+#readonly GM4_DL_BASEURL="https://gm4.co/modules/download/${MCVERSION}"
+readonly GM4_DL_BASEURL="https://raw.githubusercontent.com/Gamemode4Dev/GM4_Datapacks/release/${MCVERSION}"
+
+log "寻找仓库根目录..."
+
+while true;do
+    if [ ! "$PWD" == "/" ];then
+        cd ..
+        if [ -f ".assetroot" ];then
+            break
+        fi;
+    else
+        dir 1 "无法找到仓库根目录，请确保 .assetroot 存在。"
+    fi
+done;
+
+log "移除现有的数据包..."
+for d in ./gm4_*; do
+    if [ "$d" == "./gm4_*" ];then
+        break
+    fi
+
+    rm -r "$d"
+done
+
+for m in "${TARGET_MODULES[@]}"; do
+    archiveName="gm4_${m//-/_}_${MCVERSION/./_}"
+    download false "dl_${archiveName}" "" "$m" "${GM4_DL_BASEURL}/${archiveName}.zip" || die 3 "下载时遇到错误"
+
+    log "正在解压$m(${archiveName})..."
+    unzip "dl_${archiveName}" -d "${archiveName}" >/dev/null || die 2 "解压时遇到错误"
+
+    sleep 0.1
+done
+
+log "清理文件..."
+rm ./dl_*
