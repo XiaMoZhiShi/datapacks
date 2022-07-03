@@ -1,7 +1,6 @@
-summon armor_stand ~ ~ ~ {Tags:["nrr_spawner"]}
-spreadplayers ~ ~ 0 60 false @e[tag=nrr_spawner]
+scoreboard players set $nrr_retry nife_stats 0
+scoreboard players set $nrr_rabbits nife_stats 0
 
-execute at @e[tag=nrr_spawner] run function nifeather_rabbit_raid:raid/rabbit/spawn/run
-kill @e[tag=nrr_spawner]
+function nifeather_rabbit_raid:raid/rabbit/spawn/tryspawn
 
-execute as @e[tag=nrr_rabbit] run function nifeather_rabbit_raid:raid/rabbit/bossbar/max_upd/update
+function nifeather_rabbit_raid:raid/rabbit/bossbar/max_upd/update
