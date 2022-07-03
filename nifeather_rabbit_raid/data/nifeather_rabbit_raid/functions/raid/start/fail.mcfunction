@@ -1,0 +1,1 @@
+tellraw @a {"translate":"text.hub.hint", "with":["?", "有另一个袭击正在进行，请稍等片刻。"]}

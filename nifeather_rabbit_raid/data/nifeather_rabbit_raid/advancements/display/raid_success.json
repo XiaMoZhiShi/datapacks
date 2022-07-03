@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "rabbit_foot"
+        },
+        "title": "请问您今天要来点兔子吗？",
+        "description": "在多兔袭击中取得胜利",
+        "frame": "challenge"
+    },
+    "criteria":
+    {
+        "imp":
+        {
+            "trigger": "impossible"
+        }
+    },
+    "parent": "nifeather_extras:display/root",
+    "rewards":
+    {
+        "experience": 300
+    }
+}

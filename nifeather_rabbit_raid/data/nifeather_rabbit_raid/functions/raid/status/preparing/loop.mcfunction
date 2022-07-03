@@ -1,0 +1,2 @@
+execute if score $nrr_bossbarValue nife_stats matches 200 run function nifeather_rabbit_raid:raid/status/preparing/on_prepare_done
+execute if score $nrr_bossbarValue nife_stats matches ..200 run scoreboard players add $nrr_bossbarValue nife_stats 1

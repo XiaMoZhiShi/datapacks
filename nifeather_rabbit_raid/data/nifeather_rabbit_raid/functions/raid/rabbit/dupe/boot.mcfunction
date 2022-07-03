@@ -1,0 +1,1 @@
+execute as @e[tag=nrr_rabbit] at @s run function nifeather_rabbit_raid:raid/rabbit/dupe/detect
