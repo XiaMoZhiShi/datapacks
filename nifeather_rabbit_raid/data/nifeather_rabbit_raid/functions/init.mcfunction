@@ -20,5 +20,11 @@ scoreboard objectives add nrr_ageTracker dummy
 scoreboard objectives add nrr_bossbarTimeTracker dummy
 #declare objective nrr_bossbarTimeTracker Bossbar时间追踪器
 
-scoreboard players set $nrr_rabbitMaxHealth nife_stats 10
+scoreboard objectives add nrr_stats dummy
+#declare objective nrr_stats Bossbar时间追踪器
+
+scoreboard players set $nrr_rabbitMaxHealth nife_stats 5
 #declare entity $nrr_rabbitMaxHealth 兔子的最大血量
+
+scoreboard players set $nrr_dupeTime nife_stats 600
+#declare entity $nrr_dupeTime 兔子的最大血量

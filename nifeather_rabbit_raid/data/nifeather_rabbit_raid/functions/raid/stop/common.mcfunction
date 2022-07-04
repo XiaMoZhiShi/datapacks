@@ -18,3 +18,5 @@ tag @e[tag=nrr_rabbit] add nrr_remained_rabbit
 tag @e[tag=nrr_rabbit] remove nrr_rabbit
 
 tag @a remove nrr_raid
+
+scoreboard players set $nrr_status nife_stats -1

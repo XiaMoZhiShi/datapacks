@@ -5,4 +5,3 @@ tag @a[tag=nrr_raid] add nrr_raid_showResult_fail
 bossbar set nrr_display_fail players @a[tag=nrr_raid]
 
 function nifeather_rabbit_raid:raid/stop/common
-say fail

@@ -6,5 +6,3 @@ bossbar set nrr_display value 0
 
 scoreboard players set $nrr_bossbarValue nife_stats 0
 #declare entity $nrr_bossbarValue 用于显示到bossbar上的值
-
-say prepareboot

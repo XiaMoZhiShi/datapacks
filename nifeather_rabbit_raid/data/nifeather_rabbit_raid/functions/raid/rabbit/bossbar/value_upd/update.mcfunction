@@ -1,4 +1,5 @@
 #nrr_temp_rabbit_health -> nrr_trh
-execute store result score $nrr_trh nife_stats run data get entity @s Health
-scoreboard players operation $nrr_rabbitTotalHealth nife_stats += $nrr_trh nife_stats
+execute store result score $nrr_trh nrr_bossbarTimeTracker run data get entity @s Health
+execute if score $nrr_trh nrr_bossbarTimeTracker matches ..0 run scoreboard players set $nrr_trh nrr_bossbarTimeTracker 1
+scoreboard players operation $nrr_rabbitTotalHealth nrr_bossbarTimeTracker += $nrr_trh nrr_bossbarTimeTracker
 #declare entity $nrr_tabbitTotalHealth 兔子的总血量

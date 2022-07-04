@@ -11,8 +11,7 @@ function nifeather_rabbit_raid:raid/status/preparing/boot
 bossbar set nrr_display name {"text":"多兔袭击"}
 bossbar set nrr_display color red
 
-
-summon armor_stand ~ ~ ~ {Tags:["nrr_centre"]}
+summon marker ~ ~ ~ {Tags:["nrr_centre"]}
 
 execute positioned ~ ~5 ~ run particle minecraft:end_rod ~ ~ ~ 0 10 0 0 80
 

@@ -8,4 +8,3 @@ scoreboard players reset $nrr_successed
 bossbar set nrr_display_success players @a[tag=nrr_raid]
 
 function nifeather_rabbit_raid:raid/stop/common
-say success

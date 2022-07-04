@@ -1,5 +1,5 @@
 summon armor_stand ~ ~ ~ {Tags:["nrr_spawner"]}
-spreadplayers ~ ~ 0 60 false @e[tag=nrr_spawner]
+spreadplayers ~ ~ 0 40 false @e[tag=nrr_spawner]
 
 execute as @e[tag=nrr_spawner] at @s run function nifeather_rabbit_raid:raid/rabbit/spawn/run
 kill @e[tag=nrr_spawner]
