@@ -1,11 +1,14 @@
 bossbar add nrr_display "nrr display"
+bossbar set minecraft:nrr_display style notched_10
 #declare bossbar nrr_display 用于显示进度的bossbar
 
 bossbar add nrr_display_success [{"text":"多兔袭击"}, " - 胜利"]
+bossbar set minecraft:nrr_display style notched_10
 bossbar set nrr_display_success color red
 #declare bossbar nrr_display_success 用于显示进度的bossbar
 
 bossbar add nrr_display_fail [{"text":"多兔袭击"}, " - 失败"]
+bossbar set minecraft:nrr_display style notched_10
 bossbar set nrr_display_fail color red
 #declare bossbar nrr_display_fail 用于显示进度的bossbar
 

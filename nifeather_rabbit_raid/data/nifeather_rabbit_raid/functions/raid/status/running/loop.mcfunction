@@ -7,7 +7,8 @@ execute as @e[tag=nrr_rabbit] run function nifeather_rabbit_raid:raid/rabbit/bos
 
 scoreboard players operation $nrr_bossbarValue nrr_stats = $nrr_rabbitTotalHealth nrr_bossbarTimeTracker
 
-bossbar set nrr_display name [{"text":"多兔袭击"}, " - 剩余", {"score":{"objective": "nrr_stats", "name":"$nrr_rabbits"}}, "只兔子"]
+execute unless score $nrr_rabbits nrr_stats matches ..10 run bossbar set nrr_display name [{"text":"多兔袭击"}]
+execute if score $nrr_rabbits nrr_stats matches ..10 run bossbar set nrr_display name [{"text":"多兔袭击"}, " - 剩余", {"score":{"objective": "nrr_stats", "name":"$nrr_rabbits"}}, "只兔子"]
 
 scoreboard players reset $nrr_trmh
 execute if score $nrr_rabbitTotalHealth nrr_bossbarTimeTracker matches ..0 unless score $nrr_successed nrr_stats matches 1 run function nifeather_rabbit_raid:raid/status/running/trigger_success
