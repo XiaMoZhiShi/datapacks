@@ -1,7 +1,6 @@
-summon armor_stand ~ ~ ~ {Tags:["nrr_spawner"]}
-spreadplayers ~ ~ 0 40 false @e[tag=nrr_spawner]
+kill @e[tag=nrr_sparead_centre]
 
-execute as @e[tag=nrr_spawner] at @s run function nifeather_rabbit_raid:raid/rabbit/spawn/run
+execute as @e[tag=nrr_spawner] at @s if score $nrr_rabbits nrr_stats < $nrr_targetSpawnCount nrr_stats run function nifeather_rabbit_raid:raid/rabbit/spawn/dospawn/boot
+
+execute if score $nrr_spreadFails nrr_stats matches 1.. run function nifeather_rabbit_raid:raid/rabbit/spawn/fix/boot
 kill @e[tag=nrr_spawner]
-
-execute if score $nrr_rabbits nrr_stats matches ..39 run function nifeather_rabbit_raid:raid/rabbit/spawn/tryspawn

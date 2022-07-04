@@ -1,0 +1,2 @@
+function nifeather_rabbit_raid:raid/rabbit/spawn/prepare/spawner/create
+execute if score $nrr_spawners nrr_stats < $nrr_targetSpawners nrr_stats run function nifeather_rabbit_raid:raid/rabbit/spawn/prepare/spawner/autocreate

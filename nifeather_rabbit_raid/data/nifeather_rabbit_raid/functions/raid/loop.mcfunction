@@ -1,8 +1,8 @@
 data merge entity @s {Glowing: 1b}
 
 #处理玩家加入和退出
-execute as @a[tag=!nrr_raid, distance=..80] run function nifeather_rabbit_raid:raid/player/makejoin
-execute as @a[tag=nrr_raid, distance=81..] run function nifeather_rabbit_raid:raid/player/makeleave
+execute as @a[tag=!nrr_raid, distance=..100] run function nifeather_rabbit_raid:raid/player/makejoin
+execute as @a[tag=nrr_raid, distance=101..] run function nifeather_rabbit_raid:raid/player/makeleave
 
 #设置bossbar
 bossbar set nrr_display players @a[tag=nrr_raid]

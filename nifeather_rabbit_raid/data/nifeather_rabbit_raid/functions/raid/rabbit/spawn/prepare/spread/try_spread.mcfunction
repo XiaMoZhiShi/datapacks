@@ -1,0 +1,2 @@
+execute unless score @s nrr_temp matches 180.. run function nifeather_rabbit_raid:raid/rabbit/spawn/prepare/spread/do_spread
+execute if score @s nrr_temp matches 180.. run function nifeather_rabbit_raid:raid/rabbit/spawn/prepare/spread/fail_spread
