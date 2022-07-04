@@ -12,7 +12,7 @@ bossbar set nrr_display_fail color red
 #declare tag nrr_centre 袭击中心
 
 #一次袭击默认最多20分钟
-execute unless score $nrr_maxTime nife_stats matches 1.. run scoreboard players set $nrr_maxTime nife_stats 24000
+execute unless score $nrr_maxTime nrr_stats matches 1.. run scoreboard players set $nrr_maxTime nrr_stats 24000
 
 scoreboard objectives add nrr_ageTracker dummy
 #declare objective nrr_ageTracker 实体追踪器，用来移除活得太久的NRR兔子（
@@ -23,8 +23,8 @@ scoreboard objectives add nrr_bossbarTimeTracker dummy
 scoreboard objectives add nrr_stats dummy
 #declare objective nrr_stats Bossbar时间追踪器
 
-scoreboard players set $nrr_rabbitMaxHealth nife_stats 5
+scoreboard players set $nrr_rabbitMaxHealth nrr_stats 5
 #declare entity $nrr_rabbitMaxHealth 兔子的最大血量
 
-scoreboard players set $nrr_dupeTime nife_stats 600
+scoreboard players set $nrr_dupeTime nrr_stats 600
 #declare entity $nrr_dupeTime 兔子的最大血量

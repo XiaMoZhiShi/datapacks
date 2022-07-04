@@ -1,1 +1,1 @@
-execute if score $nrr_rabbits nife_stats matches ..39 run function nifeather_rabbit_raid:raid/rabbit/spawn/dospawn
+execute if score $nrr_rabbits nrr_stats matches ..39 run function nifeather_rabbit_raid:raid/rabbit/spawn/dospawn
