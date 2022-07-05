@@ -1,0 +1,23 @@
+{
+    "replace": false,
+    "values":
+    [
+        "minecraft:grass_block",
+        "minecraft:sand",
+        "minecraft:red_sand",
+        "minecraft:gravel",
+        "minecraft:soul_sand",
+        "minecraft:soul_soil",
+        "minecraft:dirt",
+        "minecraft:mud",
+        "minecraft:coarse_dirt",
+        "minecraft:podzol",
+        "minecraft:rooted_dirt",
+        "#minecraft:nylium",
+        "minecraft:hay_block",
+        "minecraft:grass",
+        "minecraft:fern",
+        "minecraft:tall_grass",
+        "#minecraft:flowers"
+    ]
+}
