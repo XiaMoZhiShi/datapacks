@@ -32,6 +32,9 @@ scoreboard players set $nrr_rabbitMaxHealth nrr_stats 5
 
 execute unless score $nrr_maxTime nrr_stats matches 1.. run scoreboard players set $nrr_maxTime nrr_stats 24000
 
+#随机跟随距离
+data modify storage nrr RBAT set value {Name:"minecraft:generic.follow_range", Base: 0d}
+
 #设置
 execute unless score $nrr_dupeTime nrr_stats matches 1.. run scoreboard players set $nrr_dupeTime nrr_stats 300
 #declare entity $nrr_dupeTime 兔子复制时间
@@ -50,5 +53,8 @@ execute unless score $nrr_prepareTime nrr_stats matches 40.. run scoreboard play
 
 execute unless score $nrr_waves nrr_stats matches 1.. run scoreboard players set $nrr_waves nrr_stats 2
 #declare entity $nrr_waves 出多少波
+
+execute unless score $nrr_rabbitMaxFR nrr_stats matches 1.. run scoreboard players set $nrr_rabbitMaxFR nrr_stats 64
+#declare entity $nrr_rabbitMaxFR 兔子最大追踪距离
 
 scoreboard players set #nrr_20 nife_stats 20
