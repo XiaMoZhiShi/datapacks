@@ -48,4 +48,7 @@ execute unless score $nrr_showSpawners nrr_stats matches 0.. run scoreboard play
 execute unless score $nrr_prepareTime nrr_stats matches 40.. run scoreboard players set $nrr_prepareTime nrr_stats 200
 #declare entity $nrr_prepareTime 要留多少刻给数据包和玩家做准备，最小40刻
 
+execute unless score $nrr_waves nrr_stats matches 1.. run scoreboard players set $nrr_waves nrr_stats 2
+#declare entity $nrr_waves 出多少波
+
 scoreboard players set #nrr_20 nife_stats 20

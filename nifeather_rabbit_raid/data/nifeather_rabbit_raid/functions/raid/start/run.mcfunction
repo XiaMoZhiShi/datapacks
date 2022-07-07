@@ -4,8 +4,8 @@ scoreboard players set $nrr_running nrr_stats 1
 scoreboard players operation $nrr_current nrr_stats = $nrr_maxTime nrr_stats
 #declare entity $nrr_current 当前剩余时间
 
-#设置阶段
-function nifeather_rabbit_raid:raid/status/preparing/boot
+scoreboard players set $nrr_current_wave nrr_stats 1
+#declare entity $nrr_current_wave 当前多少波
 
 summon marker ~ ~ ~ {Tags:["nrr_centre"]}
 
@@ -28,3 +28,6 @@ execute if predicate nifeather:weather/thunder run scoreboard players set $nrr_s
 
 #设置天气
 weather thunder 1000000
+
+#设置阶段
+function nifeather_rabbit_raid:raid/status/preparing/boot
