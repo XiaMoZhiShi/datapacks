@@ -1,1 +1,1 @@
-execute if entity @s[tag=nrr_raid] if entity @r[tag=nrr_c_00] run function nifeather_rabbit_raid:raid/ex_conditions/conditions/xp_level/external_event/run
+execute if entity @s[tag=nrr_raid] if entity @e[tag=nrr_c_00] run function nifeather_rabbit_raid:raid/ex_conditions/conditions/xp_level/external_event/run
