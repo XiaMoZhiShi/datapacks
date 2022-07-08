@@ -54,7 +54,10 @@ execute unless score $nrr_prepareTime nrr_stats matches 40.. run scoreboard play
 execute unless score $nrr_waves nrr_stats matches 1.. run scoreboard players set $nrr_waves nrr_stats 2
 #declare entity $nrr_waves 出多少波
 
-execute unless score $nrr_rabbitMaxFR nrr_stats matches 1.. run scoreboard players set $nrr_rabbitMaxFR nrr_stats 64
+execute unless score $nrr_rabbitMaxFR nrr_stats matches 1.. run scoreboard players set $nrr_rabbitMaxFR nrr_stats 48
 #declare entity $nrr_rabbitMaxFR 兔子最大追踪距离
+
+execute unless score $nrr_rabbitTriggerChance nrr_stats matches 1.. run scoreboard players set $nrr_rabbitTriggerChance nrr_stats 15
+#declare entity $nrr_rabbitTriggerChance 某个兔子有多少的概率可以让玩家触发袭击(1/($nrr_rabbitTriggerChance+1))
 
 scoreboard players set #nrr_20 nife_stats 20

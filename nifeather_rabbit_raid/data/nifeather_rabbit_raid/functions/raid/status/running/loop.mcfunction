@@ -18,6 +18,7 @@ execute if score $nrr_dupeRemain nrr_stats matches 0 run tag @s add firstDupeIgn
 effect give @e[tag=nrr_rabbit] weakness 10 1 true
 
 execute as @e[tag=nrr_rabbit, distance=90..] at @s run function nifeather_rabbit_raid:tracker/killentity
+execute as @e[tag=nrr_rabbit] at @s if block ~ ~ ~ #nifeather_rabbit_raid:rabbit_stuckable run function nifeather_rabbit_raid:raid/status/running/no_stuck
 
 execute if score $nrr_current nrr_stats matches ..0 run function nifeather_rabbit_raid:raid/stop/fail
 execute if score $nrr_rabbitTotalHealth nrr_bossbarTimeTracker matches ..0 run function nifeather_rabbit_raid:raid/status/running/on_clear

@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values":
+    [
+        "#minecraft:trapdoors",
+        "#minecraft:stairs",
+        "#minecraft:walls",
+        "#minecraft:fences",
+        "#minecraft:fence_gates",
+        "minecraft:cobweb"
+    ]
+}
