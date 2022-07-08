@@ -19,4 +19,6 @@ execute if score $nrr_status nrr_stats matches 2 run function nifeather_rabbit_r
 execute if score $nrr_status nrr_stats matches 1 run function nifeather_rabbit_raid:raid/status/running/loop
 execute if score $nrr_status nrr_stats matches 0 run function nifeather_rabbit_raid:raid/status/preparing/loop
 
+#更新BOSSBAR
 execute store result bossbar nrr_display value run scoreboard players get $nrr_bossbarValue nrr_stats
+execute if entity @s[tag=nrr_show_conditionProgress] unless entity @s[tag=nrr_c_completed] run function nifeather_rabbit_raid:raid/ex_conditions/loop

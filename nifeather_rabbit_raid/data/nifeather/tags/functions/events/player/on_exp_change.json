@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values":
+    [
+        "nifeather_rabbit_raid:raid/ex_conditions/conditions/xp_level/external_event/on_trigger"
+    ]
+}

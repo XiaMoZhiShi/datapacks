@@ -1,3 +1,4 @@
+#BOSSBAR
 bossbar add nrr_display "nrr display"
 bossbar set minecraft:nrr_display style notched_10
 #declare bossbar nrr_display 用于显示进度的bossbar
@@ -11,6 +12,9 @@ bossbar add nrr_display_fail [{"text":"多兔袭击"}, " - 失败"]
 bossbar set minecraft:nrr_display_fail style notched_10
 bossbar set nrr_display_fail color red
 #declare bossbar nrr_display_fail 用于显示进度的bossbar
+
+bossbar add nrr_display_c [{"text":"多兔袭击"}, " - 附加进度"]
+#declare bossbar nrr_display_c 用于显示进度的bossbar
 
 #declare tag nrr_centre 袭击中心
 
@@ -32,6 +36,11 @@ scoreboard objectives add nrr_temp dummy
 
 scoreboard players set $nrr_rabbitMaxHealth nrr_options 5
 #declare entity $nrr_rabbitMaxHealth 兔子的最大血量
+
+scoreboard players set $nrr_conditionCount_real nrr_stats 1
+scoreboard players set $nrr_conditionCount_multiplier nrr_stats 3
+scoreboard players operation $nrr_conditionCount nrr_stats = $nrr_conditionCount_real nrr_stats
+scoreboard players operation $nrr_conditionCount nrr_stats *= $nrr_conditionCount_multiplier nrr_stats
 
 execute unless score $nrr_maxTime nrr_options matches 1.. run scoreboard players set $nrr_maxTime nrr_options 24000
 

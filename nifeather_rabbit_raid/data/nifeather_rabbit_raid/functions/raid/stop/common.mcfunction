@@ -5,6 +5,8 @@ kill @e[tag=nrr_centre]
 scoreboard players set $nrr_running nrr_stats 0
 bossbar set nrr_display players
 
+bossbar set nrr_display_c players
+
 #移除forceload
 execute if score $nrr_haveForceLoad nrr_stats matches 0 run forceload remove ~ ~
 
