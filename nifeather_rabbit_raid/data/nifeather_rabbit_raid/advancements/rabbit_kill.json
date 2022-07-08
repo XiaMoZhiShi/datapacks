@@ -1,0 +1,20 @@
+{
+    "criteria":
+    {
+        "kill":
+        {
+            "trigger": "player_killed_entity",
+            "conditions":
+            {
+                "entity":
+                {
+                    "nbt": "{Tags:['nrr_rabbit']}"
+                }
+            }
+        }
+    },
+    "rewards":
+    {
+        "function": "nifeather_rabbit_raid:raid/ex_conditions/conditions/kill_time/external_on_kill"
+    }
+}

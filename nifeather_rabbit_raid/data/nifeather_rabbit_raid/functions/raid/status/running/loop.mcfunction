@@ -22,3 +22,5 @@ execute as @e[tag=nrr_rabbit] at @s if block ~ ~ ~ #nifeather_rabbit_raid:rabbit
 
 execute if score $nrr_current nrr_stats matches ..0 run function nifeather_rabbit_raid:raid/stop/fail
 execute if score $nrr_rabbitTotalHealth nrr_bossbarTimeTracker matches ..0 run function nifeather_rabbit_raid:raid/status/running/on_clear
+
+execute if entity @s[tag=nrr_show_conditionProgress] run function nifeather_rabbit_raid:raid/ex_conditions/loop
