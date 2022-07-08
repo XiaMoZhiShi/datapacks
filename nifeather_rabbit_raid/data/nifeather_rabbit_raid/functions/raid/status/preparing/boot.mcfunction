@@ -4,7 +4,7 @@ scoreboard players set $nrr_status nrr_stats 0
 bossbar set nrr_display name {"text":"多兔袭击"}
 bossbar set nrr_display color red
 
-execute store result bossbar nrr_display max run scoreboard players get $nrr_prepareTime nrr_stats
+execute store result bossbar nrr_display max run scoreboard players get $nrr_prepareTime nrr_options
 bossbar set nrr_display value 0
 
 scoreboard players set $nrr_bossbarValue nrr_stats 0

@@ -9,6 +9,6 @@ function nifeather_rabbit_raid:raid/rabbit/spawn/boot
 scoreboard players set $nrr_status nrr_stats 1
 
 #设置时间
-scoreboard players operation $nrr_current nrr_stats = $nrr_maxTime nrr_stats
+scoreboard players operation $nrr_current nrr_stats = $nrr_maxTime nrr_options
 
 tag @s remove firstDupeIgnored

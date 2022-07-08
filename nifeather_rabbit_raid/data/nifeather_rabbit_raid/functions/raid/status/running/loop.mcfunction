@@ -11,7 +11,7 @@ execute unless score $nrr_rabbits nrr_stats matches ..10 run bossbar set nrr_dis
 execute if score $nrr_rabbits nrr_stats matches ..10 run bossbar set nrr_display name [{"text":"多兔袭击"}, " - 剩余", {"score":{"objective": "nrr_stats", "name":"$nrr_rabbits"}}, "只兔子"]
 
 scoreboard players operation $nrr_dupeRemain nrr_stats = $nrr_current nrr_stats
-scoreboard players operation $nrr_dupeRemain nrr_stats %= $nrr_dupeTime nrr_stats
+scoreboard players operation $nrr_dupeRemain nrr_stats %= $nrr_dupeTime nrr_options
 execute if score $nrr_dupeRemain nrr_stats matches 0 if entity @s[tag=firstDupeIgnored] run function nifeather_rabbit_raid:raid/rabbit/dupe/boot
 execute if score $nrr_dupeRemain nrr_stats matches 0 run tag @s add firstDupeIgnored
 

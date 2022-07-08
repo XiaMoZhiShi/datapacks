@@ -1,7 +1,7 @@
 scoreboard players set $nrr_running nrr_stats 1
 
 #设置事件
-scoreboard players operation $nrr_current nrr_stats = $nrr_maxTime nrr_stats
+scoreboard players operation $nrr_current nrr_stats = $nrr_maxTime nrr_options
 #declare entity $nrr_current 当前剩余时间
 
 scoreboard players set $nrr_current_wave nrr_stats 1

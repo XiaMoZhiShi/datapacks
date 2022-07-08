@@ -24,40 +24,43 @@ scoreboard objectives add nrr_bossbarTimeTracker dummy
 scoreboard objectives add nrr_stats dummy
 #declare objective nrr_stats Bossbar时间追踪器
 
+scoreboard objectives add nrr_options dummy
+#declare objective nrr_options Bossbar时间追踪器
+
 scoreboard objectives add nrr_temp dummy
 #declare objective nrr_temp 临时
 
-scoreboard players set $nrr_rabbitMaxHealth nrr_stats 5
+scoreboard players set $nrr_rabbitMaxHealth nrr_options 5
 #declare entity $nrr_rabbitMaxHealth 兔子的最大血量
 
-execute unless score $nrr_maxTime nrr_stats matches 1.. run scoreboard players set $nrr_maxTime nrr_stats 24000
+execute unless score $nrr_maxTime nrr_options matches 1.. run scoreboard players set $nrr_maxTime nrr_options 24000
 
 #随机跟随距离
-data modify storage nrr RBAT set value {Name:"minecraft:generic.follow_range", Base: 0d}
+data modify storage nifeather:nrr RBAT set value {Name:"minecraft:generic.follow_range", Base: 0d}
 
 #设置
-execute unless score $nrr_dupeTime nrr_stats matches 1.. run scoreboard players set $nrr_dupeTime nrr_stats 300
+execute unless score $nrr_dupeTime nrr_options matches 1.. run scoreboard players set $nrr_dupeTime nrr_options 300
 #declare entity $nrr_dupeTime 兔子复制时间
 
-execute unless score $nrr_targetSpawnCount nrr_stats matches 1.. run scoreboard players set $nrr_targetSpawnCount nrr_stats 40
+execute unless score $nrr_targetSpawnCount nrr_options matches 1.. run scoreboard players set $nrr_targetSpawnCount nrr_options 40
 #declare entity $nrr_targetSpawnCount 目标生成个数
 
-execute unless score $nrr_spawnPerTry nrr_stats matches 1.. run scoreboard players set $nrr_spawnPerTry nrr_stats 10
+execute unless score $nrr_spawnPerTry nrr_options matches 1.. run scoreboard players set $nrr_spawnPerTry nrr_options 10
 #declare entity $nrr_spawnPerTry 每次生成刷多少只
 
-execute unless score $nrr_showSpawners nrr_stats matches 0.. run scoreboard players set $nrr_showSpawners nrr_stats 0
+execute unless score $nrr_showSpawners nrr_options matches 0.. run scoreboard players set $nrr_showSpawners nrr_options 0
 #declare entity $nrr_showSpawners 是否显示spawner
 
-execute unless score $nrr_prepareTime nrr_stats matches 40.. run scoreboard players set $nrr_prepareTime nrr_stats 200
+execute unless score $nrr_prepareTime nrr_options matches 40.. run scoreboard players set $nrr_prepareTime nrr_options 200
 #declare entity $nrr_prepareTime 要留多少刻给数据包和玩家做准备，最小40刻
 
-execute unless score $nrr_waves nrr_stats matches 1.. run scoreboard players set $nrr_waves nrr_stats 2
+execute unless score $nrr_waves nrr_options matches 1.. run scoreboard players set $nrr_waves nrr_options 2
 #declare entity $nrr_waves 出多少波
 
-execute unless score $nrr_rabbitMaxFR nrr_stats matches 1.. run scoreboard players set $nrr_rabbitMaxFR nrr_stats 48
+execute unless score $nrr_rabbitMaxFR nrr_options matches 1.. run scoreboard players set $nrr_rabbitMaxFR nrr_options 48
 #declare entity $nrr_rabbitMaxFR 兔子最大追踪距离
 
-execute unless score $nrr_rabbitTriggerChance nrr_stats matches 1.. run scoreboard players set $nrr_rabbitTriggerChance nrr_stats 15
+execute unless score $nrr_rabbitTriggerChance nrr_options matches 1.. run scoreboard players set $nrr_rabbitTriggerChance nrr_options 15
 #declare entity $nrr_rabbitTriggerChance 某个兔子有多少的概率可以让玩家触发袭击(1/($nrr_rabbitTriggerChance+1))
 
 scoreboard players set #nrr_20 nife_stats 20
