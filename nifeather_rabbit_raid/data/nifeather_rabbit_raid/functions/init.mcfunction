@@ -37,7 +37,7 @@ scoreboard objectives add nrr_temp dummy
 scoreboard players set $nrr_rabbitMaxHealth nrr_options 5
 #declare entity $nrr_rabbitMaxHealth 兔子的最大血量
 
-scoreboard players set $nrr_conditionCount_real nrr_stats 1
+scoreboard players set $nrr_conditionCount_real nrr_stats 3
 scoreboard players set $nrr_conditionCount_multiplier nrr_stats 3
 scoreboard players operation $nrr_conditionCount nrr_stats = $nrr_conditionCount_real nrr_stats
 scoreboard players operation $nrr_conditionCount nrr_stats *= $nrr_conditionCount_multiplier nrr_stats
@@ -68,6 +68,9 @@ execute unless score $nrr_waves nrr_options matches 1.. run scoreboard players s
 
 execute unless score $nrr_rabbitMaxFR nrr_options matches 1.. run scoreboard players set $nrr_rabbitMaxFR nrr_options 48
 #declare entity $nrr_rabbitMaxFR 兔子最大追踪距离
+
+execute unless score $nrr_rabbitIHPChance nrr_options matches 1.. run scoreboard players set $nrr_rabbitIHPChance nrr_options 2
+#declare entity $nrr_rabbitIHPChance 兔子超肉概率
 
 execute unless score $nrr_rabbitTriggerChance nrr_options matches 1.. run scoreboard players set $nrr_rabbitTriggerChance nrr_options 15
 #declare entity $nrr_rabbitTriggerChance 某个兔子有多少的概率可以让玩家触发袭击(1/($nrr_rabbitTriggerChance+1))

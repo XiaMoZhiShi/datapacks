@@ -5,7 +5,7 @@ summon lightning_bolt ~ 512 ~
 scoreboard players set $nrr_rabbitTotalMaxHealth nrr_stats 0
 function nifeather_rabbit_raid:raid/rabbit/spawn/boot
 
-execute if score $nrr_current_wave nrr_stats matches ..1 run function nifeather_rabbit_raid:raid/ex_conditions/boot
+execute if score $nrr_current_wave nrr_stats matches ..1 run function nifeather_rabbit_raid:raid/status/running/set_conditions
 execute unless score $nrr_current_wave nrr_stats matches ..1 run function nifeather_rabbit_raid:raid/ex_conditions/refresh
 
 #设置状态

@@ -7,7 +7,8 @@
         "#minecraft:walls",
         "#minecraft:fences",
         "#minecraft:fence_gates",
+        "#nifeather_rabbit_raid:glass_panes",
         "minecraft:cobweb",
-        "#nifeather_rabbit_raid:glass_panes"
+        "minecraft:sweet_berry_bush"
     ]
 }
