@@ -1,3 +1,4 @@
+#初始化记分板
 scoreboard players set $nrr_spawners nrr_stats 0
 #declare entity $nrr_spawners 有多少个生成器
 

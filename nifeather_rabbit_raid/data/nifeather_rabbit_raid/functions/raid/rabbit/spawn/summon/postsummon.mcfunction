@@ -14,6 +14,7 @@ data modify entity @s Attributes[0] merge from storage nifeather:nrr RBAT
 scoreboard players reset @s
 #endregion
 
+#设置最大血量，并将血量补全
 attribute @s generic.max_health base set 5
 effect give @s instant_health 10 20 true
 

@@ -1,15 +1,20 @@
+#设置运行状态
 scoreboard players set $nrr_running nrr_stats 1
 
-#设置事件
+#设置属性
 scoreboard players operation $nrr_current nrr_stats = $nrr_maxTime nrr_options
 #declare entity $nrr_current 当前剩余时间
 
+#设置波数
 scoreboard players set $nrr_current_wave nrr_stats 1
 #declare entity $nrr_current_wave 当前多少波
 
+#生成袭击中心
 summon marker ~ ~ ~ {Tags:["nrr_centre"]}
 
+#粒子效果
 execute positioned ~ ~5 ~ run particle minecraft:end_rod ~ ~ ~ 0 10 0 0 80
+particle minecraft:lava ~ ~1 ~ 0 0 0 1 5
 
 #强制加载区域
 #检查当前区域有没有被forceload

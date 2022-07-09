@@ -1,1 +1,0 @@
-tellraw @a[distance=..16] {"translate":"text.hub.hint", "with":["?", "未能触发多兔袭击，有另一个袭击正在进行。"]}
