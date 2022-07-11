@@ -8,6 +8,7 @@ execute at @e[tag=nrr_sparead_centre] run spreadplayers ~ ~ 0 35 false @s
 #检查方块
 execute at @s unless block ~ ~ ~ air unless block ~ ~ ~ #nifeather_rabbit_raid:spawnable run tag @s add notSpawnable
 execute at @s if block ~ ~ ~ air unless block ~ ~-1 ~ #nifeather_rabbit_raid:spawnable run tag @s add notSpawnable
+execute at @s unless entity @e[tag=nrr_sparead_centre, distance=..35] run tag @s add notSpawnable
 
 #检查附近是否有其他生成器
 execute at @s store result score $spawnersNearBy nrr_temp if entity @e[tag=spawnable, tag=nrr_spawner, distance=..15]
