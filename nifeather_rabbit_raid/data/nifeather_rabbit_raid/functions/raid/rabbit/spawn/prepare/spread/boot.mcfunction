@@ -1,5 +1,5 @@
 #生成扩散中心
-summon marker ~ ~ ~ {Tags:["nrr_sparead_centre"]}
+summon marker ~ ~ ~ {Tags:["nrr_spread_centre"]}
 
 #初始化记分板
 scoreboard players set $nrr_spreadFails nrr_stats 0

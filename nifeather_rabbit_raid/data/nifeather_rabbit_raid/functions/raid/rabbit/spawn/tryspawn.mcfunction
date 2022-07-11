@@ -1,5 +1,5 @@
 #清除扩散中心
-kill @e[tag=nrr_sparead_centre]
+kill @e[tag=nrr_spread_centre]
 
 #如果兔子总量小于设定的目标，那么刷新一次
 execute as @e[tag=nrr_spawner] at @s if score $nrr_rabbits nrr_stats < $nrr_targetSpawnCount nrr_options run function nifeather_rabbit_raid:raid/rabbit/spawn/dospawn/boot
