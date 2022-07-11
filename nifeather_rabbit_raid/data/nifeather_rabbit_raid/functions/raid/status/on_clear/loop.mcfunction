@@ -1,0 +1,1 @@
+execute if score $nrr_current nrr_stats matches ..0 run function nifeather_rabbit_raid:raid/stop/success

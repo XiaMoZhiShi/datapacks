@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "experience_bottle"
+        },
+        "title": "经验收藏家",
+        "description": "在多兔袭击中首次完成收集经验的附加条件"
+    },
+    "criteria":
+    {
+        "imp":
+        {
+            "trigger": "impossible"
+        }
+    },
+    "parent": "nifeather_rabbit_raid:display/raid_success",
+    "rewards":
+    {
+        "experience": 100
+    }
+}

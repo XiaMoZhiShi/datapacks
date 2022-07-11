@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values":
+    [
+        "#minecraft:trapdoors",
+        "#minecraft:stairs",
+        "#minecraft:walls",
+        "#minecraft:fences",
+        "#minecraft:fence_gates",
+        "#nifeather_rabbit_raid:glass_panes",
+        "minecraft:cobweb",
+        "minecraft:sweet_berry_bush"
+    ]
+}
