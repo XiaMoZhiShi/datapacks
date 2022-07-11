@@ -1,5 +1,3 @@
-#效果
-summon lightning_bolt ~ 512 ~
 
 #清空最大血量
 scoreboard players set $nrr_rabbitTotalMaxHealth nrr_stats 0
