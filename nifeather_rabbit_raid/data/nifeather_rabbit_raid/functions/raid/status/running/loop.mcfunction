@@ -15,8 +15,9 @@ scoreboard players operation $nrr_dupeRemain nrr_stats %= $nrr_dupeTime nrr_opti
 execute if score $nrr_dupeRemain nrr_stats matches 0 if entity @s[tag=firstDupeIgnored] run function nifeather_rabbit_raid:raid/rabbit/dupe/boot
 execute if score $nrr_dupeRemain nrr_stats matches 0 run tag @s add firstDupeIgnored
 
-#清理过远的兔子、方块破坏机制
+#清理过远、在下界的兔子、方块破坏机制
 execute as @e[tag=nrr_rabbit, distance=90..] at @s run function nifeather_rabbit_raid:tracker/killentity
+execute in the_nether as @e[tag=nrr_rabbit, distance=0..] at @s run function nifeather_rabbit_raid:tracker/killentity
 execute as @e[tag=nrr_rabbit] at @s if block ~ ~ ~ #nifeather_rabbit_raid:rabbit_stuckable run function nifeather_rabbit_raid:raid/status/running/no_stuck
 
 #附加条件
