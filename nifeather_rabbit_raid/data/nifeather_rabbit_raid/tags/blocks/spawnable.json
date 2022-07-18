@@ -18,6 +18,7 @@
         "minecraft:grass",
         "minecraft:fern",
         "minecraft:tall_grass",
-        "#minecraft:flowers"
+        "#minecraft:flowers",
+        "minecraft:snow_block"
     ]
 }
