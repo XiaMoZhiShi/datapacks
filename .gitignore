@@ -5,3 +5,5 @@ vanilla-worldgen/dimension_type
 
 #Bukkit
 bukkit
+
+ignore_*
