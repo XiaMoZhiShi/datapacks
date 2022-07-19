@@ -3,7 +3,7 @@
     {
         "tick":
         {
-            "trigger": "tick"
+            "trigger": "impossible"
         }
     },
     "requirements":

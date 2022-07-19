@@ -4,6 +4,12 @@ execute if score debug nife_stats matches 1 run tellraw @a[tag=admin] [{"text": 
 tag @s add n3l_applyingPatch
 #declare tag n3l_applyingPatch 正在应用登录补丁
 
+#改名检测
+execute if entity @s[tag=n3l_init_done] unless score @s n3l_lives matches -2147483648..2147483647 run function nifeather_3lives:tools/reset_n3l_data_silent
+
+#workaround: 相关成就
+execute if entity @s[advancements={nifeather_3lives:mechanics/armor/spawn=false}] run advancement grant @s only nifeather_3lives:mechanics/armor/spawn
+
 #重置生命
 execute if entity @s[tag=!n3l_init_done] run function nifeather_3lives:tools/reset_lives
 
@@ -12,6 +18,9 @@ execute unless score @s n3l_patchlevel matches 1.. run function nifeather_3lives
 
 #2: 盔甲进度
 execute unless score @s n3l_patchlevel matches 2.. run function nifeather_3lives:events/player/join/patches/2_advancements
+
+#3: 数值变动
+execute unless score @s n3l_patchlevel matches 3.. run function nifeather_3lives:events/player/join/patches/3_lives
 
 tag @s remove n3l_applyingPatch
 #endregion 补丁

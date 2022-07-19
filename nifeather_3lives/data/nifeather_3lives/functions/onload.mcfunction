@@ -52,6 +52,6 @@ scoreboard players set #n3l_ticksPerHr nife_stats 72000
 scoreboard players set #n3l_secsPerMin nife_stats 60
 scoreboard players set #n3l_minsPerHr nife_stats 60
 
-execute unless score #n3l_respawnTick nife_stats matches -2147483648..2147483647 run scoreboard players set #n3l_respawnTick nife_stats 216000
+execute unless score #n3l_respawnTick nife_stats matches -2147483648..2147483647 run scoreboard players set #n3l_respawnTick nife_stats 108000
 
 #define entity #n3l_respawnTick 重生等待时间
