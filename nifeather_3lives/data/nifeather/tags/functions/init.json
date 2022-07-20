@@ -1,5 +1,5 @@
 {
-    "replaces": false,
+    "replace": false,
     "values":
     [
         "nifeather_3lives:onload"

@@ -10,7 +10,7 @@ playsound entity.villager.celebrate player @s ~ ~ ~
 tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE2B6", {"text": "成功重生！"}]}]
 tellraw @s[tag=!n3l_respawnedonce] ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE2B6", {"text": "你的存在并不稳定，请远离一切伤害源"}]}]
 tellraw @s[tag=!n3l_respawnedonce] ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE2B6", {"text": "食用金苹果可以帮助稳定你的存在形式"}]}]
-tellraw @s[tag=!n3l_respawnedonce] ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE2B6", {"text": "恢复途中任何形式的死亡都会中断该过程！"}]}]
+tellraw @s[tag=!n3l_respawnedonce] ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE2B6", {"text": "恢复过程中死亡会中断该过程！"}]}]
 tellraw @s[tag=!n3l_respawnedonce] ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE2B6", {"text": "此文本不会出现第二次"}]}]
 
 tag @s remove n3l_specator
