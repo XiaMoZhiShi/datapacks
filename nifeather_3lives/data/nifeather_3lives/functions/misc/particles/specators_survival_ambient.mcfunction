@@ -1,1 +1,1 @@
-execute at @a[scores={n3l_lives=..0}, gamemode=survival] run particle minecraft:soul ~ ~ ~ 0.3 0.9 0.3 0.05 3
+execute at @a[tag=n3l_curing, gamemode=survival] run particle minecraft:soul ~ ~ ~ 0.3 0.9 0.3 0.05 3
