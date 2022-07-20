@@ -18,6 +18,10 @@
                 {
                     "type": "loot_table",
                     "name": "nifeather_extras:potions/experience"
+                },
+                {
+                    "type": "loot_table",
+                    "name": "nifeather_extras:potions/spread"
                 }
             ]
         }

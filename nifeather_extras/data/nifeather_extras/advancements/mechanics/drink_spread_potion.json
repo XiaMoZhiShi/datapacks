@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "potion0": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{NiFeather_IsSpreadPotion: true}",
+                    "items": [
+                        "potion"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nifeather_extras:mechanics/spread_potion/boot"
+    }
+}

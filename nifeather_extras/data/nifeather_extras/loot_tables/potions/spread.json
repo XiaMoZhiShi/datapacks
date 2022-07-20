@@ -1,0 +1,73 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "potion",
+                    "functions":
+                    [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{HideFlags:32, NiFeatherItem: 1b, Enchantments:[{}], NiFeather_IsSpreadPotion: true, CustomPotionColor: 4489215}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "扩散药水",
+                                "italic": false,
+                                "color": "white"
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":
+                            [
+                                {
+                                    "text": "仅在主世界和下界生效",
+                                    "color": "blue",
+                                    "italic": false
+                                },
+                                {
+                                    "text": ""
+                                },
+                                {
+                                    "text": "当生效后：",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "将自己传送到附近的主世界地表",
+                                    "color": "blue",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "或下界不高于",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra":
+                                    [
+                                        {
+                                            "translate": "%1$s%3$s",
+                                            "with":
+                                            [
+                                                {
+                                                    "text": "???"
+                                                },
+                                                {
+                                                    "translate": "text.spreadPotion.height"
+                                                },
+                                                ""
+                                            ]
+                                        },
+                                        "格的表面"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
