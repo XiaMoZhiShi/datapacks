@@ -53,5 +53,7 @@ scoreboard players set #n3l_secsPerMin nife_stats 60
 scoreboard players set #n3l_minsPerHr nife_stats 60
 
 execute unless score #n3l_respawnTick nife_stats matches -2147483648..2147483647 run scoreboard players set #n3l_respawnTick nife_stats 108000
+#declare entity #n3l_respawnTick 重生等待时间
 
-#define entity #n3l_respawnTick 重生等待时间
+execute unless score #n3l_recoverCost nife_stats matches 1..2147483647 run scoreboard players set #n3l_recoverCost nife_stats 5
+#declare entity #n3l_recoverCost 重生后恢复要多少金苹果
