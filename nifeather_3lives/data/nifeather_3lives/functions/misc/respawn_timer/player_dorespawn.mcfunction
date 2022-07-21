@@ -1,8 +1,10 @@
 execute if score debug nife_stats matches 1 run tellraw @a[tag=admin] [{"text": "[调试] ", "color": "gray"}, "RespawnTimer.DoRespawn: ", {"selector": "@s"}]
 
-effect give @s resistance 10 255
+effect give @s resistance 180 255
 effect give @s glowing 10
-effect give @s fire_resistance 20
+effect give @s fire_resistance 180
+effect give @s regeneration 180 1
+effect give @s health_boost 180 1
 gamemode survival @s
 
 playsound entity.villager.celebrate player @s ~ ~ ~
