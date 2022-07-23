@@ -1,0 +1,59 @@
+From 28ba9a7552bb3f0ed57ac7b5d7752e4248ffac01 Mon Sep 17 00:00:00 2001
+From: MATRIX-feather <midnightcarnival@outlook.com>
+Date: Sun, 24 Jul 2022 04:47:46 +0800
+Subject: [PATCH] =?UTF-8?q?fix:=20=E4=BF=AE=E5=A4=8Dgm4=5Fbetter=5Farmour?=
+ =?UTF-8?q?=5Fstands=E5=9C=A8paper=E4=B8=8A=E6=B2=A1=E6=B3=95=E6=91=86pose?=
+ =?UTF-8?q?=E7=9A=84=E9=97=AE=E9=A2=98?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Signed-off-by: MATRIX-feather <midnightcarnival@outlook.com>
+---
+ .../data/gm4_better_armour_stands/advancements/pose/set.json   | 2 +-
+ .../functions/pose/select/success.mcfunction                   | 3 +++
+ .../functions/toggle/arms/detect_interaction.mcfunction        | 1 +
+ 3 files changed, 5 insertions(+), 1 deletion(-)
+
+diff --git a/gm4_better_armour_stands_1_19/data/gm4_better_armour_stands/advancements/pose/set.json b/gm4_better_armour_stands_1_19/data/gm4_better_armour_stands/advancements/pose/set.json
+index 69988f1..cd77af4 100644
+--- a/gm4_better_armour_stands_1_19/data/gm4_better_armour_stands/advancements/pose/set.json
++++ b/gm4_better_armour_stands_1_19/data/gm4_better_armour_stands/advancements/pose/set.json
+@@ -18,7 +18,7 @@
+             "entity": "this",
+             "predicate": {
+               "type": "minecraft:wandering_trader",
+-              "team": "gm4_bas"
++              "nbt": "{Tags:[\"gm4_bas_detect\"]}"
+             }
+           }
+         ]
+diff --git a/gm4_better_armour_stands_1_19/data/gm4_better_armour_stands/functions/pose/select/success.mcfunction b/gm4_better_armour_stands_1_19/data/gm4_better_armour_stands/functions/pose/select/success.mcfunction
+index 12cdc27..351449c 100644
+--- a/gm4_better_armour_stands_1_19/data/gm4_better_armour_stands/functions/pose/select/success.mcfunction
++++ b/gm4_better_armour_stands_1_19/data/gm4_better_armour_stands/functions/pose/select/success.mcfunction
+@@ -14,6 +14,9 @@ data modify entity @s[nbt={Invisible:1b}] Glowing set value 1
+ summon minecraft:wandering_trader ~ ~-10000 ~ {CustomName:'"gm4_bas_detect_click"',Tags:["smithed.entity","smithed.strict","gm4_trader","gm4_bas_detect","gm4_bas_new","gm4_bas_temp"],Team:"gm4_bas",NoAI:1b,Silent:1b,Health:1f,Offers:{},ActiveEffects:[{Id:14,Amplifier:0b,Duration:10000000,ShowParticles:0b},{Id:11,Amplifier:10b,Duration:10000000,ShowParticles:0b}]}
+ tp @e[type=wandering_trader,tag=gm4_bas_new,limit=1] ~ ~ ~ 
+ 
++#bug: Paper
++team join gm4_bas @e[type=wandering_trader,tag=gm4_bas_new,limit=1, sort=nearest]
++
+ # spawn marker for player offset and current armour stand data
+ summon marker ~ ~ ~ {CustomName:'"gm4_bas_player_offset"',Tags:["smithed.entity","smithed.strict","gm4_bas_player_offset","gm4_bas_marker","gm4_bas_new","gm4_bas_temp"]}
+ data modify entity @e[type=minecraft:marker,tag=gm4_bas_player_offset,tag=gm4_bas_new,distance=..1,limit=1] data set from storage gm4_better_armour_stands:temp Data
+diff --git a/gm4_better_armour_stands_1_19/data/gm4_better_armour_stands/functions/toggle/arms/detect_interaction.mcfunction b/gm4_better_armour_stands_1_19/data/gm4_better_armour_stands/functions/toggle/arms/detect_interaction.mcfunction
+index 50114fd..f7cc08c 100644
+--- a/gm4_better_armour_stands_1_19/data/gm4_better_armour_stands/functions/toggle/arms/detect_interaction.mcfunction
++++ b/gm4_better_armour_stands_1_19/data/gm4_better_armour_stands/functions/toggle/arms/detect_interaction.mcfunction
+@@ -7,6 +7,7 @@ tag @s add gm4_bas_no_arms
+ # place wandering_trader inside armor_stand to detect right click
+ summon minecraft:wandering_trader ~ ~-10000 ~ {CustomName:'"gm4_bas_detect_rightclick"',Tags:["smithed.entity","smithed.strict","gm4_trader","gm4_bas_arms_detect"],Team:"gm4_bas",Silent:1b,NoAI:1b,Invulnerable:1b,Offers:{},ActiveEffects:[{Id:14,Amplifier:0b,Duration:10000000,ShowParticles:0b}]}
+ execute positioned ~ ~-10000 ~ run tp @e[type=wandering_trader,tag=gm4_bas_arms_detect,distance=..1,sort=nearest,limit=1] @s
++team join gm4_bas @e[type=wandering_trader,tag=gm4_bas_arms_detect,distance=..1,sort=nearest,limit=1]
+ 
+ # start check loop to remove wandering_trader
+ schedule function gm4_better_armour_stands:toggle/arms/check 16t
+-- 
+2.34.1
+
