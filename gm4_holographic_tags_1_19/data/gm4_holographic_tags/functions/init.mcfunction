@@ -54,7 +54,6 @@ execute if score book_binders gm4_modules matches ..19001 run data modify storag
 execute if score boots_of_ostara gm4_modules matches ..19001 run data modify storage gm4:log queue append value {type:"outdated",module:"Boots of Ostara"}
 execute if score cement_mixers gm4_modules matches ..19001 run data modify storage gm4:log queue append value {type:"outdated",module:"Cement Mixers"}
 execute if score chairs gm4_modules matches ..19001 run data modify storage gm4:log queue append value {type:"outdated",module:"Chairs"}
-execute if score chest_boats gm4_modules matches ..19001 run data modify storage gm4:log queue append value {type:"outdated",module:"Chest Boats"}
 execute if score cooler_caves gm4_modules matches ..19001 run data modify storage gm4:log queue append value {type:"outdated",module:"Cooler Caves"}
 execute if score cozy_campfires gm4_modules matches ..19001 run data modify storage gm4:log queue append value {type:"outdated",module:"Cozy Campfires"}
 execute if score crossbow_cartridges gm4_modules matches ..19001 run data modify storage gm4:log queue append value {type:"outdated",module:"Crossbow Cartridges"}
