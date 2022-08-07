@@ -1,5 +1,5 @@
-scoreboard objectives add nife_ods_timer dummy
-scoreboard objectives add nife_ods_rng dummy
+scoreboard objectives add nife_catalystCounter minecraft.mined:minecraft.sculk_catalyst
+#declare objective nife_catalystCounter 催发器挖掘计数
 
 #declare objective nifeather.limbo.chestFind.retries 寻箱计数器
 scoreboard objectives add nifeather.limbo.chestFind.retries dummy
