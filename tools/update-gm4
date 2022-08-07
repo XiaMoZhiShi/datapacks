@@ -54,5 +54,14 @@ for m in "${TARGET_MODULES[@]}"; do
     sleep 0.1
 done
 
+log "应用补丁..."
+for p in ./patches/*; do
+    if [ -f "${p}" ];then
+        patchBaseName="$(basename "${p}")"
+        log "应用${patchBaseName}..."
+        git apply "${p}" || log LWARN "补丁\"${patchBaseName}\"应用失败"
+    fi
+done
+
 log "清理文件..."
 rm ./dl_*
