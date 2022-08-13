@@ -12,3 +12,5 @@ execute unless score #slimecap nife_stats matches 0..2147483647 run scoreboard p
 
 #declare objective nifeather.limbo.darknessLevel 黑暗等级，大于5（即失去光源10秒）后给予凋零
 scoreboard objectives add nifeather.limbo.darknessLevel dummy
+
+function nifeather_extras:race/init

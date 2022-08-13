@@ -9,3 +9,5 @@ execute as @a[scores={nife_catalystCounter=1..}] at @s run function nifeather_ex
 
 #Incendium史莱姆workaround
 function nifeather_extras:incendium/slime_workaround_boot
+
+function nifeather_extras:race/loop
