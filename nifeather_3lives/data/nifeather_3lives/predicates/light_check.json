@@ -9,6 +9,7 @@
             {
                 "max": 4
             }
-        }
+        },
+        "dimension": "overworld"
     }
 }
