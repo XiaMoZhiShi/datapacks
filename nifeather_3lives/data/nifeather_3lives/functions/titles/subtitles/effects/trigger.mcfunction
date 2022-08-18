@@ -2,7 +2,7 @@
 scoreboard players set @s n3l_st_clock 0
 
 execute if entity @s[tag=n3l_stE_movement] run function nifeather_3lives:titles/subtitles/effects/apply/movement
-execute if entity @s[tag=n3l_stE_dmg] run function nifeather_3lives:titles/subtitles/effects/apply/dmg
+execute if entity @s[tag=n3l_stE_battle] run function nifeather_3lives:titles/subtitles/effects/apply/battle
 execute if entity @s[tag=n3l_stE_cure] run function nifeather_3lives:titles/subtitles/effects/apply/cure
 
 #设置CD

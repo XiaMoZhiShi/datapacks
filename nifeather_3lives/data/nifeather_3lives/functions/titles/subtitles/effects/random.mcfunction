@@ -9,14 +9,14 @@ scoreboard players operation @s n3l_subrandom_temp %= #3 nife_stats
 #endregion
 
 #region 通过记分板的值给与标签
-#declare tag n3l_stE_cure 效果：恢复一定生命并提升移动速度
+#declare tag n3l_stE_cure 效果：恢复生命和饱食度
 execute if score @s n3l_subrandom_temp matches 0 run tag @s add n3l_stE_cure
 
-#declare tag n3l_stE_movement 效果：提升移动速度
+#declare tag n3l_stE_movement 效果：提升移速和伤害
 execute if score @s n3l_subrandom_temp matches 1 run tag @s add n3l_stE_movement
 
-#declare tag n3l_stE_dmg 效果：提升攻击伤害
-execute if score @s n3l_subrandom_temp matches 2 run tag @s add n3l_stE_dmg
+#declare tag n3l_stE_battle 效果：提升移速或者伤害
+execute if score @s n3l_subrandom_temp matches 2 run tag @s add n3l_stE_battle
 #endregion
 
 scoreboard players reset @s n3l_subrandom_temp
