@@ -3,14 +3,23 @@ scoreboard objectives add n3l_lives dummy
 scoreboard objectives add n3l_random dummy
 #declare objective n3l_random 主事件随机数储存
 
-scoreboard objectives add n3l_subrandom dummy
-#declare objective n3l_subrandom 子事件随机数储存
 
-scoreboard objectives add n3l_patchlevel dummy
-#declare objective n3l_patchlevel 玩家补丁等级
+scoreboard objectives add n3l_subrandom_temp dummy
+#declare objective n3l_subrandom_temp 子事件触发器临时储存
+
+
+scoreboard objectives add n3l_subrandom_timer dummy
+#declare objective n3l_subrandom_timer 子事件触发器储存
 
 scoreboard objectives add n3l_se_clock dummy
 #declare objective n3l_se_clock se时钟
+
+scoreboard objectives add n3l_st_clock dummy
+#declare objective n3l_st_clock 触发器时钟
+
+
+scoreboard objectives add n3l_patchlevel dummy
+#declare objective n3l_patchlevel 玩家补丁等级
 
 scoreboard objectives add n3l_monsters_nearby dummy
 #declare objective n3l_monsters_nearby 周围的怪物数量
@@ -40,11 +49,16 @@ scoreboard objectives add n3l_recipeCheckTemp dummy
 #declare objective n3l_recipeCheckTemp 图腾配方相关临时记分板
 
 
+scoreboard objectives remove n3l_subrandom
+#declare objective n3l_subrandom （弃用）子事件随机数储存
+
 #scoreboard objectives add nife_gapple_eat minecraft.used:minecraft.golden_apple
 
 scoreboard players set #4 n3l_lives 4
 scoreboard players set #2 n3l_lives 2
 scoreboard players set #0 n3l_lives 0
+
+scoreboard players set #31 nife_stats 31
 
 scoreboard players set #n3l_ticksPerSec nife_stats 20
 scoreboard players set #n3l_ticksPerMin nife_stats 1200

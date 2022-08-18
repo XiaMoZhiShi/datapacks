@@ -1,3 +1,4 @@
-execute if entity @s[tag=n3l_se0] run function nifeather_3lives:titles/subtitles/0/remove
-execute if entity @s[tag=n3l_se1] run function nifeather_3lives:titles/subtitles/1/remove
-execute if entity @s[tag=n3l_se2] run function nifeather_3lives:titles/subtitles/2/remove
+function nifeather_3lives:titles/subtitles/triggers/removeall
+function nifeather_3lives:titles/subtitles/effects/removeall
+function nifeather_3lives:titles/subtitles/cd_timers/removeall
+function nifeather_3lives:titles/subtitles/timers/removeall

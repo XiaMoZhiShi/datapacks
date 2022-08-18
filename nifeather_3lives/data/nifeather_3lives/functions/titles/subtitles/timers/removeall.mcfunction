@@ -1,0 +1,1 @@
+scoreboard players set @s n3l_subrandom_timer 1

@@ -1,1 +1,2 @@
-execute if entity @s[tag=n3l_se1] run function nifeather_3lives:titles/subtitles/1/check
+#declare tag __n3l_sprintStarted 疾跑开始
+tag @s add __n3l_sprintStarted

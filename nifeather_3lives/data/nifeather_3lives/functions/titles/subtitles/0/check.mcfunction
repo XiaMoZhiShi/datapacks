@@ -1,1 +1,0 @@
-execute if score @s nife_health matches ..4 if score @s nife_health_delta matches ..-1 if score @s n3l_se_clock matches ..-1200 run function nifeather_3lives:titles/subtitles/0/pass

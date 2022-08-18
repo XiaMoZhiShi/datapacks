@@ -1,1 +1,0 @@
-execute if entity @s[tag=n3l_se0] run function nifeather_3lives:titles/subtitles/0/check

@@ -1,0 +1,1 @@
+attribute @s generic.movement_speed modifier add 1-0-0-1-0 "n3l_se1_modifier" 0.4 multiply

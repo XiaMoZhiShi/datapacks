@@ -14,6 +14,5 @@ execute if score @s n3l_random matches 12 run tellraw @s ["", {"translate": "tex
 execute if score @s n3l_random matches 13 run tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE33C", "当前主词条：降低运气"]}]
 execute if score @s n3l_random matches 14 run tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE33C", "当前主词条：夜晚周围亮度小于4时将致盲"]}]
 
-execute if score @s n3l_subrandom matches 1 run tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE33C", "当前子词条：生命值小于5时恢复少量生命和饱食度并提升攻击速度和伤害"]}]
-execute if score @s n3l_subrandom matches 2 run tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE33C", "当前子词条：生命值大于12时疾跑将提升移动速度和攻击伤害"]}]
-execute if score @s n3l_subrandom matches 3 run tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE33C", "当前子词条：根据周围的敌人提升攻击伤害或速度"]}]
+function nifeather_3lives:titles/subtitles/display/buildbuffer
+tellraw @s ["", {"translate": "text.hub.hint", "color": "#dddddd", "with":["\uE33C", ["当前副词条：", {"nbt":"Output", "storage": "nifeather:n3l", "interpret": true}]]}]

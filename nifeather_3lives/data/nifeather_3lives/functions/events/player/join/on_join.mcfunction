@@ -22,6 +22,9 @@ execute unless score @s n3l_patchlevel matches 2.. run function nifeather_3lives
 #3: 数值变动
 execute unless score @s n3l_patchlevel matches 3.. run function nifeather_3lives:events/player/join/patches/3_lives
 
+#4: 副词条重做
+execute unless score @s n3l_patchlevel matches 4.. run function nifeather_3lives:events/player/join/patches/4_subtitle_refactor
+
 tag @s remove n3l_applyingPatch
 #endregion 补丁
 
