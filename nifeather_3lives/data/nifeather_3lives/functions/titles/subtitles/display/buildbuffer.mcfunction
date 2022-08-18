@@ -9,7 +9,7 @@ execute if entity @s[tag=n3l_stT_enemycount] run data modify storage nifeather:n
 
 #region 效果
 execute if entity @s[tag=n3l_stE_movement] run data modify storage nifeather:n3l SubtitleTextBuffer append value '{"text":"提升移动速度"}'
-execute if entity @s[tag=n3l_stE_battle] run data modify storage nifeather:n3l SubtitleTextBuffer append value '{"text":"提升攻击伤害"}'
+execute if entity @s[tag=n3l_stE_dmg] run data modify storage nifeather:n3l SubtitleTextBuffer append value '{"text":"提升攻击伤害"}'
 execute if entity @s[tag=n3l_stE_cure] run data modify storage nifeather:n3l SubtitleTextBuffer append value '{"text":"恢复一定生命并提升移动速度"}'
 #endregion
 
