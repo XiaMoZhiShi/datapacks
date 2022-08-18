@@ -4,6 +4,7 @@ scoreboard players set @s n3l_st_clock 0
 execute if entity @s[tag=n3l_stE_movement] run function nifeather_3lives:titles/subtitles/effects/apply/movement
 execute if entity @s[tag=n3l_stE_battle] run function nifeather_3lives:titles/subtitles/effects/apply/battle
 execute if entity @s[tag=n3l_stE_cure] run function nifeather_3lives:titles/subtitles/effects/apply/cure
+execute if entity @s[tag=n3l_stE_attack_speed] run function nifeather_3lives:titles/subtitles/effects/apply/attack_speed
 
 #设置CD
 execute if entity @s[tag=n3l_stCD_1m] run scoreboard players add @s n3l_st_clock 1200

@@ -1,0 +1,1 @@
+attribute @s generic.attack_speed modifier add 1-0-0-3-0 "n3l_as_modifier" 0.6 multiply

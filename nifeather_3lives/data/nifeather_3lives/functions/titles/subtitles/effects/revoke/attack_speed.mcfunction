@@ -1,0 +1,1 @@
+attribute @s generic.attack_speed modifier remove 1-0-0-3-0
