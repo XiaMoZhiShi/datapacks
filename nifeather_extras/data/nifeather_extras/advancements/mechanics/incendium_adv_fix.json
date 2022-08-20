@@ -1,0 +1,27 @@
+{
+    "criteria":
+    {
+      "elytra":
+      {
+        "trigger": "minecraft:inventory_changed",
+        "conditions":
+        {
+          "items":
+          [
+            {
+              "nbt": "{incendium:{item:'infernal_feather'}}",
+              "items":
+              [
+                "minecraft:elytra"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "rewards":
+    {
+        "function": "nifeather_extras:incendium/elytra_advancement_fix"
+    }
+  }
+  
