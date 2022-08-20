@@ -15,7 +15,7 @@ execute if entity @s[tag=n3l_stE_cure] run data modify storage nifeather:n3l Sub
 #endregion
 
 #region CD限制
-execute if entity @s[tag=n3l_stCD_1m] run data modify storage nifeather:n3l SubtitleTextBuffer append value '{"text":"，每1分钟最多触发一次"}'
+execute if entity @s[tag=n3l_stCD_1m] run data modify storage nifeather:n3l SubtitleTextBuffer append value '{"text":"，每分钟最多触发一次"}'
 execute if entity @s[tag=n3l_stCD_2m] run data modify storage nifeather:n3l SubtitleTextBuffer append value '{"text":"，每2分钟最多触发一次"}'
 #endregion
 
