@@ -5,4 +5,4 @@ execute if entity @s[tag=n3l_stE_attack_speed] run function nifeather_3lives:tit
 
 tag @s remove __n3l_effect_triggering
 
-playsound block.fire.extinguish player @s ~ ~ ~ 0.75
+playsound xmzs:nifeather.n3l.subtitle_stop player @s ~ ~ ~ 0.75

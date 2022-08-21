@@ -13,7 +13,7 @@ execute if entity @s[tag=n3l_stCD_internal] run scoreboard players add @s n3l_st
 
 scoreboard players operation @s n3l_se_clock = @s n3l_subrandom_timer
 
-execute if entity @s[tag=!__n3l_effect_triggering] run playsound minecraft:block.enchantment_table.use player @s
+execute if entity @s[tag=!__n3l_effect_triggering] run playsound xmzs:nifeather.n3l.subtitle_trigger player @s
 
 #设置标签
 #declare tag __n3l_effect_triggering 正在触发效果
