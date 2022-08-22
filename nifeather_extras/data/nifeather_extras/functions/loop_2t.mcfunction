@@ -1,0 +1,2 @@
+#Incendium史莱姆workaround
+function nifeather_extras:incendium/slime_workaround_boot

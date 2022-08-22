@@ -7,7 +7,4 @@ execute in nifeather_extras:limbo as @a[distance=0..] at @s if block ~ ~ ~ end_g
 #挖掘催发体时额外生成15点经验，与1.19保持一致
 execute as @a[scores={nife_catalystCounter=1..}] at @s run function nifeather_extras:mechanics/catalyst_exp_revert
 
-#Incendium史莱姆workaround
-function nifeather_extras:incendium/slime_workaround_boot
-
 function nifeather_extras:race/loop
