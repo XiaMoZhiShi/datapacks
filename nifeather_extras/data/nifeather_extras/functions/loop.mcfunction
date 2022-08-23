@@ -8,3 +8,6 @@ execute in nifeather_extras:limbo as @a[distance=0..] at @s if block ~ ~ ~ end_g
 execute as @a[scores={nife_catalystCounter=1..}] at @s run function nifeather_extras:mechanics/catalyst_exp_revert
 
 function nifeather_extras:race/loop
+
+
+execute in the_nether as @a[distance=0..] at @s if entity @s[predicate=incendium:structure/forbidden_castle] unless entity @e[type=piglin_brute,tag=in.castle,distance=..160] run advancement grant @s only incendium:ash_barrens/conquer_castle
