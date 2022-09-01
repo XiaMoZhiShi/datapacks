@@ -38,3 +38,5 @@ execute if entity @s[tag=n3l_showActualLives] run function nifeather_3lives:even
 
 tag @s remove n3l_showActualLives
 tag @s add n3l_init_done
+
+scoreboard players enable @s n3l_settings_trigger

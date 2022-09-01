@@ -5,3 +5,6 @@ execute as @a[tag=n3l_itemThrownAway] at @s as @e[type=item, nbt={Item:{id:"mine
 execute as @a[tag=n3l_itemThrownAway] run tag @s remove n3l_itemThrownAway
 
 tag @a[tag=n3l_curedThisTick] remove n3l_curedThisTick
+
+
+execute as @a[scores={n3l_settings_trigger=1..}] run function nifeather_3lives:settings/trigger/ontrigger

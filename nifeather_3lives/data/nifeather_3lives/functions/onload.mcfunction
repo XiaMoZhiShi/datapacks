@@ -17,6 +17,9 @@ scoreboard objectives add n3l_se_clock dummy
 scoreboard objectives add n3l_st_clock dummy
 #declare objective n3l_st_clock 触发器时钟
 
+scoreboard objectives add n3l_settings_trigger trigger
+#declare objective n3l_settings_trigger 设置触发器
+
 
 scoreboard objectives add n3l_patchlevel dummy
 #declare objective n3l_patchlevel 玩家补丁等级
