@@ -1,0 +1,31 @@
+From 6763cb49cca49686740d9f98e6734da6bc7345a6 Mon Sep 17 00:00:00 2001
+From: MATRIX-feather <midnightcarnival@outlook.com>
+Date: Sun, 4 Sep 2022 12:20:00 +0800
+Subject: [PATCH] =?UTF-8?q?misc:=20=E7=A7=BB=E9=99=A4=E9=93=81=E9=93=BE?=
+ =?UTF-8?q?=E7=9A=84=E6=94=80=E7=88=AC=E6=A0=87=E7=AD=BE=20=09*=20?=
+ =?UTF-8?q?=E4=B8=8E=E6=9C=8D=E5=8A=A1=E5=99=A8=E5=8F=8D=E4=BD=9C=E5=BC=8A?=
+ =?UTF-8?q?=E5=86=B2=E7=AA=81?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Signed-off-by: MATRIX-feather <midnightcarnival@outlook.com>
+---
+ .../data/minecraft/tags/blocks/climbable.json                    | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/hopobettermineshaft-1-19-1-1-5/data/minecraft/tags/blocks/climbable.json b/hopobettermineshaft-1-19-1-1-5/data/minecraft/tags/blocks/climbable.json
+index ab8acc0..a1dc310 100644
+--- a/hopobettermineshaft-1-19-1-1-5/data/minecraft/tags/blocks/climbable.json
++++ b/hopobettermineshaft-1-19-1-1-5/data/minecraft/tags/blocks/climbable.json
+@@ -1,6 +1,5 @@
+ {
+     "replace": false,
+     "values": [
+-        "minecraft:chain"
+     ]
+ }
+\ No newline at end of file
+-- 
+2.34.1
+
