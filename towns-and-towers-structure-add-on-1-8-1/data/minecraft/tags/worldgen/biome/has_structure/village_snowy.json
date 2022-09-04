@@ -1,0 +1,22 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:snowy_plains",
+    {
+      "id": "biomesoplenty:cold_desert",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:snowy_coniferous_forest",
+      "required": false
+    },
+    {
+      "id": "byg:frosted_coniferous_forest",
+      "required": false
+    },
+    {
+      "id": "byg:shattered_glacier",
+      "required": false
+    }
+  ]
+}

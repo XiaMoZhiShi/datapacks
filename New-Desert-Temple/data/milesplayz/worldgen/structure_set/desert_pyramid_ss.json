@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "milesplayz:desert_pyramid",
+      "weight": 10
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 50,
+    "separation": 12,
+    "salt": 1646207470
+  }
+}

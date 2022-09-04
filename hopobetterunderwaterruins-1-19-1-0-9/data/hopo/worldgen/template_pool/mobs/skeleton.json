@@ -1,0 +1,15 @@
+{ ////doesnt work :(
+    "name": "hopo:mobs/skeleton",
+    "fallback": "hopo:mobs/skeleton",
+    "elements": [
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/mobs/skeleton",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        }
+    ]
+}

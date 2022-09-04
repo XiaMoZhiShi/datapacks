@@ -1,0 +1,78 @@
+{
+  "name": "milesplayz:pool",
+  "fallback": "milesplayz:end",
+  "elements": [
+	{
+      "weight": 20,
+      "element": {
+        "location": "milesplayz:path",
+        "processors": "minecraft:empty",
+		"projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{
+      "weight": 10,
+      "element": {
+        "location": "milesplayz:house_1",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{
+      "weight": 10,
+      "element": {
+        "location": "milesplayz:house_2",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{
+      "weight": 10,
+      "element": {
+        "location": "milesplayz:house_3",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{
+      "weight": 10,
+      "element": {
+        "location": "milesplayz:house_4",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    	{
+      "weight": 2,
+      "element": {
+        "location": "milesplayz:clocktower",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		{
+      "weight": 1,
+      "element": {
+        "location": "milesplayz:well",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+		}
+      },
+		{
+      "weight": 10,
+      "element": {
+        "location": "milesplayz:path_2",
+        "processors": "minecraft:empty",
+		"projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

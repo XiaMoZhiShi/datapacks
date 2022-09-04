@@ -1,0 +1,285 @@
+{
+  "name": "prototypedungeons:corridor_main_elements",
+  "fallback": "prototypedungeons:corridor_deadend",
+  "elements": [
+    {
+      "weight": 50,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_long",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 30,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_crossroad",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 40,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_stairs",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 30,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_bigstairs",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 40,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_long_side",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 40,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_zigzag_1",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_01",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_02",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_03",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_04",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_05",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_06",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_07",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_08",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_09",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_10",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_11",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_12",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_13",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_14",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_15",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_16",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_17",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_18",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_19",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_20",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_21",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_22",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_23",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_24",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 8,
+      "element": {
+        "location": "prototypedungeons:hallways_and_rooms/corridor_room_25",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

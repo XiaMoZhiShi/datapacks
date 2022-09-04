@@ -1,0 +1,643 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 3,
+				"max": 6
+			},
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 8,
+					"name": "minecraft:apple",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 5
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "minecraft:golden_apple",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 4,
+					"name": "minecraft:mushroom_stew"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 6,
+					"name": "minecraft:brown_mushroom",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 7
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 6,
+					"name": "minecraft:red_mushroom",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 7
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 14,
+					"name": "minecraft:suspicious_stew",
+					"functions": [
+						{
+							"function": "minecraft:set_stew_effect",
+							"effects": [
+								{
+									"type": "minecraft:weakness",
+									"duration": {
+										"min": 20,
+										"max": 40
+									}
+								},
+								{
+									"type": "minecraft:poison",
+									"duration": {
+										"min": 10,
+										"max": 20
+									}
+								},
+								{
+									"type": "minecraft:night_vision",
+									"duration": {
+										"min": 20,
+										"max": 40
+									}
+								},
+								{
+									"type": "minecraft:saturation",
+									"duration": {
+										"min": 7,
+										"max": 10
+									}
+								},
+								{
+									"type": "minecraft:jump_boost",
+									"duration": {
+										"min": 20,
+										"max": 40
+									}
+								},
+								{
+									"type": "minecraft:blindness",
+									"duration": {
+										"min": 10,
+										"max": 20
+									}
+								},
+								{
+									"type": "minecraft:haste",
+									"duration": {
+										"min": 20,
+										"max": 40
+									}
+								},
+								{
+									"type": "minecraft:speed",
+									"duration": {
+										"min": 20,
+										"max": 40
+									}
+								},
+								{
+									"type": "minecraft:water_breathing",
+									"duration": {
+										"min": 20,
+										"max": 40
+									}
+								},
+								{
+									"type": "minecraft:regeneration",
+									"duration": {
+										"min": 10,
+										"max": 20
+									}
+								},
+								{
+									"type": "minecraft:strength",
+									"duration": {
+										"min": 10,
+										"max": 20
+									}
+								},
+								{
+									"type": "minecraft:absorption",
+									"duration": {
+										"min": 10,
+										"max": 20
+									}
+								},
+								{
+									"type": "minecraft:conduit_power",
+									"duration": {
+										"min": 10,
+										"max": 20
+									}
+								},
+								{
+									"type": "minecraft:health_boost",
+									"duration": {
+										"min": 10,
+										"max": 20
+									}
+								},
+								{
+									"type": "minecraft:dolphins_grace",
+									"duration": {
+										"min": 10,
+										"max": 20
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "minecraft:oak_boat"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "minecraft:spruce_boat"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "minecraft:lily_pad",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 10
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "minecraft:coal",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 6
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "minecraft:coal_block",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "minecraft:map",
+					"functions": [
+						{
+							"function": "minecraft:exploration_map",
+							"destination": "shipwreck",
+							"decoration": "red_x",
+							"zoom": 2,
+							"skip_existing_chunks": true
+						},
+						{
+							"function": "minecraft:set_name",
+							"name": "Abandoned Shipwreck Map"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "minecraft:map",
+					"functions": [
+						{
+							"function": "minecraft:exploration_map",
+							"destination": "buried_treasure",
+							"decoration": "red_x",
+							"zoom": 2,
+							"skip_existing_chunks": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 6,
+					"name": "minecraft:fishing_rod",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"min": 0.2,
+								"max": 0.6
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 6,
+					"name": "minecraft:fishing_rod",
+					"functions": [
+						{
+							"function": "minecraft:enchant_randomly"
+						},
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"min": 0.2,
+								"max": 0.6
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"name": "minecraft:rotten_flesh",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 6
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 4,
+					"name": "minecraft:nautilus_shell",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 0,
+								"max": 3
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "minecraft:stick",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 16
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"name": "minecraft:string",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 12
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 4,
+					"name": "minecraft:ink_sac",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 15
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 7,
+					"name": "minecraft:book",
+					"functions": [
+						{
+							"function": "minecraft:enchant_randomly",
+							"enchantments": [
+								"minecraft:mending",
+								"minecraft:unbreaking",
+								"minecraft:lure",
+								"minecraft:luck_of_the_sea"
+							]
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 6,
+					"name": "minecraft:bone_meal",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 15
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 4,
+					"name": "minecraft:bone_block",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 0,
+								"max": 2
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 6,
+					"name": "minecraft:bone",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 5
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"name": "minecraft:pufferfish",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 0,
+								"max": 2
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 9,
+					"name": "minecraft:cod",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 10
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 9,
+					"name": "minecraft:salmon",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 10
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 6,
+					"name": "minecraft:tropical_fish",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 7
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"name": "minecraft:water_bucket"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"name": "minecraft:bucket"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "minecraft:pufferfish_bucket"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"name": "minecraft:salmon_bucket"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"name": "minecraft:cod_bucket"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 6,
+					"name": "minecraft:dried_kelp_block",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 9,
+					"name": "minecraft:dried_kelp",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 12
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 6,
+					"name": "minecraft:seagrass",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 12,
+								"max": 22
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 7,
+					"name": "minecraft:kelp",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 12,
+								"max": 32
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "minecraft:wheat_seeds",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 5,
+								"max": 25
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 6,
+					"name": "minecraft:wheat",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 30
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "minecraft:hay_block",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							},
+							"add": false
+						}
+					]
+				}
+			]
+		}
+	]
+}

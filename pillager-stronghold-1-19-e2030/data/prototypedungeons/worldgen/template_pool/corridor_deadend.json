@@ -1,0 +1,132 @@
+{
+  "name": "prototypedungeons:corridor_deadend",
+  "fallback": "minecraft:empty",
+  "elements": [
+	{	
+      "weight": 3,
+      "element": {
+        "location": "prototypedungeons:ending_pieces/corridor_deadend_1",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 3,
+      "element": {
+        "location": "prototypedungeons:ending_pieces/corridor_deadend_2",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 3,
+      "element": {
+        "location": "prototypedungeons:ending_pieces/corridor_deadend_3",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 3,
+      "element": {
+        "location": "prototypedungeons:ending_pieces/corridor_deadend_4",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 3,
+      "element": {
+        "location": "prototypedungeons:ending_pieces/corridor_deadend_5",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 3,
+      "element": {
+        "location": "prototypedungeons:ending_pieces/corridor_deadend_6",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 3,
+      "element": {
+        "location": "prototypedungeons:ending_pieces/corridor_deadend_7",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 3,
+      "element": {
+        "location": "prototypedungeons:ending_pieces/corridor_deadend_8",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 3,
+      "element": {
+        "location": "prototypedungeons:ending_pieces/corridor_deadend_9",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 3,
+      "element": {
+        "location": "prototypedungeons:ending_pieces/corridor_deadend_10",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 3,
+      "element": {
+        "location": "prototypedungeons:ending_pieces/corridor_deadend_11",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 3,
+      "element": {
+        "location": "prototypedungeons:ending_pieces/corridor_deadend_12",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 3,
+      "element": {
+        "location": "prototypedungeons:ending_pieces/corridor_deadend_13",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 1,
+      "element": {
+        "location": "prototypedungeons:ending_pieces/corridor_deadend_14",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

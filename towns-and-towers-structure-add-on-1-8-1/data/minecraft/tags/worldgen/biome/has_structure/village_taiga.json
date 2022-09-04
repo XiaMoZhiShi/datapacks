@@ -1,0 +1,50 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:taiga",
+    {
+      "id": "biomesoplenty:coniferous_forest",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:dead_forest",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:maple_woods",
+      "required": false
+    },
+    {
+      "id": "byg:borealis_grove",
+      "required": false
+    },
+    {
+      "id": "byg:canadian_shield",
+      "required": false
+    },
+    {
+      "id": "byg:cika_woods",
+      "required": false
+    },
+    {
+      "id": "byg:coniferous_forest",
+      "required": false
+    },
+    {
+      "id": "terralith:alpine_highlands",
+      "required": false
+    },
+    {
+      "id": "terralith:lush_valley",
+      "required": false
+    },
+    {
+      "id": "terralith:rocky_shrubland",
+      "required": false
+    },
+    {
+      "id": "terralith:shield",
+      "required": false
+    }
+  ]
+}

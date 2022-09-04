@@ -1,0 +1,105 @@
+{
+  "name": "milesplayz:western",
+  "fallback": "minecraft:empty",
+  "elements": [
+	{
+      "weight": 10,
+      "element": {
+        "location": "milesplayz:west_path",
+        "processors": "minecraft:empty",
+		"projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{
+      "weight": 20,
+      "element": {
+        "location": "milesplayz:west_house",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{
+      "weight": 20,
+      "element": {
+        "location": "milesplayz:west_house_2",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{
+      "weight": 3,
+      "element": {
+        "location": "milesplayz:jail",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{
+      "weight": 3,
+      "element": {
+        "location": "milesplayz:sheriff",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    	{
+      "weight": 10,
+      "element": {
+        "location": "milesplayz:hotel",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		{
+      "weight": 1,
+      "element": {
+        "location": "milesplayz:watertower",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+		}
+    },
+		{
+      "weight": 10,
+      "element": {
+        "location": "milesplayz:saloon",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+		}
+    },
+		{
+      "weight": 10,
+      "element": {
+        "location": "milesplayz:bank",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+		}
+      },
+		{
+      "weight": 20,
+      "element": {
+        "location": "milesplayz:west_path_2",
+        "processors": "minecraft:empty",
+		"projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+     	 }
+      },
+		{
+      "weight": 20,
+      "element": {
+        "location": "milesplayz:west_path_3",
+        "processors": "minecraft:empty",
+		"projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

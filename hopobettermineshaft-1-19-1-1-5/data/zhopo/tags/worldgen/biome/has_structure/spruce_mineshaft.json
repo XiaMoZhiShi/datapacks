@@ -1,0 +1,27 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:taiga",
+        "minecraft:snowy_taiga",
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga",
+        "minecraft:snowy_plains",
+        "minecraft:lush_caves",
+        {"id": "terralith:cave/andesite_caves", "required": false},
+        {"id": "terralith:cave/deep_caves", "required": false},
+        {"id": "terralith:alpine_grove", "required": false},
+        {"id": "terralith:bryce_canyon", "required": false},
+        {"id": "terralith:cloud_forest", "required": false},
+        {"id": "terralith:cold_shrubland", "required": false},
+        {"id": "terralith:highlands", "required": false},
+        {"id": "terralith:lush_valley", "required": false},
+        {"id": "terralith:red_oasis", "required": false},
+        {"id": "terralith:rocky_shrubland", "required": false},
+        {"id": "terralith:shield", "required": false},
+        {"id": "terralith:valley_clearing", "required": false},
+        {"id": "terralith:wintry_forest", "required": false},
+        {"id": "terralith:wintry_lowlands", "required": false},
+        {"id": "terralith:yellowstone", "required": false},
+        {"id": "wythers:underground", "required": false}
+    ]
+}

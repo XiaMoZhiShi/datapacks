@@ -1,0 +1,15 @@
+    {
+    "schemaVersion": 1,
+    "authors": ["Hoponopono"],
+    "contact": {
+    "discord": "discord.gg/CZQthZJjPc"
+},
+    "environment": "*",
+    "name": "Hopo Better Mineshaft",
+    "id": "hopobettermineshaft",
+    "version": "1.1.5",
+    "description": "§7More and better mineshafts to explore",
+    "license": "All Rights Reserved",
+    "icon": "icon.png"
+    }   
+}

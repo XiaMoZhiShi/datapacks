@@ -1,0 +1,33 @@
+{
+  "name": "prototypedungeons:corridor_udgd_start",
+  "fallback": "prototypedungeons:corridor_udgd_start",
+  "elements": [
+	{	
+      "weight": 2,
+      "element": {
+        "location": "prototypedungeons:into_underground/corridor_udgd_starter1",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 2,
+      "element": {
+        "location": "prototypedungeons:into_underground/corridor_udgd_starter2",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 2,
+      "element": {
+        "location": "prototypedungeons:into_underground/corridor_udgd_starter3",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

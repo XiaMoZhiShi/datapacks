@@ -1,0 +1,45 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": 1
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:splash_potion",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomPotionEffects:[{Id:15b,Amplifier:0b,Duration:400}],CustomPotionColor:2367777}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "text": "Splash Potion of Blindness",
+                                "italic": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:book",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "min": 15,
+                                "max": 20
+                            },
+                            "treasure": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

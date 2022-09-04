@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:shipwreck",
+  "biomes": "#zhopo:has_structure/river_update",
+  "is_beached": false,
+  "spawn_overrides": {},
+  "step": "surface_structures"
+}

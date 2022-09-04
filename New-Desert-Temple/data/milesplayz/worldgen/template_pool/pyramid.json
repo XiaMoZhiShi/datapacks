@@ -1,0 +1,15 @@
+{
+  "name": "milesplayz:pyramid",
+  "fallback": "minecraft:empty",
+  "elements": [
+	{
+      "weight": 20,
+      "element": {
+        "location": "milesplayz:pyramid_corner",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

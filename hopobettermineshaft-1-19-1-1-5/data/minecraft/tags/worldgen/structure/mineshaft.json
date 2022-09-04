@@ -1,0 +1,14 @@
+{
+  "values": [
+    "minecraft:mineshaft",
+    "minecraft:mineshaft_mesa",
+    "hopo:deepslate_mineshaft",
+    "hopo:stone_mineshaft",
+    "hopo:spruce_mineshaft",
+    "hopo:birch_mineshaft",
+    "hopo:acacia_mineshaft",
+    "hopo:dark_oak_mineshaft",
+    "hopo:jungle_mineshaft",
+    "hopo:mangrove_mineshaft"
+  ]
+}

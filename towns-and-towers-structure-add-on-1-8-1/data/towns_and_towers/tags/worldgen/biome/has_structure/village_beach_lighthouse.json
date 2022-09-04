@@ -1,0 +1,22 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:beach",
+        {
+            "id": "biomesoplenty:dune_beach",
+            "required": false
+        },
+        {
+            "id": "byg:rainbow_beach",
+            "required": false
+        },
+        {
+            "id": "byg:windswept_beach",
+            "required": false
+        },
+        {
+            "id": "terralith:gravel_beach",
+            "required": false
+        }
+    ]
+}

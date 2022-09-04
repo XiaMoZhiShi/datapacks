@@ -1,0 +1,22 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:sparse_jungle",
+        {
+            "id": "terralith:tropical_jungle",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:floodplain",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:tropics",
+            "required": false
+        },
+        {
+            "id": "byg:jacaranda_forest",
+            "required": false
+        }
+    ]
+}

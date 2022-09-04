@@ -1,0 +1,25 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "terralith:desert_oasis",
+            "required": false
+        },
+        {
+            "id": "terralith:warped_mesa",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:lush_desert",
+            "required": false
+        },
+        {
+            "id": "byg:windswept_desert",
+            "required": false
+        },
+        {
+            "id": "byg:windswept_dunes",
+            "required": false
+        }
+    ]
+}

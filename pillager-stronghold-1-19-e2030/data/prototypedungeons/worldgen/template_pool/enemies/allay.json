@@ -1,0 +1,22 @@
+{
+  "name": "prototypedungeons:enemies/allay",
+  "fallback": "prototypedungeons:enemies/allay",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:empty_pool_element",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "prototypedungeons:mob_summon/custom_allay",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

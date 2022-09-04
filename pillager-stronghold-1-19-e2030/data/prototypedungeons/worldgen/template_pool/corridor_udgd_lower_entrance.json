@@ -1,0 +1,114 @@
+{
+  "name": "prototypedungeons:corridor_udgd_lower_entrance",
+  "fallback": "minecraft:empty",
+  "elements": [
+	{	
+      "weight": 1,
+      "element": {
+        "location": "prototypedungeons:underground_decor_entrances/corridor_udgd_lower_entrance_1",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 1,
+      "element": {
+        "location": "prototypedungeons:underground_decor_entrances/corridor_udgd_lower_entrance_2",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 1,
+      "element": {
+        "location": "prototypedungeons:underground_decor_entrances/corridor_udgd_lower_entrance_3",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 1,
+      "element": {
+        "location": "prototypedungeons:underground_decor_entrances/corridor_udgd_lower_entrance_4",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 1,
+      "element": {
+        "location": "prototypedungeons:underground_decor_entrances/corridor_udgd_lower_entrance_5",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 1,
+      "element": {
+        "location": "prototypedungeons:underground_decor_entrances/corridor_udgd_lower_entrance_6",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 1,
+      "element": {
+        "location": "prototypedungeons:underground_decor_entrances/corridor_udgd_lower_entrance_7",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 1,
+      "element": {
+        "location": "prototypedungeons:underground_decor_entrances/corridor_udgd_lower_entrance_8",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 1,
+      "element": {
+        "location": "prototypedungeons:underground_decor_entrances/corridor_udgd_lower_entrance_9",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 1,
+      "element": {
+        "location": "prototypedungeons:underground_decor_entrances/corridor_udgd_lower_entrance_10",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 1,
+      "element": {
+        "location": "prototypedungeons:underground_decor_entrances/corridor_udgd_lower_entrance_11",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 1,
+      "element": {
+        "location": "prototypedungeons:underground_decor_entrances/corridor_udgd_lower_entrance_12",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

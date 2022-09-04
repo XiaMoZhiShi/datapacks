@@ -1,0 +1,1 @@
+summon evoker ~ ~-2 ~ {DeathLootTable:"prototypedungeons:customowe/random_totems",PersistenceRequired:1b,Health:80f,HandItems:[{id:'minecraft:totem_of_undying',Count:1b},{}],Attributes:[{Name:generic.max_health,Base:80},{Name:generic.follow_range,Base:30},{Name:generic.armor,Base:8},{Name:generic.armor_toughness,Base:8}]}

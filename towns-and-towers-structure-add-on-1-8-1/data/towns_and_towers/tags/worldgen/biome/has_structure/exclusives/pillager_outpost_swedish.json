@@ -1,0 +1,41 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "terralith:snowy_maple_forest",
+            "required": false
+        },
+        {
+            "id": "terralith:forested_highlands",
+            "required": false
+        },
+        {
+            "id": "terralith:shield",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:fir_clearing",
+            "required": false
+        },
+        {
+            "id": "byg:maple_taiga",
+            "required": false
+        },
+        {
+            "id": "byg:zelkova_forest",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:snowy_fir_clearing",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:snowy_maple_forest",
+            "required": false
+        },
+        {
+            "id": "minecraft:cold_island",
+            "required": false
+        }
+    ]
+}

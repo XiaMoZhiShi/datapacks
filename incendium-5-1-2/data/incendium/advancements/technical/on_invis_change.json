@@ -1,0 +1,16 @@
+{
+  "parent": "incendium:technical/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:invisibility": {}
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "incendium:player/event/on_invis_change"
+  }
+}

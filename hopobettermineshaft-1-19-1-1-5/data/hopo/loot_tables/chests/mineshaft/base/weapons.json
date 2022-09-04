@@ -1,0 +1,191 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 4,
+                "max": 6
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:diamond_sword",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "min": 15,
+                                "max": 30
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": {
+                                "min": 0.05,
+                                "max": 0.3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:diamond_axe",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "min": 15,
+                                "max": 30
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": {
+                                "min": 0.05,
+                                "max": 0.3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:diamond_sword",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": {
+                                "min": 0.05,
+                                "max": 0.3
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:diamond_axe",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": {
+                                "min": 0.05,
+                                "max": 0.3
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "minecraft:iron_sword",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": {
+                                "min": 0.05,
+                                "max": 0.4
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "minecraft:iron_axe",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 0.05,
+                                "max": 0.4
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 8,
+                    "name": "minecraft:iron_sword",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": {
+                                "min": 0.05,
+                                "max": 0.4
+                            },
+                            "add": false
+                        },
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "min": 15,
+                                "max": 30
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 8,
+                    "name": "minecraft:iron_axe",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": {
+                                "min": 0.05,
+                                "max": 0.4
+                            },
+                            "add": false
+                        },
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "min": 15,
+                                "max": 30
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "minecraft:shield",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": {
+                                "min": 0.05,
+                                "max": 0.4
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "minecraft:shield",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": {
+                                "min": 0.05,
+                                "max": 0.4
+                            },
+                            "add": false
+                        },
+                        {
+                            "function": "minecraft:enchant_randomly"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

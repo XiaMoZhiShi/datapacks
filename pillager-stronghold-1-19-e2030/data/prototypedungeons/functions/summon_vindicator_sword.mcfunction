@@ -1,0 +1,1 @@
+summon vindicator ~ ~-2 ~ {PersistenceRequired:1b,Health:30f,HandItems:[{id:'minecraft:diamond_sword',Count:1b,tag:{Enchantments:[{id:'minecraft:sharpness',lvl:10s},{id:'minecraft:sweeping',lvl:6s},{id:'minecraft:vanishing_curse',lvl:1s}]}},{}],Attributes:[{Name:generic.max_health,Base:30},{Name:generic.movement_speed,Base:0.4},{Name:generic.armor,Base:12}]}

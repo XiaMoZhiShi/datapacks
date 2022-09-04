@@ -1,0 +1,15 @@
+{
+  "name": "prototypedungeons:enemies/ravager",
+  "fallback": "prototypedungeons:enemies/ravager",
+  "elements": [
+    {
+      "weight": 50,
+      "element": {
+        "location": "prototypedungeons:mob_summon/custom_enemy_ravager",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

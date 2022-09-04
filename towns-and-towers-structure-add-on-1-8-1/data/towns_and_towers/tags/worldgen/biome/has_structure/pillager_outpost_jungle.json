@@ -1,0 +1,26 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:jungle",
+        {
+            "id": "terralith:amethyst_rainforest",
+            "required": false
+        },
+        {
+            "id": "terralith:rocky_jungle",
+            "required": false
+        },
+        {
+            "id": "byg:tropical_rainforest",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:rainforest",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:rocky_rainforest",
+            "required": false
+        }
+    ]
+}

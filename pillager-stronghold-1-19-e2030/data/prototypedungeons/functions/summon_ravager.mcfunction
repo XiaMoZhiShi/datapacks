@@ -1,0 +1,1 @@
+summon ravager ~ ~-2 ~ {DeathLootTable:"chests/shipwreck_treasure",PersistenceRequired:1b,Health:150f,Attributes:[{Name:generic.max_health,Base:150},{Name:generic.follow_range,Base:40},{Name:generic.knockback_resistance,Base:1},{Name:generic.movement_speed,Base:0.32}]}

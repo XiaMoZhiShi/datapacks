@@ -1,0 +1,18 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:bamboo_jungle",
+        "minecraft:jungle",
+        "minecraft:sparse_jungle",
+        "minecraft:lush_caves",
+        {"id": "terralith:cave/fungal_caves", "required": false},
+        {"id": "terralith:cave/granite_caves", "required": false},
+        {"id": "terralith:desert_oasis", "required": false},
+        {"id": "terralith:jungle_mountains", "required": false},
+        {"id": "terralith:red_oasis", "required": false},
+        {"id": "terralith:rocky_jungle", "required": false},
+        {"id": "terralith:sandstone_valley", "required": false},
+        {"id": "terralith:tropical_jungle", "required": false},
+        {"id": "wythers:underground", "required": false}
+    ]
+}

@@ -1,0 +1,267 @@
+{
+    "name": "hopo:room/jungle_mineshaft",
+    "fallback": "hopo:room/jungle_mineshaft",
+    "elements": [
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_amethyst",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_amethyst"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_archer",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_archer"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_armor",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_armor"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_bedroom",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_bedroom"
+            }
+        },
+        {
+            "weight": 80,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_bedroom_1",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_bedroom"
+            }
+        },
+        {
+            "weight": 80,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_bedroom_2",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_bedroom"
+            }
+        },
+        {
+            "weight": 80,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_bedroom_3",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_bedroom"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_books",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_books"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_brown_mushroom",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_brown_mushroom"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_copper",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_copper"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_crafting",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_crafting"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_emerald",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_emerald"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_food",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_food"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_fossils",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_fossils"
+            }
+        },
+        {
+            "weight": 80,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_fossils_1",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_fossils"
+            }
+        },
+        {
+            "weight": 80,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_fossils_2",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_fossils"
+            }
+        },
+        {
+            "weight": 80,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_fossils_3",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_fossils"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_gold",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_gold"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_iron",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_iron"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_lapis",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_lapis"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_potions",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_potions"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_prison",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_prison"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_red_mushroom",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_red_mushroom"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_redstone",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_redstone"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_rip",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_rip"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_smelting",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_smelting"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_tnt",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_tnt"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_tools",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_tools"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/jungle/room_weapons",
+                "projection": "rigid",
+                "processors": "hopo:jungle/degraded_weapons"
+            }
+        }
+    ]
+}

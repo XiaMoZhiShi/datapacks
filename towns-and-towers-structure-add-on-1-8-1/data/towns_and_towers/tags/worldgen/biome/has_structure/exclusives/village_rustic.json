@@ -1,0 +1,29 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "byg:autumnal_forest",
+            "required": false
+        },
+        {
+            "id": "byg:autumnal_taiga",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:boreal_forest",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:seasonal_forest",
+            "required": false
+        },
+        {
+            "id": "promenade:pumpkin_pastures",
+            "required": false
+        },
+        {
+            "id": "minecraft:harvest_fields",
+            "required": false
+        }
+    ]
+}

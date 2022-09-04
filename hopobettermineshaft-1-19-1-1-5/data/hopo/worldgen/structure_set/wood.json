@@ -1,0 +1,37 @@
+{
+    "structures": [
+        {
+            "structure": "hopo:acacia_mineshaft",
+            "weight": 10
+        },
+        {
+            "structure": "hopo:birch_mineshaft",
+            "weight": 10
+        },
+        {
+            "structure": "hopo:dark_oak_mineshaft",
+            "weight": 10
+        },
+        {
+            "structure": "hopo:jungle_mineshaft",
+            "weight": 10
+        },
+        {
+            "structure": "hopo:oak_mineshaft",
+            "weight": 10
+        },
+        {
+            "structure": "hopo:spruce_mineshaft",
+            "weight": 10
+        },
+        {
+            "structure": "hopo:mangrove_mineshaft",
+            "weight": 10
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 28,
+        "separation": 4,
+        "salt": 123456789    }
+}

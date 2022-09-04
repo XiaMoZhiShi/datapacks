@@ -1,0 +1,15 @@
+{
+  "name": "prototypedungeons:corridor_top",
+  "fallback": "prototypedungeons:corridor_top",
+  "elements": [
+	{	
+      "weight": 1,
+      "element": {
+        "location": "prototypedungeons:castle_parts/corridor_top_part1",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

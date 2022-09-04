@@ -1,0 +1,22 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga",
+        {
+            "id": "terralith:siberian_taiga",
+            "required": false
+        },
+        {
+            "id": "terralith:valley_clearing",
+            "required": false
+        },
+        {
+            "id": "byg:black_forest",
+            "required": false
+        },        {
+            "id": "byg:dacite_ridges",
+            "required": false
+        }
+    ]
+}

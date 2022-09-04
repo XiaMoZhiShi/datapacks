@@ -1,0 +1,15 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:flower_forest",
+        "minecraft:birch_forest",
+        "minecraft:old_growth_birch_forest",
+        "minecraft:lush_caves",
+        {"id": "terralith:cave/diorite_caves", "required": false},
+        {"id": "terralith:birch_taiga", "required": false},
+        {"id": "terralith:orchid_swamp", "required": false},
+        {"id": "terralith:temperate_highlands", "required": false},
+        {"id": "terralith:white_cliffs", "required": false},
+        {"id": "wythers:underground", "required": false}
+    ]
+}

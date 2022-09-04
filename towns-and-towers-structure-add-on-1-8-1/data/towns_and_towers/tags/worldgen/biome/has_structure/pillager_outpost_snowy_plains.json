@@ -1,0 +1,18 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:snowy_plains",
+        {
+            "id": "biomesoplenty:cold_desert",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:muskeg",
+            "required": false
+        },
+        {
+            "id": "byg:frosted_coniferous_forest",
+            "required": false
+        }
+    ]
+}

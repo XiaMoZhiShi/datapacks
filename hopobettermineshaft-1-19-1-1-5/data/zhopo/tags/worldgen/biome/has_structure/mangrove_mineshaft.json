@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:swamp",
+        "minecraft:mangrove_swamp",
+        {"id": "terralith:cave/underground_jungle", "required": false},
+        {"id": "wythers:underground", "required": false}
+   ]
+}

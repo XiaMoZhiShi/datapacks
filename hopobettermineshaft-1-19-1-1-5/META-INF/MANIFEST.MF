@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: hopobettermineshaft
+Specification-Vendor: hopobettermineshaftsareus
+Specification-Version: 1
+Implementation-Title: HopoBetterMineShaft
+Implementation-Version: 1.19-1.0.0
+Implementation-Vendor: hopobettermineshaftsareus
+Implementation-Timestamp: 2022-05-15T10:34:29+0800
+

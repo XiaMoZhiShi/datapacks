@@ -1,0 +1,15 @@
+{
+  "name": "prototypedungeons:enemies/vindicator_axe",
+  "fallback": "prototypedungeons:enemies/vindicator_axe",
+  "elements": [
+    {
+      "weight": 50,
+      "element": {
+        "location": "prototypedungeons:mob_summon/custom_enemy_vindicator_axe",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

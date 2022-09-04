@@ -1,0 +1,34 @@
+--- The real update & more mineshafts --- 3/19/2022
+♦ Improved a lot the placement of mineshafts, byebye ugly air spaces.
+♦ Added 5 more types of mineshafts: spruce, birch, jungle, acacia and dark oak, they spawn in there respective biome.
+♦ Make mineshafts larger, is gonna help a lot if you wanna find caves.
+--- Advancements & tweaking generation --- 3/26/2022
+♦ Now it has 2 new advancements.
+♦ Mineshafts are just a little bit more common now, and also tweak the generation.
+--- Compatibility & Rewarding --- 4/30/2022
+♦ TheBrackenPack compatibility, a cool dimension datapack.
+♦ Added 5 more rooms and also they spawn more frequently.
+♦ Added mineshaft mobs, go prepare.
+♦ Added traps, occasionally they are gonna generate in some paths, be careful on your steps. 
+♦ Lots of Bug fixes and tweaks. (locate command, generation, spamming logs, lag)
+--- Fabric/Forge Mod version --- 5/15/2022
+♦ Fixed a unused loottable on a room
+♦ And yes! Mod version have been release, someone was asking for it, here is! 
+--- 1.19 Update --- 6/11/2022
+♦ Literally improve everything
+♦ Add new paths with lots of variations
+♦ Minecarts can now spawn
+♦ Nerfed zombies that spawn on rooms 
+♦ Increase the spawn of the rooms (again lol)
+♦ Mangrove mineshaft is real!
+♦ Improve the desing of some pillars
+♦ Mineshaft can now spawn on deepslate levels
+♦ Fix bug when mineshaft spawn near rivers or oceans
+♦ Fix untencional bad generation
+♦ Fix some trap that usually explode everything lol
+--- The "Minecart" Update --- 7/15/2022
+♦ Fix "Hanging entity at invalid position" line, spamming on logs
+♦ Added new paths
+♦ Added minecart exploration! these include new loots, some lore, and teach you some sculk mechanics
+♦ Added Compatibility with "William Wythers' Overhauled" Worldgen
+♦ Improve performance of generation

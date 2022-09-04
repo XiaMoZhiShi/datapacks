@@ -1,0 +1,21 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "terralith:highlands",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:highland",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:highland_moor",
+            "required": false
+        },
+        {
+            "id": "minecraft:temperate_island",
+            "required": false
+        }
+    ]
+}

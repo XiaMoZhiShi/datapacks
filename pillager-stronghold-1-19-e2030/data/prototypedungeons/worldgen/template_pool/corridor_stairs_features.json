@@ -1,0 +1,132 @@
+{
+  "name": "prototypedungeons:corridor_stairs_features",
+  "fallback": "prototypedungeons:corridor_stairs_features",
+  "elements": [
+	{	
+      "weight": 2,
+      "element": {
+        "location": "prototypedungeons:stairwall_decor/corridor_stairs_fullwall",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 2,
+      "element": {
+        "location": "prototypedungeons:stairwall_decor/corridor_stairs_walldecor_1",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 2,
+      "element": {
+        "location": "prototypedungeons:stairwall_decor/corridor_stairs_walldecor_2",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 2,
+      "element": {
+        "location": "prototypedungeons:stairwall_decor/corridor_stairs_walldecor_3",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 2,
+      "element": {
+        "location": "prototypedungeons:stairwall_decor/corridor_stairs_walldecor_4",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 2,
+      "element": {
+        "location": "prototypedungeons:stairwall_decor/corridor_stairs_walldecor_5",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 2,
+      "element": {
+        "location": "prototypedungeons:stairwall_decor/corridor_stairs_walldecor_6",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 2,
+      "element": {
+        "location": "prototypedungeons:stairwall_decor/corridor_stairs_walldecor_7",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 2,
+      "element": {
+        "location": "prototypedungeons:stairwall_decor/corridor_stairs_walldecor_8",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 2,
+      "element": {
+        "location": "prototypedungeons:stairwall_decor/corridor_stairs_walldecor_9",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 2,
+      "element": {
+        "location": "prototypedungeons:stairwall_decor/corridor_stairs_walldecor_10",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 2,
+      "element": {
+        "location": "prototypedungeons:stairwall_decor/corridor_stairs_walldecor_11",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 2,
+      "element": {
+        "location": "prototypedungeons:stairwall_decor/corridor_stairs_walldecor_12",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 2,
+      "element": {
+        "location": "prototypedungeons:stairwall_decor/corridor_stairs_walldecor_13",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

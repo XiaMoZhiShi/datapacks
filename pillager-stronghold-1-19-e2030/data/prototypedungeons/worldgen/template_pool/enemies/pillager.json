@@ -1,0 +1,15 @@
+{
+  "name": "prototypedungeons:enemies/pillager",
+  "fallback": "prototypedungeons:enemies/pillager",
+  "elements": [
+    {
+      "weight": 50,
+      "element": {
+        "location": "prototypedungeons:mob_summon/custom_enemy_pillager",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

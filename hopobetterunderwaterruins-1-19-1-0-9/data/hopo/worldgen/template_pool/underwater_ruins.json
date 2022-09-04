@@ -1,0 +1,204 @@
+{
+    "name": "hopo:underwater_ruins",
+    "fallback": "hopo:underwater_ruins",
+    "elements": [
+        {       //COPPER//
+            "weight": 96,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/copper/1",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 96,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/copper/2",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 96,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/copper/3",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 96,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/copper/4",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {       //CORAL//
+            "weight": 96,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/coral/1",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 96,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/coral/2",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 96,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/coral/3",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {       //FOOD//
+            "weight": 96,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/food/1",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 96,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/food/2",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 96,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/food/3",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 96,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/food/4",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {       //MATERIALS//
+            "weight": 98,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/materials/1",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 98,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/materials/2",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 98,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/materials/3",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 98,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/materials/4",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 98,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/materials/5",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {       //PRISMARINE//
+            "weight": 96,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/prismarine/1",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 96,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/prismarine/2",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/prismarine/3",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 96,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/prismarine/4",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        },
+        {  //PATHS//
+            "weight": 96,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/path/2",
+                "projection": "rigid",
+                "processors": "hopo:path/detail"
+            }
+        },
+        {
+            "weight": 96,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:underwater_ruins/path/2",
+                "projection": "rigid",
+                "processors": "hopo:path/detail"
+            }
+        }
+    ]
+}

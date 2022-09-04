@@ -1,0 +1,26 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:savanna",
+    {
+      "id": "biomesoplenty:dryland",
+      "required": false
+    },
+    {
+      "id": "byg:araucaria_savanna",
+      "required": false
+    },
+    {
+      "id": "byg:baobab_savanna",
+      "required": false
+    },
+    {
+      "id": "byg:firecracker_shrubland",
+      "required": false
+    },
+    {
+      "id": "terralith:savanna_slopes",
+      "required": false
+    }
+  ]
+}

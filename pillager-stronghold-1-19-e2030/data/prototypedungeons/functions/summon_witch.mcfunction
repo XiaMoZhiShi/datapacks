@@ -1,0 +1,1 @@
+summon witch ~ ~-2 ~ {PersistenceRequired:1b,Health:50f,Attributes:[{Name:generic.max_health,Base:50},{Name:generic.movement_speed,Base:0.4},{Name:generic.armor,Base:8}]}

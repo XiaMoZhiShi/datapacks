@@ -1,0 +1,18 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:meadow",
+        {
+            "id": "terralith:blooming_plateau",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:clover_patch",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:field",
+            "required": false
+        }
+    ]
+}

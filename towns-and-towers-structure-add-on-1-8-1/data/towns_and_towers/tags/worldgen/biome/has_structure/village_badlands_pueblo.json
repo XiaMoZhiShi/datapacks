@@ -1,0 +1,23 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:badlands",
+        {
+            "id": "byg:autacama_desert",
+            "required": false
+        },
+        {
+            "id": "terralith:arid_highlands",
+            "required": false
+        },
+        {
+            "id": "terralith:red_oasis",
+            "required": false
+        },
+        {
+            "id": "terralith:snowy_badlands",
+            "required": false
+        }
+
+    ]
+}

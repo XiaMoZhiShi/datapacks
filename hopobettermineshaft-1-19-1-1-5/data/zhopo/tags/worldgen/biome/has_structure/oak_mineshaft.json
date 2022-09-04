@@ -1,0 +1,19 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:beach",
+        "minecraft:plains",
+        "minecraft:forest",
+        "minecraft:grove",
+        "minecraft:lush_caves",
+        {"id": "terralith:alpine_highlands", "required": false},
+        {"id": "terralith:blooming_plateau", "required": false},
+        {"id": "terralith:blooming_valley", "required": false},
+        {"id": "terralith:haze_mountain", "required": false},
+        {"id": "terralith:shrubland", "required": false},
+        {"id": "terralith:steppe", "required": false},
+        {"id": "terralith:yosemite_cliffs", "required": false},
+        {"id": "terralith:yosemite_lowlands", "required": false},
+        {"id": "wythers:underground", "required": false}
+    ]
+}

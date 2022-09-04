@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: hopomod
+Specification-Vendor: hopomodsareus
+Specification-Version: 1
+Implementation-Title: hopomod
+Implementation-Version: 1.0.0
+Implementation-Vendor: hopomodsareus
+Implementation-Timestamp: 2022-07-06T18:05:39+0800
+

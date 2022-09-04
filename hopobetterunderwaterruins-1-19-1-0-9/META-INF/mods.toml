@@ -1,0 +1,10 @@
+modLoader = "javafml"
+loaderVersion = "[38,)"
+license = "All Rights Reserved"
+[[mods]]
+modId = "hopour"
+version = "1.0.9"
+displayName = "HopoBetterUnderwaterRuins"
+credits = ""
+authors = "Hoponopono"
+description = ""

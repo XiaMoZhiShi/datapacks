@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "terralith:alpha_islands",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:origin_valley",
+            "required": false
+        }
+    ]
+}

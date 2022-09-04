@@ -1,0 +1,23 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:dripstone_caves",
+        "minecraft:deep_dark",
+        {"id": "terralith:cave/crystal_caves", "required": false},
+        {"id": "terralith:cave/frostfire_caves", "required": false},
+        {"id": "terralith:cave/ice_caves", "required": false},
+        {"id": "terralith:cave/tuff_caves", "required": false},
+        {"id": "terralith:cave/infested_caves", "required": false},
+        {"id": "terralith:ice_marsh", "required": false},
+        {"id": "terralith:ashen_savanna", "required": false},
+        {"id": "terralith:caldera", "required": false},
+        {"id": "terralith:warped_mesa", "required": false},
+        {"id": "terralith:emerald_peaks", "required": false},
+        {"id": "terralith:frozen_cliffs", "required": false},
+        {"id": "terralith:glacial_chasm", "required": false},
+        {"id": "terralith:volcanic_crater", "required": false},
+        {"id": "terralith:volcanic_peaks", "required": false},
+        {"id": "terralith:windswept_spires", "required": false},
+        {"id": "wythers:underground", "required": false}
+    ]
+}
