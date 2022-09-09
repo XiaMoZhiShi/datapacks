@@ -1,4 +1,4 @@
-scoreboard players add @s ne_race_time 1
+scoreboard players operation @s ne_race_time += clockdiff nife_clock
 scoreboard players operation $sourceTick nife_stats = @s ne_race_time
 function nifeather:modules/time/default
 

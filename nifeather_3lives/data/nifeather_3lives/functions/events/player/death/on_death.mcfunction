@@ -6,7 +6,7 @@ scoreboard players remove @s n3l_lives 1
 execute if entity @s[tag=n3l_curing, scores={n3l_lives=0..}] run scoreboard players set @s n3l_lives 0
 execute if entity @s[scores={n3l_lives=..0}] run scoreboard players set @s n3l_lives 0
 
-scoreboard players operation @s n3l_lastDeathTime = clock nife_stats
+scoreboard players operation @s n3l_lastDeathTime = clock nife_clock
 
 execute if score @s n3l_lives matches ..0 run function nifeather_3lives:events/player/death/types/specator_death
 
