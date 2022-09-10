@@ -1,5 +1,5 @@
-scoreboard players remove @s n3l_se_clock 1
-scoreboard players remove @s n3l_st_clock 1
+scoreboard players operation @s n3l_se_clock -= clockdiff nife_clock
+scoreboard players operation @s n3l_st_clock -= clockdiff nife_clock
 
 #检查触发器
 execute if entity @s[tag=n3l_stT_healthfit, scores={nife_health=12..}, tag=__n3l_sprintStarted] run tag @s add __n3l_can_trigger
