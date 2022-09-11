@@ -1,0 +1,26 @@
+From 8b4ff3adf9ca2d18e50e6adb258a4924c5ccb9ef Mon Sep 17 00:00:00 2001
+From: MATRIX-feather <midnightcarnival@outlook.com>
+Date: Mon, 12 Sep 2022 06:13:14 +0800
+Subject: [PATCH] =?UTF-8?q?misc:=20=E8=B0=83=E6=95=B4Hovering=20Inferno?=
+ =?UTF-8?q?=E5=8F=AC=E5=94=A4=E5=A4=B1=E8=B4=A5=E7=9A=84=E6=96=87=E6=9C=AC?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Signed-off-by: MATRIX-feather <midnightcarnival@outlook.com>
+---
+ .../incendium/functions/hovering_inferno/summon_fail.mcfunction | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/incendium-5-1-2/data/incendium/functions/hovering_inferno/summon_fail.mcfunction b/incendium-5-1-2/data/incendium/functions/hovering_inferno/summon_fail.mcfunction
+index 9bea49e..b558282 100644
+--- a/incendium-5-1-2/data/incendium/functions/hovering_inferno/summon_fail.mcfunction
++++ b/incendium-5-1-2/data/incendium/functions/hovering_inferno/summon_fail.mcfunction
+@@ -1 +1 @@
+-tellraw @a[distance=..32] ["", {"translate":"text.hub.hint", "with":["?", "地狱伊伏诺正在上班，请稍后再来"]}]
+\ No newline at end of file
++tellraw @a[distance=..32] ["", {"translate":"text.hub.hint", "with":["?", ["别处正在挑战", {"translate":"Hovering Inferno"}, "，请稍后再来。"]]}]
+\ No newline at end of file
+-- 
+2.34.1
+
