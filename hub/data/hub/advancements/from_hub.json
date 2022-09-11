@@ -6,8 +6,7 @@
             "trigger": "changed_dimension",
             "conditions": 
             {
-                "from": "nifeather:hub",
-                "to": "minecraft:witp"
+                "from": "nifeather:hub"
             }
         }       
     },
