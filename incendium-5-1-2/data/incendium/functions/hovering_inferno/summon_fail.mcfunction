@@ -1,0 +1,1 @@
+tellraw @a[distance=..32] ["", {"translate":"text.hub.hint", "with":["?", "地狱伊伏诺正在上班，请稍后再来"]}]

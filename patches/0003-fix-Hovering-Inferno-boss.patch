@@ -1,0 +1,150 @@
+From ce2715793d6ec972c8d83eee37afd6d694cde2b6 Mon Sep 17 00:00:00 2001
+From: MATRIX-feather <midnightcarnival@outlook.com>
+Date: Sun, 11 Sep 2022 22:59:18 +0800
+Subject: [PATCH] =?UTF-8?q?fix:=20Hovering=20Inferno=E6=98=AF=E5=8D=95?=
+ =?UTF-8?q?=E5=AE=9E=E4=BE=8Bboss=20fix:=20=E4=BF=AE=E5=A4=8DHovering=20In?=
+ =?UTF-8?q?ferno=E7=9A=84bossbar=E6=B2=A1=E6=9C=89=E7=BF=BB=E8=AF=91?=
+ =?UTF-8?q?=E7=9A=84=E9=97=AE=E9=A2=98?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Signed-off-by: MATRIX-feather <midnightcarnival@outlook.com>
+---
+ .../hovering_inferno/kill.mcfunction          |  2 +
+ .../hovering_inferno/summon.mcfunction        | 44 +----------------
+ .../hovering_inferno/summon_fail.mcfunction   |  1 +
+ .../hovering_inferno/summon_real.mcfunction   | 47 +++++++++++++++++++
+ 4 files changed, 52 insertions(+), 42 deletions(-)
+ create mode 100644 incendium-5-1-2/data/incendium/functions/hovering_inferno/summon_fail.mcfunction
+ create mode 100644 incendium-5-1-2/data/incendium/functions/hovering_inferno/summon_real.mcfunction
+
+diff --git a/incendium-5-1-2/data/incendium/functions/hovering_inferno/kill.mcfunction b/incendium-5-1-2/data/incendium/functions/hovering_inferno/kill.mcfunction
+index 006551e..b68f5bb 100755
+--- a/incendium-5-1-2/data/incendium/functions/hovering_inferno/kill.mcfunction
++++ b/incendium-5-1-2/data/incendium/functions/hovering_inferno/kill.mcfunction
+@@ -25,3 +25,5 @@ schedule clear incendium:hovering_inferno/timer
+ execute as @a run function incendium:border_of_life/stop
+ 
+ data remove storage incendium:main inferno
++
++scoreboard players set $infernoRunning nife_stats 0
+\ No newline at end of file
+diff --git a/incendium-5-1-2/data/incendium/functions/hovering_inferno/summon.mcfunction b/incendium-5-1-2/data/incendium/functions/hovering_inferno/summon.mcfunction
+index 862bf99..713aff3 100755
+--- a/incendium-5-1-2/data/incendium/functions/hovering_inferno/summon.mcfunction
++++ b/incendium-5-1-2/data/incendium/functions/hovering_inferno/summon.mcfunction
+@@ -1,45 +1,5 @@
+ # from: entity/other/init
+ # @s: item
+ 
+-scoreboard players set $running in.inferno 0
+-scoreboard players set $cheater in.inferno 0
+-scoreboard players set $last.timer in.inferno 0
+-
+-# summon the damn thing
+-execute at @e[type=marker,tag=in.altar,distance=..4] run summon blaze ~ ~4 ~ {Attributes: [{Base: 700.0d, Name: "minecraft:generic.max_health"}, {Base: 20.0d, Name: "minecraft:generic.armor"}, {Base: 0.87d, Name: "minecraft:generic.knockback_resistance"}, {Base: 20.0d, Name: "minecraft:generic.attack_knockback"}, {Base: 12.0d, Name: "minecraft:generic.armor_toughness"}, {Base: 0.4d, Name: "minecraft:generic.movement_speed"}, {Base: 20.0d, Name: "minecraft:generic.attack_damage"}, {Base: 70.0d, Name: "minecraft:generic.follow_range"}], PersistenceRequired: 1b, Tags: ["in.hovering_inferno"], Health: 700.0f, Rotation: [-129.48582f, 0.0f], HandItems: [{id:"totem_of_undying",Count:1b}, {}], CustomName: '{"text":"Hovering Inferno", "color": "#ff6600"}', CanPickUpLoot: 0b, DeathLootTable:"incendium:hovering_inferno"}
+-execute as @e[type=blaze,tag=in.hovering_inferno,tag=!in.checked,distance=..25] at @s run function incendium:hovering_inferno/inferno/init
+-
+-# get bossbar
+-bossbar add incendium:inferno {"text":"Hovering Inferno","color":"#ff6600"}
+-
+-bossbar set incendium:inferno color yellow
+-bossbar set incendium:inferno value 700
+-bossbar set incendium:inferno max 700
+-
+-# status
+-data modify storage incendium:main inferno.mode set value 'normal'
+-data remove storage incendium:temp bullet
+-
+-execute as @a run function incendium:border_of_life/stop
+-
+-# bootstrap functions
+-schedule clear incendium:hovering_inferno/2s
+-schedule clear incendium:hovering_inferno/main
+-schedule clear incendium:hovering_inferno/loop
+-schedule clear incendium:hovering_inferno/timer
+-
+-function incendium:hovering_inferno/spell/clear_all
+-
+-function incendium:hovering_inferno/armor/summon
+-schedule function incendium:hovering_inferno/2s 2t replace
+-schedule function incendium:hovering_inferno/main 2t replace
+-schedule function incendium:hovering_inferno/loop 2t replace
+-
+-# player
+-advancement grant @a[distance=..30,gamemode=!spectator] only incendium:infernal_dunes/inferno/summon
+-
+-# kill nether star and destory (physical) altar
+-#  remember nether_star = @s
+-execute at @e[type=marker,tag=in.altar,distance=..4] run fill ~-3 ~1 ~-3 ~3 ~7 ~3 minecraft:air destroy
+-
+-kill @s[type=item]
++execute if score $infernoRunning nife_stats matches 1 run function incendium:hovering_inferno/summon_fail
++execute unless score $infernoRunning nife_stats matches 1 run function incendium:hovering_inferno/summon_real
+\ No newline at end of file
+diff --git a/incendium-5-1-2/data/incendium/functions/hovering_inferno/summon_fail.mcfunction b/incendium-5-1-2/data/incendium/functions/hovering_inferno/summon_fail.mcfunction
+new file mode 100644
+index 0000000..9bea49e
+--- /dev/null
++++ b/incendium-5-1-2/data/incendium/functions/hovering_inferno/summon_fail.mcfunction
+@@ -0,0 +1 @@
++tellraw @a[distance=..32] ["", {"translate":"text.hub.hint", "with":["?", "地狱伊伏诺正在上班，请稍后再来"]}]
+\ No newline at end of file
+diff --git a/incendium-5-1-2/data/incendium/functions/hovering_inferno/summon_real.mcfunction b/incendium-5-1-2/data/incendium/functions/hovering_inferno/summon_real.mcfunction
+new file mode 100644
+index 0000000..1534c35
+--- /dev/null
++++ b/incendium-5-1-2/data/incendium/functions/hovering_inferno/summon_real.mcfunction
+@@ -0,0 +1,47 @@
++# from: entity/other/init
++# @s: item
++
++scoreboard players set $running in.inferno 0
++scoreboard players set $cheater in.inferno 0
++scoreboard players set $last.timer in.inferno 0
++
++# summon the damn thing
++execute at @e[type=marker,tag=in.altar,distance=..4] run summon blaze ~ ~4 ~ {Attributes: [{Base: 700.0d, Name: "minecraft:generic.max_health"}, {Base: 20.0d, Name: "minecraft:generic.armor"}, {Base: 0.87d, Name: "minecraft:generic.knockback_resistance"}, {Base: 20.0d, Name: "minecraft:generic.attack_knockback"}, {Base: 12.0d, Name: "minecraft:generic.armor_toughness"}, {Base: 0.4d, Name: "minecraft:generic.movement_speed"}, {Base: 20.0d, Name: "minecraft:generic.attack_damage"}, {Base: 70.0d, Name: "minecraft:generic.follow_range"}], PersistenceRequired: 1b, Tags: ["in.hovering_inferno"], Health: 700.0f, Rotation: [-129.48582f, 0.0f], HandItems: [{id:"totem_of_undying",Count:1b}, {}], CustomName: '{"text":"Hovering Inferno", "color": "#ff6600"}', CanPickUpLoot: 0b, DeathLootTable:"incendium:hovering_inferno"}
++execute as @e[type=blaze,tag=in.hovering_inferno,tag=!in.checked,distance=..25] at @s run function incendium:hovering_inferno/inferno/init
++
++# get bossbar
++bossbar add incendium:inferno {"translate":"Hovering Inferno","color":"#ff6600"}
++
++bossbar set incendium:inferno color yellow
++bossbar set incendium:inferno value 700
++bossbar set incendium:inferno max 700
++
++# status
++data modify storage incendium:main inferno.mode set value 'normal'
++data remove storage incendium:temp bullet
++
++execute as @a run function incendium:border_of_life/stop
++
++# bootstrap functions
++schedule clear incendium:hovering_inferno/2s
++schedule clear incendium:hovering_inferno/main
++schedule clear incendium:hovering_inferno/loop
++schedule clear incendium:hovering_inferno/timer
++
++function incendium:hovering_inferno/spell/clear_all
++
++function incendium:hovering_inferno/armor/summon
++schedule function incendium:hovering_inferno/2s 2t replace
++schedule function incendium:hovering_inferno/main 2t replace
++schedule function incendium:hovering_inferno/loop 2t replace
++
++# player
++advancement grant @a[distance=..30,gamemode=!spectator] only incendium:infernal_dunes/inferno/summon
++
++# kill nether star and destory (physical) altar
++#  remember nether_star = @s
++execute at @e[type=marker,tag=in.altar,distance=..4] run fill ~-3 ~1 ~-3 ~3 ~7 ~3 minecraft:air destroy
++
++kill @s[type=item]
++
++scoreboard players set $infernoRunning nife_stats 1
+\ No newline at end of file
+-- 
+2.34.1
+
