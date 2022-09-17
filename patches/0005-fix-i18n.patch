@@ -1,0 +1,56 @@
+From 88ad03478edfa543424d0c2c3065dc98d2eda27b Mon Sep 17 00:00:00 2001
+From: MATRIX-feather <nekocrystal@xiamomc.ink>
+Date: Sat, 17 Sep 2022 14:34:23 +0800
+Subject: [PATCH] =?UTF-8?q?fix:=20=E4=BF=AE=E5=A4=8D=E6=9C=AC=E5=9C=B0?=
+ =?UTF-8?q?=E5=8C=96=E9=97=AE=E9=A2=98?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Signed-off-by: MATRIX-feather <nekocrystal@xiamomc.ink>
+---
+ .../advancements/quartz_flats/rescue_mission.json         | 8 ++++++--
+ .../loot_tables/artifact/misc/restless_nature.json        | 4 ++--
+ 2 files changed, 8 insertions(+), 4 deletions(-)
+
+diff --git a/incendium-5-1-2/data/incendium/advancements/quartz_flats/rescue_mission.json b/incendium-5-1-2/data/incendium/advancements/quartz_flats/rescue_mission.json
+index adbd798..50639f8 100755
+--- a/incendium-5-1-2/data/incendium/advancements/quartz_flats/rescue_mission.json
++++ b/incendium-5-1-2/data/incendium/advancements/quartz_flats/rescue_mission.json
+@@ -3,8 +3,12 @@
+     "icon": {
+       "item": "minecraft:iron_bars"
+     },
+-    "title": "Rescue Mission",
+-    "description": "Enter the Quartz Tower, the prison of the Ghastling",
++    "title": {
++      "translate": "Rescue Mission"
++    },
++    "description": {
++      "translate": "Enter the Quartz Tower, the prison of the Ghastling"
++    },
+     "frame": "task",
+     "show_toast": true,
+     "announce_to_chat": true,
+diff --git a/incendium-5-1-2/data/incendium/loot_tables/artifact/misc/restless_nature.json b/incendium-5-1-2/data/incendium/loot_tables/artifact/misc/restless_nature.json
+index c96d3db..84ed87c 100644
+--- a/incendium-5-1-2/data/incendium/loot_tables/artifact/misc/restless_nature.json
++++ b/incendium-5-1-2/data/incendium/loot_tables/artifact/misc/restless_nature.json
+@@ -17,12 +17,12 @@
+                   "italic": true
+                 },
+                 {
+-                  "text": "with a final wish to regrow",
++                  "translate": "with a final wish to regrow",
+                   "color": "#169e7e",
+                   "italic": true
+                 },
+                 {
+-                  "text": "the lost nature of the Nether",
++                  "translate": "the lost nature of the Nether",
+                   "color": "#169e7e",
+                   "italic": true
+                 },
+-- 
+2.34.1
+
