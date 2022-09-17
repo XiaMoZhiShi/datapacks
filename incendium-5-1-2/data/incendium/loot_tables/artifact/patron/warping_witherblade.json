@@ -23,7 +23,7 @@
                 {
                   "attribute": "minecraft:generic.attack_speed",
                   "name": "d",
-                  "amount": -3.4,
+                  "amount": -2.4,
                   "operation": "addition",
                   "slot": "mainhand"
                 },
@@ -41,20 +41,34 @@
               "entity": "this",
               "lore": [
                 {
-                  "translate": "Used by the wither king Mors to",
+                  "translate": "\"For in life all things return",
                   "color": "#006666",
                   "italic": true
                 },
                 {
-                  "translate": "corrupt and torment the piglins",
+                  "translate": "to death, and in death all things",
                   "color": "#006666",
                   "italic": true
                 },
-                {
-                  "translate": "and their ancient forests in war...",
-                  "color": "#006666",
-                  "italic": true
-                },
+                [
+                  {
+                    "translate": "return to the shadow of ",
+                    "color": "#006666",
+                    "italic": true
+                  },
+                  {
+                    "text": "CENSOR",
+                    "color": "#006666",
+                    "italic": true,
+                    "obfuscated": true
+                  },
+                  {
+                    "text": "\"",
+                    "color": "#006666",
+                    "italic": true,
+                    "obfuscated": false
+                  }
+                ],
                 {
                   "translate": "",
                   "color": "#884400",

@@ -1,6 +1,9 @@
 # from: entity/mobs/init
 # @s: spirit
 
+data modify entity @s CustomName set value {"text":"Restless Spirit","color":"#329e83"}
+team join in.noname @s
+
 attribute @s generic.movement_speed base set 1.1
 attribute @s generic.max_health base set 1
 
@@ -11,5 +14,6 @@ effect give @s invisibility 999999 0 true
 
 tag @s add in.checked
 tag @s add in.ticking_entity
+scoreboard players set @s in.lifetime 150
 
 data modify entity @s DeathLootTable set value 'incendium:entity/spirit'

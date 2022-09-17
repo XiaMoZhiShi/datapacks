@@ -14,6 +14,21 @@
               }
             },
             {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "d",
+                  "amount": {
+                    "min": 11,
+                    "max": 13
+                  },
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
               "function": "minecraft:set_lore",
               "lore": [
                 {

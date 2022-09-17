@@ -25,5 +25,3 @@ schedule clear incendium:hovering_inferno/timer
 execute as @a run function incendium:border_of_life/stop
 
 data remove storage incendium:main inferno
-
-scoreboard players set $infernoRunning nife_stats 0

@@ -30,8 +30,8 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:experience_bottle",
+          "type": "minecraft:loot_table",
+          "name": "incendium:artifact/misc/restless_nature",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -45,6 +45,44 @@
               "count": {
                 "min": 0,
                 "max": 1
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:killed_by_player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:killed_by_player"
               }
             }
           ]

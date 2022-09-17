@@ -36,6 +36,7 @@ scoreboard objectives add in.wet dummy
 scoreboard objectives add in.frozen dummy
 scoreboard objectives add in.shielding dummy
 scoreboard objectives add in.use_map minecraft.used:minecraft.map
+scoreboard objectives add in.use_snowball minecraft.used:minecraft.snowball
 scoreboard objectives add in.scouts_helmet dummy
 
 scoreboard objectives add in.castle_id dummy
@@ -73,8 +74,13 @@ scoreboard objectives add in.trident minecraft.used:minecraft.trident
 scoreboard objectives add in.trident_id dummy
 scoreboard players set $latest.id in.trident_id 0
 
-# mobcap
+# spawncap
 scoreboard objectives add in.spirit_count dummy
+scoreboard objectives add in.toxic_count dummy
+scoreboard objectives add in.lifetime dummy
+
+# scroll of returning
+summon marker ~ ~ ~ {Tags:["in.world_spawn"]}
 
 # we keep this separate incase u want to update the song, etc
 function incendium:border_of_life/load
@@ -90,11 +96,14 @@ team modify in.castle nametagVisibility never
 team modify in.castle color dark_red
 team modify in.castle friendlyFire false
 
-# teams
 team add in.sanctum
 team modify in.sanctum nametagVisibility never
 team modify in.sanctum color aqua
 team modify in.sanctum friendlyFire false
+
+team add in.noname
+team modify in.noname nametagVisibility never
+team modify in.noname color yellow
 
 scoreboard players set %shulker.steps in.constants 30
 

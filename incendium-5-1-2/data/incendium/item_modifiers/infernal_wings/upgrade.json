@@ -36,6 +36,6 @@
     },
     {
       "function": "minecraft:set_nbt",
-      "tag": "{CustomModelData:1450400,incendium:{item:'infernal_wings'}}"
+      "tag": "{CustomModelData:1450201,incendium:{item:'infernal_wings'}}"
     }
   ]

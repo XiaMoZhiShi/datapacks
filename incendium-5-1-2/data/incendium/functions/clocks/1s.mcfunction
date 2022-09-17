@@ -10,4 +10,5 @@ execute as @e[type=blaze,tag=in.dune_blaze] at @s run function incendium:entity/
 
 effect give @e[type=piglin,predicate=incendium:biome/toxic_heap] poison 10 1
 
-tag @e[type=vex,tag=in.baby_ghast,predicate=incendium:random/10] remove in.following
+scoreboard players remove @e[type=vex,tag=in.spirit] in.lifetime 1
+scoreboard players remove @e[type=slime,tag=in.toxic_slime] in.lifetime 1

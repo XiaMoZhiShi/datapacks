@@ -1,14 +1,14 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:polished_blackstone_bricks",
+      "item": "minecraft:gilded_blackstone",
       "nbt": "{Enchantments:[{}]}"
     },
     "title": {
       "translate": "In the Hall of the Piglin King"
     },
     "description": {
-      "translate": "Enter a Forbidden Castle at your own peril"
+      "translate": "In the Golden Age, a great King ruled this castle. But he was betrayed, cursed, and exiled from his Kingdom. This is what remains."
     },
     "frame": "goal",
     "show_toast": true,

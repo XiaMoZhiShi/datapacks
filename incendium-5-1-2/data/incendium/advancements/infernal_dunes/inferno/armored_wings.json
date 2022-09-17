@@ -21,7 +21,7 @@
       "conditions": {
         "items": [
           {
-            "nbt": "{incendium:{item:'infernal_wing'}}",
+            "nbt": "{incendium:{item:'infernal_wings'}}",
             "items": [
               "minecraft:elytra"
             ]

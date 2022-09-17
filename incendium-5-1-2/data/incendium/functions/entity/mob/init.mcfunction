@@ -6,9 +6,6 @@ tag @s add in.checked
 
 #> ## Mob Specifics ##
 
-#> Toxic Slimes
-execute if entity @s[type=magma_cube,predicate=incendium:biome/toxic_heap] run function incendium:entity/toxic_slime/init
-
 #> Blazes
 
 ## Sentry
@@ -30,6 +27,10 @@ execute if entity @s[type=wither_skeleton, predicate=incendium:biome/withered_fo
 #> Spirits
 execute if entity @s[type=magma_cube,predicate=incendium:biome/has/spirit] if score %count in.spirit_count matches ..30 run function incendium:entity/spirit/init
 execute if entity @s[type=magma_cube,predicate=incendium:biome/has/spirit] if score %count in.spirit_count matches 31.. run function incendium:entity/spirit/fail
+
+#> Toxic Slimes
+execute if entity @s[type=magma_cube,predicate=incendium:biome/toxic_heap] if score %count in.toxic_count matches ..30 run function incendium:entity/toxic_slime/init
+execute if entity @s[type=magma_cube,predicate=incendium:biome/toxic_heap] if score %count in.toxic_count matches 31.. run function incendium:entity/toxic_slime/fail
 
 # #> Voltaic Lightning 
 # execute if entity @s[type=silverfish,predicate=incendium:biome/voltaic_heap] run function incendium:entity/voltaic_lightning/spawn

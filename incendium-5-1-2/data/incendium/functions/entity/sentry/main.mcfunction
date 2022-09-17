@@ -1,7 +1,7 @@
 # from: entity/mob/main
 # @s: sentry
 
-particle minecraft:soul_fire_flame ~ ~0.85 ~ 0.1 0.3 0.1 0.02 1 force
+execute if entity @s[tag=!in.sentry_active] run particle minecraft:soul_fire_flame ~ ~0.85 ~ 0.1 0.3 0.1 0.02 1 force @a[distance=..40]
 
 execute if entity @s[tag=in.sentry_active] run particle minecraft:end_rod ~ ~1.25 ~ 0.3 0.3 0.3 0.05 2 force @a[distance=..40]
 

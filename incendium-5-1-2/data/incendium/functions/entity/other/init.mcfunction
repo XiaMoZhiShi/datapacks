@@ -43,3 +43,6 @@ loot replace entity @s[type=minecraft:armor_stand,tag=in.sword] weapon.mainhand 
 
 #> Voltaic Lightning
 execute if entity @s[type=area_effect_cloud,tag=in.thunder] run function incendium:entity/voltaic_lightning/spawn
+
+# Quartz Tower GHastling init
+execute if entity @s[type=marker,tag=in.tower_ghastling] run function incendium:entity/baby_ghast/init

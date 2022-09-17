@@ -53,12 +53,12 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "weight": 2,
+          "weight": 10,
           "name": "incendium:artifact/weapon/chilling_blade"
         },
         {
           "type": "minecraft:item",
-          "weight": 9,
+          "weight": 2,
           "name": "minecraft:diamond_pickaxe",
           "functions": [
             {
@@ -82,7 +82,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 8,
+          "weight": 1,
           "name": "minecraft:diamond_shovel",
           "functions": [
             {

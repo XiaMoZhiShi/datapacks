@@ -14,10 +14,10 @@ execute unless entity @s[tag=in.following] run stopsound @a[distance=..40] * min
 execute unless entity @s[tag=in.following] run stopsound @a[distance=..40] * minecraft:entity.ghast.warn
 
 # teleports towards
-execute if entity @s[tag=in.following] if entity @a[distance=2..8] facing entity @p[distance=2..8] feet run tp @s ^ ^ ^0.15 
+execute if entity @s[tag=in.following] if entity @a[distance=2..24] facing entity @p[distance=2..24] feet run tp @s ^ ^ ^0.17 
 
 # visual
-particle minecraft:end_rod ~ ~0.55 ~ 0.2 0.01 0.2 0 3 force
+particle minecraft:end_rod ~ ~0.55 ~ 0.15 0.01 0.15 0 1 force
 
 # death
 execute unless entity @e[type=allay,distance=..1,tag=in.baby_head] run kill @s

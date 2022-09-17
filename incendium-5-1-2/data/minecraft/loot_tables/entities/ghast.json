@@ -50,28 +50,6 @@
           ]
         }
       ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "incendium:ghastling",
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "effects": {
-                  "minecraft:regeneration": {},
-                  "minecraft:speed": {},
-                  "minecraft:invisibility": {}
-                }
-              }
-            }
-          ]
-        }
-      ]
     }
   ]
 }

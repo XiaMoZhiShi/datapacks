@@ -30,6 +30,8 @@
 		"minecraft:soul_soil",
 		"minecraft:shroomlight",
 		"minecraft:warped_stem",
-		"minecraft:gravel"
+		"minecraft:gravel",
+		"minecraft:basalt",
+		"minecraft:smooth_basalt"
 	]
 }

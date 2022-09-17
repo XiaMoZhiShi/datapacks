@@ -1,7 +1,8 @@
 # from: entity/mobs/init
 # @s: sentry
 
-execute unless data entity @s CustomName run data modify entity @s CustomName set value {"text": "Pipeline Sentry", "color": "yellow"}
+execute unless data entity @s CustomName run data modify entity @s CustomName set value {"text":"Pipeline Sentry","color":"yellow"}
+team join in.noname @s
 
 execute store result score $hand.items in.dummy if data entity @s HandItems[{id:"minecraft:totem_of_undying"}]
 

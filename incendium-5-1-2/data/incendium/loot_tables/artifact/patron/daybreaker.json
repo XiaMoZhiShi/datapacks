@@ -21,8 +21,8 @@
                   "attribute": "minecraft:generic.attack_speed",
                   "name": "d",
                   "amount": {
-                    "min": 0.3,
-                    "max": 0.45
+                    "min": 0.25,
+                    "max": 0.4
                   },
                   "operation": "multiply_base",
                   "slot": "mainhand"

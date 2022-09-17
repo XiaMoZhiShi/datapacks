@@ -3,9 +3,27 @@
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 2,
+      "weight": 14,
       "element": {
-        "location": "incendium:quartz_tower",
+        "location": "incendium:quartz_tower1",
+        "processors": "minecraft:bastion_generic_degradation",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "incendium:quartz_tower2",
+        "processors": "minecraft:bastion_generic_degradation",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:quartz_tower3",
         "processors": "minecraft:bastion_generic_degradation",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

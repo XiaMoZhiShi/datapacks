@@ -4,13 +4,11 @@
     "requirement": {
       "trigger": "minecraft:effects_changed",
       "conditions": {
-        "effects": {
-          "minecraft:invisibility": {}
-        }
+        "effects": {}
       }
     }
   },
   "rewards": {
-    "function": "incendium:player/event/on_invis_change"
+    "function": "incendium:player/event/on_effect_change"
   }
 }

@@ -15,7 +15,16 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "incendium:artifact/tool/unstable_powder"
+          "name": "incendium:artifact/tool/unstable_powder",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
         }
       ]
     }

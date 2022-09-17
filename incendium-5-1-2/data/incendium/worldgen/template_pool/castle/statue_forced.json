@@ -12,18 +12,9 @@
       }
     },
     {
-      "weight": 10,
+      "weight": 12,
       "element": {
-        "location": "incendium:castle/statues/king_broken1",
-        "processors": "incendium:castle_floor",
-        "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
-      }
-    },
-    {
-      "weight": 4,
-      "element": {
-        "location": "incendium:castle/statues/king_broken2",
+        "location": "incendium:castle/statues/king_ruined1",
         "processors": "incendium:castle_floor",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

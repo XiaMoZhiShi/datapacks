@@ -70,6 +70,10 @@ execute if entity @s[scores={in.use_bow=1..},predicate=incendium:holding/ragnaro
 execute if entity @s[scores={in.ragnarok=1..}, advancements={incendium:technical/using/ragnarok=false}] run function incendium:item/ragnarok/on_unload
 execute if entity @s[advancements={incendium:technical/using/ragnarok=true}] run function incendium:item/ragnarok/using
 
+# restless nature
+execute if entity @s[scores={in.use_snowball=1..},predicate=incendium:holding/restless_nature,predicate=incendium:dimension/nether] run execute as @e[type=snowball,distance=..2,limit=1,sort=nearest] run function incendium:item/restless_nature/init
+scoreboard players set @s in.use_snowball 0
+
 # scroll of returning
 execute if entity @s[scores={in.use_map=1..},tag=in.scroll] run function incendium:item/patron/scroll_of_returning/use
 
