@@ -17,20 +17,6 @@
                     "quality": 2
                 }
             ]
-        },
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:empty",
-                    "weight": 80
-                },
-                {
-                    "type": "loot_table",
-                    "name": "nifeather_3lives:fishing/reroll_boot",
-                    "weight": 20
-                }
-            ]
         }
     ]
 }
