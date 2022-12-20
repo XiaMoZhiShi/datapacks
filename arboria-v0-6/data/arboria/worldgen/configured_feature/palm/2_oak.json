@@ -1,0 +1,178 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "config": {
+            "features": [
+              {
+                "feature": {
+                  "config": {
+                    "decorators": [],
+                    "ignore_vines": true,
+                    "force_dirt": false,
+                    "dirt_provider": {
+                      "state": {
+                        "Name": "minecraft:sand"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "minimum_size": {
+                      "limit": 1,
+                      "lower_size": 0,
+                      "upper_size": 0,
+                      "type": "minecraft:two_layers_feature_size"
+                    },
+                    "trunk_provider": {
+                      "state": {
+                        "Properties": {
+                          "axis": "y"
+                        },
+                        "Name": "minecraft:stripped_oak_log"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "trunk_placer": {
+                      "base_height": 7,
+                      "height_rand_a": 1,
+                      "height_rand_b": 1,
+                      "type": "minecraft:straight_trunk_placer"
+                    },
+                    "foliage_provider": {
+                      "state": {
+                        "Properties": {
+                          "persistent": "false",
+                          "distance": "2",
+                          "waterlogged": "false"
+                        },
+                        "Name": "minecraft:oak_leaves"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "foliage_placer": {
+                      "radius": 0,
+                      "offset": 1,
+                      "height": 2,
+                      "type": "minecraft:fancy_foliage_placer"
+                    }
+                  },
+                  "type": "minecraft:tree"
+                },
+                "placement": [
+                  {
+                    "predicate": {
+                      "type": "minecraft:replaceable"
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                  }
+                ]
+              },
+              {
+                "feature": "arboria:palm/branch_set/2_oak",
+                "placement": [
+                  {
+                    "predicate": {
+                      "blocks": "minecraft:stripped_oak_log",
+                      "type": "minecraft:matching_blocks"
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                  },
+                  {
+                    "xz_spread": 0,
+                    "y_spread": 7,
+                    "type": "minecraft:random_offset"
+                  },
+                  {
+                    "direction_of_search": "up",
+                    "target_condition": {
+                      "blocks": "minecraft:oak_leaves",
+                      "offset": [
+                        0,
+                        -1,
+                        0
+                      ],
+                      "type": "minecraft:matching_blocks"
+                    },
+                    "max_steps": 6,
+                    "type": "minecraft:environment_scan"
+                  },
+                  {
+                    "predicate": {
+                      "predicate": {
+                        "predicates": [
+                          {
+                            "blocks": "minecraft:oak_leaves",
+                            "offset": [
+                              1,
+                              0,
+                              0
+                            ],
+                            "type": "minecraft:matching_blocks"
+                          },
+                          {
+                            "blocks": "minecraft:oak_leaves",
+                            "offset": [
+                              0,
+                              0,
+                              1
+                            ],
+                            "type": "minecraft:matching_blocks"
+                          },
+                          {
+                            "blocks": "minecraft:oak_leaves",
+                            "offset": [
+                              -1,
+                              0,
+                              0
+                            ],
+                            "type": "minecraft:matching_blocks"
+                          },
+                          {
+                            "blocks": "minecraft:oak_leaves",
+                            "offset": [
+                              0,
+                              0,
+                              -1
+                            ],
+                            "type": "minecraft:matching_blocks"
+                          }
+                        ],
+                        "type": "minecraft:any_of"
+                      },
+                      "type": "minecraft:not"
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                  },
+                  {
+                    "count": 12,
+                    "type": "minecraft:count"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "minecraft:simple_random_selector"
+        },
+        "placement": [
+          {
+            "predicate": {
+              "blocks": "minecraft:sand",
+              "offset": [
+                0,
+                -1,
+                0
+              ],
+              "type": "minecraft:matching_blocks"
+            },
+            "type": "minecraft:block_predicate_filter"
+          },
+          {
+            "count": 32,
+            "type": "minecraft:count"
+          }
+        ]
+      }
+    ]
+  },
+  "type": "minecraft:simple_random_selector"
+}

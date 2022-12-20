@@ -1,0 +1,123 @@
+{
+  "feature": {
+    "config": {
+      "layers": [
+        {
+          "height": {
+            "type": "minecraft:uniform",
+            "value": {
+              "min_inclusive": 2,
+              "max_inclusive": 4
+            }
+          },
+          "provider": {
+            "state": {
+              "Properties": {
+                "age": "0"
+              },
+              "Name": "minecraft:sugar_cane"
+            },
+            "type": "minecraft:simple_state_provider"
+          }
+        }
+      ],
+      "direction": "up",
+      "allowed_placement": {
+        "blocks": "minecraft:air",
+        "type": "minecraft:matching_blocks"
+      },
+      "prioritize_tip": false
+    },
+    "type": "minecraft:block_column"
+  },
+  "placement": [
+    {
+      "count": 24,
+      "type": "minecraft:count"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "heightmap": "MOTION_BLOCKING_NO_LEAVES",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "predicate": {
+        "predicates": [
+          {
+            "blocks": "minecraft:air",
+            "type": "minecraft:matching_blocks"
+          },
+          {
+            "state": {
+              "Properties": {
+                "age": "0"
+              },
+              "Name": "minecraft:sugar_cane"
+            },
+            "type": "minecraft:would_survive"
+          },
+          {
+            "predicates": [
+              {
+                "offset": [
+                  1,
+                  -1,
+                  0
+                ],
+                "fluids": [
+                  "minecraft:water",
+                  "minecraft:flowing_water"
+                ],
+                "type": "minecraft:matching_fluids"
+              },
+              {
+                "offset": [
+                  -1,
+                  -1,
+                  0
+                ],
+                "fluids": [
+                  "minecraft:water",
+                  "minecraft:flowing_water"
+                ],
+                "type": "minecraft:matching_fluids"
+              },
+              {
+                "offset": [
+                  0,
+                  -1,
+                  1
+                ],
+                "fluids": [
+                  "minecraft:water",
+                  "minecraft:flowing_water"
+                ],
+                "type": "minecraft:matching_fluids"
+              },
+              {
+                "offset": [
+                  0,
+                  -1,
+                  -1
+                ],
+                "fluids": [
+                  "minecraft:water",
+                  "minecraft:flowing_water"
+                ],
+                "type": "minecraft:matching_fluids"
+              }
+            ],
+            "type": "minecraft:any_of"
+          }
+        ],
+        "type": "minecraft:all_of"
+      },
+      "type": "minecraft:block_predicate_filter"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

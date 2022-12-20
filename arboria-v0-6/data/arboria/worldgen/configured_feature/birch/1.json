@@ -1,0 +1,254 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "config": {
+            "features": [
+              {
+                "feature": {
+                  "config": {
+                    "decorators": [],
+                    "ignore_vines": true,
+                    "force_dirt": false,
+                    "dirt_provider": {
+                      "state": {
+                        "Name": "minecraft:rooted_dirt"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "minimum_size": {
+                      "limit": 1,
+                      "lower_size": 0,
+                      "upper_size": 0,
+                      "type": "minecraft:two_layers_feature_size"
+                    },
+                    "trunk_provider": {
+                      "state": {
+                        "Properties": {
+                          "axis": "y"
+                        },
+                        "Name": "minecraft:birch_log"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "trunk_placer": {
+                      "base_height": 7,
+                      "height_rand_a": 2,
+                      "height_rand_b": 3,
+                      "type": "minecraft:straight_trunk_placer"
+                    },
+                    "foliage_provider": {
+                      "state": {
+                        "Properties": {
+                          "persistent": "false",
+                          "distance": "1",
+                          "waterlogged": "false"
+                        },
+                        "Name": "minecraft:birch_leaves"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "foliage_placer": {
+                      "radius": 1,
+                      "offset": 2,
+                      "height": 6,
+                      "type": "minecraft:fancy_foliage_placer"
+                    }
+                  },
+                  "type": "minecraft:tree"
+                },
+                "placement": []
+              },
+              {
+                "feature": {
+                  "config": {
+                    "decorators": [
+                      {
+                        "block_provider": {
+                          "state": {
+                            "Properties": {
+                              "persistent": "false",
+                              "distance": "2",
+                              "waterlogged": "false"
+                            },
+                            "Name": "minecraft:birch_leaves"
+                          },
+                          "type": "minecraft:simple_state_provider"
+                        },
+                        "required_empty_blocks": 1,
+                        "directions": [
+                          "down"
+                        ],
+                        "probability": 0.025,
+                        "exclusion_radius_xz": 0,
+                        "exclusion_radius_y": 0,
+                        "type": "minecraft:attached_to_leaves"
+                      }
+                    ],
+                    "ignore_vines": true,
+                    "force_dirt": false,
+                    "dirt_provider": {
+                      "state": {
+                        "Name": "minecraft:rooted_dirt"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "minimum_size": {
+                      "limit": 1,
+                      "lower_size": 0,
+                      "upper_size": 0,
+                      "type": "minecraft:two_layers_feature_size"
+                    },
+                    "trunk_provider": {
+                      "state": {
+                        "Properties": {
+                          "axis": "y"
+                        },
+                        "Name": "minecraft:birch_log"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "trunk_placer": {
+                      "base_height": 7,
+                      "height_rand_a": 4,
+                      "height_rand_b": 2,
+                      "type": "minecraft:straight_trunk_placer"
+                    },
+                    "foliage_provider": {
+                      "state": {
+                        "Properties": {
+                          "persistent": "false",
+                          "distance": "1",
+                          "waterlogged": "false"
+                        },
+                        "Name": "minecraft:birch_leaves"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "foliage_placer": {
+                      "radius": 2,
+                      "offset": 0,
+                      "height": 1,
+                      "type": "minecraft:blob_foliage_placer"
+                    }
+                  },
+                  "type": "minecraft:tree"
+                },
+                "placement": []
+              },
+              {
+                "feature": {
+                  "config": {
+                    "decorators": [
+                      {
+                        "block_provider": {
+                          "state": {
+                            "Properties": {
+                              "persistent": "false",
+                              "distance": "2",
+                              "waterlogged": "false"
+                            },
+                            "Name": "minecraft:birch_leaves"
+                          },
+                          "type": "minecraft:simple_state_provider"
+                        },
+                        "required_empty_blocks": 1,
+                        "directions": [
+                          "down"
+                        ],
+                        "probability": 0.1,
+                        "exclusion_radius_xz": 0,
+                        "exclusion_radius_y": 0,
+                        "type": "minecraft:attached_to_leaves"
+                      }
+                    ],
+                    "ignore_vines": true,
+                    "force_dirt": false,
+                    "dirt_provider": {
+                      "state": {
+                        "Name": "minecraft:rooted_dirt"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "minimum_size": {
+                      "limit": 1,
+                      "lower_size": 0,
+                      "upper_size": 0,
+                      "type": "minecraft:two_layers_feature_size"
+                    },
+                    "trunk_provider": {
+                      "state": {
+                        "Properties": {
+                          "axis": "y"
+                        },
+                        "Name": "minecraft:birch_log"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "trunk_placer": {
+                      "base_height": 7,
+                      "height_rand_a": 4,
+                      "height_rand_b": 0,
+                      "type": "minecraft:straight_trunk_placer"
+                    },
+                    "foliage_provider": {
+                      "state": {
+                        "Properties": {
+                          "persistent": "false",
+                          "distance": "1",
+                          "waterlogged": "false"
+                        },
+                        "Name": "minecraft:birch_leaves"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "foliage_placer": {
+                      "radius": 0,
+                      "offset": 1,
+                      "height": 1,
+                      "type": "minecraft:jungle_foliage_placer"
+                    }
+                  },
+                  "type": "minecraft:tree"
+                },
+                "placement": [
+                  {
+                    "chance": 2,
+                    "type": "minecraft:rarity_filter"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "minecraft:simple_random_selector"
+        },
+        "placement": [
+          {
+            "predicate": {
+              "state": {
+                "Properties": {
+                  "stage": "0"
+                },
+                "Name": "minecraft:birch_sapling"
+              },
+              "type": "minecraft:would_survive"
+            },
+            "type": "minecraft:block_predicate_filter"
+          },
+          {
+            "predicate": {
+              "type": "minecraft:replaceable"
+            },
+            "type": "minecraft:block_predicate_filter"
+          },
+          {
+            "count": 28,
+            "type": "minecraft:count"
+          }
+        ]
+      }
+    ]
+  },
+  "type": "minecraft:simple_random_selector"
+}

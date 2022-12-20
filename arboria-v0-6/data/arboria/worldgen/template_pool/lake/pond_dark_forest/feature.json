@@ -1,0 +1,14 @@
+{
+  "name": "arboria:lake/pond_dark_forest/feature",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "feature": "arboria:lake/dark_forest_pond",
+        "projection": "rigid",
+        "element_type": "minecraft:feature_pool_element"
+      }
+    }
+  ]
+}

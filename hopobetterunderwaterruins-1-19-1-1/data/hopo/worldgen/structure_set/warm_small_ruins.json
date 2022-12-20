@@ -1,0 +1,14 @@
+{
+    "structures": [
+        {
+            "structure": "hopo:warm_small_ruins",
+            "weight": 10
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 7,
+        "separation": 1,
+        "salt": 2625546
+    }
+}

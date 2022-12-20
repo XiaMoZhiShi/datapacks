@@ -1,0 +1,130 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "config": {
+            "features": [
+              {
+                "feature": {
+                  "config": {
+                    "cap_provider": {
+                      "state": {
+                        "Properties": {
+                          "west": "true",
+                          "up": "true",
+                          "south": "true",
+                          "north": "true",
+                          "east": "true",
+                          "down": "false"
+                        },
+                        "Name": "minecraft:red_mushroom_block"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "stem_provider": {
+                      "state": {
+                        "Properties": {
+                          "west": "true",
+                          "up": "false",
+                          "south": "true",
+                          "north": "true",
+                          "east": "true",
+                          "down": "false"
+                        },
+                        "Name": "minecraft:mushroom_stem"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "foliage_radius": 1
+                  },
+                  "type": "minecraft:huge_red_mushroom"
+                },
+                "placement": [
+                  {
+                    "predicate": {
+                      "type": "minecraft:replaceable"
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                  }
+                ]
+              },
+              {
+                "feature": {
+                  "config": {
+                    "can_place_on_ceiling": true,
+                    "can_place_on_wall": false,
+                    "chance_of_spreading": 0.0,
+                    "can_be_placed_on": "minecraft:red_mushroom_block",
+                    "block": "minecraft:glow_lichen",
+                    "search_range": 1,
+                    "can_place_on_floor": false
+                  },
+                  "type": "minecraft:multiface_growth"
+                },
+                "placement": [
+                  {
+                    "predicate": {
+                      "blocks": "minecraft:mushroom_stem",
+                      "type": "minecraft:matching_blocks"
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                  },
+                  {
+                    "direction_of_search": "up",
+                    "target_condition": {
+                      "blocks": "minecraft:red_mushroom_block",
+                      "offset": [
+                        1,
+                        1,
+                        0
+                      ],
+                      "type": "minecraft:matching_blocks"
+                    },
+                    "max_steps": 15,
+                    "type": "minecraft:environment_scan"
+                  },
+                  {
+                    "count": 4,
+                    "type": "minecraft:count"
+                  },
+                  {
+                    "xz_spread": {
+                      "value": {
+                        "min_inclusive": -1,
+                        "max_inclusive": 1
+                      },
+                      "type": "minecraft:uniform"
+                    },
+                    "y_spread": 0,
+                    "type": "minecraft:random_offset"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "minecraft:simple_random_selector"
+        },
+        "placement": [
+          {
+            "predicate": {
+              "blocks": "#arboria:dirt",
+              "offset": [
+                0,
+                -1,
+                0
+              ],
+              "type": "minecraft:matching_blocks"
+            },
+            "type": "minecraft:block_predicate_filter"
+          },
+          {
+            "count": 32,
+            "type": "minecraft:count"
+          }
+        ]
+      }
+    ]
+  },
+  "type": "minecraft:simple_random_selector"
+}

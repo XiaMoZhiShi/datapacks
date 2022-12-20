@@ -1,0 +1,87 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "config": {
+            "decorators": [
+              {
+                "type": "minecraft:leave_vine",
+                "probability": 0.075
+              }
+            ],
+            "ignore_vines": true,
+            "force_dirt": false,
+            "dirt_provider": {
+              "state": {
+                "Name": "minecraft:muddy_mangrove_roots"
+              },
+              "type": "minecraft:simple_state_provider"
+            },
+            "minimum_size": {
+              "limit": 1,
+              "lower_size": 1,
+              "upper_size": 1,
+              "type": "minecraft:two_layers_feature_size"
+            },
+            "trunk_provider": {
+              "state": {
+                "Properties": {
+                  "axis": "y"
+                },
+                "Name": "minecraft:mangrove_log"
+              },
+              "type": "minecraft:simple_state_provider"
+            },
+            "trunk_placer": {
+              "base_height": 4,
+              "height_rand_a": 1,
+              "height_rand_b": 0,
+              "type": "minecraft:forking_trunk_placer"
+            },
+            "foliage_provider": {
+              "state": {
+                "Properties": {
+                  "persistent": "false",
+                  "distance": "1",
+                  "waterlogged": "false"
+                },
+                "Name": "minecraft:mangrove_leaves"
+              },
+              "type": "minecraft:simple_state_provider"
+            },
+            "foliage_placer": {
+              "radius": 2,
+              "offset": 1,
+              "height": 3,
+              "type": "minecraft:fancy_foliage_placer"
+            }
+          },
+          "type": "minecraft:tree"
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:would_survive",
+              "state": {
+                "Name": "minecraft:mangrove_propagule",
+                "Properties": {
+                  "age": "0",
+                  "hanging": "false",
+                  "stage": "0",
+                  "waterlogged": "false"
+                }
+              }
+            }
+          },
+          {
+            "count": 3,
+            "type": "minecraft:count"
+          }
+        ]
+      }
+    ]
+  },
+  "type": "minecraft:simple_random_selector"
+}

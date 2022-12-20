@@ -1,0 +1,56 @@
+{
+  "feature": {
+    "config": {
+      "targets": [
+        {
+          "target": {
+            "block": "minecraft:coarse_dirt",
+            "predicate_type": "minecraft:block_match"
+          },
+          "state": {
+            "Name": "minecraft:rooted_dirt"
+          }
+        }
+      ],
+      "size": 24,
+      "discard_chance_on_air_exposure": 0.0
+    },
+    "type": "minecraft:ore"
+  },
+  "placement": [
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "noise_to_count_ratio": -1,
+      "noise_factor": 160.0,
+      "noise_offset": 0.5,
+      "type": "minecraft:noise_based_count"
+    },
+    {
+      "noise_to_count_ratio": -1,
+      "noise_factor": -160.0,
+      "noise_offset": 0.5,
+      "type": "minecraft:noise_based_count"
+    },
+    {
+      "heightmap": "WORLD_SURFACE_WG",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "predicate": {
+        "blocks": "minecraft:coarse_dirt",
+        "offset": [
+          0,
+          -1,
+          0
+        ],
+        "type": "minecraft:matching_blocks"
+      },
+      "type": "minecraft:block_predicate_filter"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

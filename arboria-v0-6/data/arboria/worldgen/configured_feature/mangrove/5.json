@@ -1,0 +1,200 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "config": {
+            "features": [
+              {
+                "feature": {
+                  "config": {
+                    "decorators": [
+                      {
+                        "type": "minecraft:leave_vine",
+                        "probability": 0.25
+                      },
+                      {
+                        "block_provider": {
+                          "state": {
+                            "Properties": {
+                              "persistent": "false",
+                              "distance": "2",
+                              "waterlogged": "false"
+                            },
+                            "Name": "minecraft:mangrove_leaves"
+                          },
+                          "type": "minecraft:simple_state_provider"
+                        },
+                        "required_empty_blocks": 1,
+                        "directions": [
+                          "east"
+                        ],
+                        "probability": 0.75,
+                        "exclusion_radius_xz": 0,
+                        "exclusion_radius_y": 0,
+                        "type": "minecraft:attached_to_leaves"
+                      },
+                      {
+                        "block_provider": {
+                          "state": {
+                            "Properties": {
+                              "persistent": "false",
+                              "distance": "2",
+                              "waterlogged": "false"
+                            },
+                            "Name": "minecraft:mangrove_leaves"
+                          },
+                          "type": "minecraft:simple_state_provider"
+                        },
+                        "required_empty_blocks": 1,
+                        "directions": [
+                          "south"
+                        ],
+                        "probability": 0.75,
+                        "exclusion_radius_xz": 0,
+                        "exclusion_radius_y": 0,
+                        "type": "minecraft:attached_to_leaves"
+                      },
+                      {
+                        "block_provider": {
+                          "state": {
+                            "Properties": {
+                              "persistent": "false",
+                              "distance": "2",
+                              "waterlogged": "false"
+                            },
+                            "Name": "minecraft:mangrove_leaves"
+                          },
+                          "type": "minecraft:simple_state_provider"
+                        },
+                        "required_empty_blocks": 1,
+                        "directions": [
+                          "west"
+                        ],
+                        "probability": 0.75,
+                        "exclusion_radius_xz": 0,
+                        "exclusion_radius_y": 0,
+                        "type": "minecraft:attached_to_leaves"
+                      },
+                      {
+                        "block_provider": {
+                          "state": {
+                            "Properties": {
+                              "persistent": "false",
+                              "distance": "2",
+                              "waterlogged": "false"
+                            },
+                            "Name": "minecraft:mangrove_leaves"
+                          },
+                          "type": "minecraft:simple_state_provider"
+                        },
+                        "required_empty_blocks": 1,
+                        "directions": [
+                          "north"
+                        ],
+                        "probability": 0.75,
+                        "exclusion_radius_xz": 0,
+                        "exclusion_radius_y": 0,
+                        "type": "minecraft:attached_to_leaves"
+                      }
+                    ],
+                    "dirt_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:muddy_mangrove_roots"
+                      }
+                    },
+                    "foliage_placer": {
+                      "radius": 2,
+                      "offset": 2,
+                      "height": 4,
+                      "type": "minecraft:fancy_foliage_placer"
+                    },
+                    "foliage_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:mangrove_leaves",
+                        "Properties": {
+                          "distance": "1",
+                          "persistent": "false",
+                          "waterlogged": "false"
+                        }
+                      }
+                    },
+                    "force_dirt": false,
+                    "ignore_vines": true,
+                    "minimum_size": {
+                      "type": "minecraft:two_layers_feature_size",
+                      "limit": 2,
+                      "lower_size": 0,
+                      "upper_size": 0
+                    },
+                    "trunk_placer": {
+                      "base_height": 4,
+                      "height_rand_a": 1,
+                      "height_rand_b": 0,
+                      "type": "minecraft:straight_trunk_placer"
+                    },
+                    "trunk_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:mangrove_log",
+                        "Properties": {
+                          "axis": "y"
+                        }
+                      }
+                    }
+                  },
+                  "type": "minecraft:tree"
+                },
+                "placement": [
+                  {
+                    "predicate": {
+                      "type": "minecraft:replaceable"
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                  }
+                ]
+              },
+              {
+                "feature": "arboria:mangrove/roots",
+                "placement": [
+                  {
+                    "predicate": {
+                      "blocks": "minecraft:mangrove_log",
+                      "type": "minecraft:matching_blocks"
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "minecraft:simple_random_selector"
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:would_survive",
+              "state": {
+                "Name": "minecraft:mangrove_propagule",
+                "Properties": {
+                  "age": "0",
+                  "hanging": "false",
+                  "stage": "0",
+                  "waterlogged": "false"
+                }
+              }
+            }
+          },
+          {
+            "count": 32,
+            "type": "minecraft:count"
+          }
+        ]
+      }
+    ]
+  },
+  "type": "minecraft:simple_random_selector"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "arboria:lake/pond_taiga/feature",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "feature": "arboria:lake/taiga_pond",
+        "projection": "rigid",
+        "element_type": "minecraft:feature_pool_element"
+      }
+    }
+  ]
+}

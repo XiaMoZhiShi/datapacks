@@ -1,0 +1,14 @@
+{
+  "name": "arboria:lake/medium_savanna/feature",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "feature": "arboria:lake/savanna_medium",
+        "projection": "rigid",
+        "element_type": "minecraft:feature_pool_element"
+      }
+    }
+  ]
+}

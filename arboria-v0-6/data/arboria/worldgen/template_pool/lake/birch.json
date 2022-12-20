@@ -1,0 +1,33 @@
+{
+  "name": "arboria:lake/birch",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 13,
+      "element": {
+        "location": "arboria:lake/pond_birch",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "arboria:lake/pond_forest",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "arboria:lake/medium_birch",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

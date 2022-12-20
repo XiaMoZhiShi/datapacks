@@ -1,0 +1,43 @@
+---2 new ruins and tweaking some loots--- 1/22/2022
+♦ Added one more copper and materials ruins. Also change the awards of some places being a little bit inconsistency, like finding hay bales on materials places.
+♦ Now the food loot is more better that before, the copper loot was nerf a little bit , and add more emeralds in materials loot.
+---3 new ruins, rebalancing and 1 new mob!--- 1/29/2022
+♦ I know that you wanted more, so now i bring to you 3 more structures to explore, and a new drowned variant joined to the adventure.
+♦ Lots of balance on loots, and also fix one custom map not working properly. Sorry, i recommend update again.
+♦ Also Wattles make a cool review to the pack, you should check it out! 
+https://www.youtube.com/watch?v=6yixo0gSYCc
+---Balacing Loot and Optimizate some ruin--- 2/4/2022
+♦ Nerf the health boost and conduit potion, now they are only for 1 minute, it was too op in many scenarios.
+♦ Added more effect to the suspicious stew, less raw copper, more experience bottles, and new item to the food loot, lilypads!
+---3 new ruins, and warm ruins--- 2/19/2022
+♦ More ruins to see, and one more drowned variant, it is full gold armor and is a strong guy, you must be careful with him, if you kill him you can get some gold ingots.
+♦ Dolphins grace is now part of the suspicious stew, also now some maps a little bit more rare and nerf some quantities of the loot.
+---1.18.2 & more spawn?--- 4/2/2022
+♦ 1.18.2 update
+♦ The cities are more frequently to spawn, making explore the ocean more exciting than before.
+--- 1.19 Update --- 6/11/2022
+♦ Now they look like a proper underwater city, you will have lots too explore
+♦ Explore the oceans never was so fun
+♦ Redone everything, and now use the "jigsaw system" to make the generation much much better
+♦ Buffed a little bit the loot of "materials chest"
+♦ Cities can go to 3 or 6 chunks of size!
+♦ Vanilla ruins can now spawn, it does not replace vanilla ruins anymore, thank god
+--- Deeper cities and much better gen --- 6/20/2022
+♦ Cities used to spawn on holes, and also can float in the middle of the ocean, total no sense... this has been fixed, now it spawn more properly.
+--- Feedback Changes and Forge Fix --- 7/9/2022
+♦ Make cities generation more rare
+♦ Sometimes cities partially generation out of the water, making them look weird, that is fixed 
+♦ Fix "Hanging entity at invalid position: BlockPosition" spamming log on servers
+♦ Fix a forge issue
+--- Performance and Tweaking --- 7/15/2022
+♦ Fix "Hanging entity at invalid position" line, spamming on logs
+♦  The chances of spawning cities have been reduced, now they only spawn on deepest regions of the oceans
+♦ Added Compatibility with "William Wythers' Overhauled" Worldgen
+♦ Improve performance of generation
+--- Performance, Crashes, 100 structures --- 9/03/2022
+♦ Reduced the amount of vanilla ruins 
+♦ Fixed a crash when open a vanilla ruin (server try to find a buried treasure, fails, and crash)
+♦ Ner
+♦ Added 100 unique structures, over the ocean! 
+Includes:
+- Small copper ruins, cold and warm ruins, and different ocean fossils

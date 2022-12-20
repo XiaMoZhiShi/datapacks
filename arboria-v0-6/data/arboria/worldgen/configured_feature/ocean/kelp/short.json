@@ -1,0 +1,51 @@
+{
+  "config": {
+    "layers": [
+      {
+        "height": {
+          "value": {
+            "min_inclusive": 2,
+            "max_inclusive": 3
+          },
+          "type": "minecraft:uniform"
+        },
+        "provider": {
+          "state": {
+            "Name": "minecraft:kelp_plant"
+          },
+          "type": "minecraft:simple_state_provider"
+        }
+      },
+      {
+        "height": 1,
+        "provider": {
+          "property": "age",
+          "source": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Properties": {
+                "age": "25"
+              },
+              "Name": "minecraft:kelp"
+            }
+          },
+          "values": {
+            "value": {
+              "min_inclusive": 24,
+              "max_inclusive": 25
+            },
+            "type": "minecraft:uniform"
+          },
+          "type": "minecraft:randomized_int_state_provider"
+        }
+      }
+    ],
+    "direction": "up",
+    "allowed_placement": {
+      "blocks": "minecraft:water",
+      "type": "minecraft:matching_blocks"
+    },
+    "prioritize_tip": true
+  },
+  "type": "minecraft:block_column"
+}

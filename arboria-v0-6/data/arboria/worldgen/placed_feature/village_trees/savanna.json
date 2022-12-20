@@ -1,0 +1,42 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        {
+          "feature": {
+            "feature": "arboria:acacia/1",
+            "placement": []
+          },
+          "chance": 0.25
+        },
+        {
+          "feature": {
+            "feature": "arboria:acacia/4",
+            "placement": []
+          },
+          "chance": 0.25
+        },
+        {
+          "feature": {
+            "feature": "arboria:acacia/5",
+            "placement": []
+          },
+          "chance": 0.333
+        },
+        {
+          "feature": {
+            "feature": "arboria:acacia/6",
+            "placement": []
+          },
+          "chance": 0.65
+        }
+      ],
+      "default": {
+        "feature": "arboria:acacia/7",
+        "placement": []
+      }
+    },
+    "type": "minecraft:random_selector"
+  },
+  "placement": []
+}

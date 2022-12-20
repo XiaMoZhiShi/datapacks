@@ -1,0 +1,14 @@
+    {
+    "schemaVersion": 1,
+    "authors": ["Hoponopono"],
+    "contact": {
+    "discord": "discord.gg/CZQthZJjPc"
+},
+    "environment": "*",
+    "name": "Hopo Better Underwater Ruins",
+    "id": "hopobetterunderwaterruins",
+    "version": "1.0.9",
+    "description": "§7Explore new ocean ruins to your world",
+    "license": "All Rights Reserved",
+    "icon": "icon.png"
+    }   

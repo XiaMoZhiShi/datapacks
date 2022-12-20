@@ -1,0 +1,14 @@
+{
+    "structures": [
+        {
+            "structure": "hopo:ocean_fossils",
+            "weight": 10
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 9,
+        "separation": 3,
+        "salt": 5953168
+    }
+}

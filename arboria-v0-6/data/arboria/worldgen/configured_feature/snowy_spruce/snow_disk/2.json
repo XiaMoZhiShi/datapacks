@@ -1,0 +1,23 @@
+{
+  "config": {
+    "state_provider": {
+      "fallback": {
+        "state": {
+          "Properties": {
+            "layers": "1"
+          },
+          "Name": "minecraft:snow"
+        },
+        "type": "minecraft:simple_state_provider"
+      },
+      "rules": []
+    },
+    "target": {
+      "blocks": "minecraft:moss_carpet",
+      "type": "minecraft:matching_blocks"
+    },
+    "radius": 2,
+    "half_height": 2
+  },
+  "type": "minecraft:disk"
+}

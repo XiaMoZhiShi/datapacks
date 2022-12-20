@@ -1,0 +1,94 @@
+{
+  "feature": {
+    "config": {
+      "tries": 6,
+      "xz_spread": 5,
+      "y_spread": 3,
+      "feature": {
+        "feature": {
+          "config": {
+            "layers": [
+              {
+                "height": {
+                  "type": "minecraft:biased_to_bottom",
+                  "value": {
+                    "min_inclusive": 2,
+                    "max_inclusive": 4
+                  }
+                },
+                "provider": {
+                  "state": {
+                    "Properties": {
+                      "age": "0"
+                    },
+                    "Name": "minecraft:cactus"
+                  },
+                  "type": "minecraft:simple_state_provider"
+                }
+              }
+            ],
+            "direction": "up",
+            "allowed_placement": {
+              "blocks": "minecraft:air",
+              "type": "minecraft:matching_blocks"
+            },
+            "prioritize_tip": false
+          },
+          "type": "minecraft:block_column"
+        },
+        "placement": [
+          {
+            "predicate": {
+              "predicates": [
+                {
+                  "blocks": "minecraft:air",
+                  "type": "minecraft:matching_blocks"
+                },
+                {
+                  "state": {
+                    "Properties": {
+                      "age": "0"
+                    },
+                    "Name": "minecraft:cactus"
+                  },
+                  "type": "minecraft:would_survive"
+                }
+              ],
+              "type": "minecraft:all_of"
+            },
+            "type": "minecraft:block_predicate_filter"
+          }
+        ]
+      }
+    },
+    "type": "minecraft:random_patch"
+  },
+  "placement": [
+    {
+      "count": {
+        "value": {
+          "min_inclusive": 2,
+          "max_inclusive": 4
+        },
+        "type": "minecraft:uniform"
+      },
+      "type": "minecraft:count"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "noise_to_count_ratio": 1,
+      "noise_factor": 120.0,
+      "noise_offset": -0.45,
+      "type": "minecraft:noise_based_count"
+    },
+    {
+      "heightmap": "MOTION_BLOCKING_NO_LEAVES",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

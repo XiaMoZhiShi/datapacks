@@ -1,0 +1,12 @@
+{
+  "feature": {
+    "config": {
+      "state": {
+        "Name": "minecraft:barrier"
+      },
+      "height": 382
+    },
+    "type": "minecraft:fill_layer"
+  },
+  "placement": []
+}

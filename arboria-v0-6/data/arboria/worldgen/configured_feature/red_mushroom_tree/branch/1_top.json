@@ -1,0 +1,226 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "config": {
+            "features": [
+              {
+                "feature": {
+                  "config": {
+                    "decorators": [],
+                    "ignore_vines": true,
+                    "force_dirt": false,
+                    "dirt_provider": {
+                      "state": {
+                        "Name": "minecraft:air"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "minimum_size": {
+                      "limit": 0,
+                      "lower_size": 0,
+                      "upper_size": 0,
+                      "type": "minecraft:two_layers_feature_size"
+                    },
+                    "trunk_provider": {
+                      "state": {
+                        "Properties": {
+                          "down": "true",
+                          "up": "true",
+                          "east": "true",
+                          "south": "true",
+                          "west": "true",
+                          "north": "true"
+                        },
+                        "Name": "minecraft:mushroom_stem"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "trunk_placer": {
+                      "base_height": 2,
+                      "height_rand_a": 0,
+                      "height_rand_b": 0,
+                      "type": "minecraft:straight_trunk_placer"
+                    },
+                    "foliage_provider": {
+                      "state": {
+                        "Properties": {
+                          "down": "true",
+                          "up": "true",
+                          "east": "true",
+                          "south": "true",
+                          "west": "true",
+                          "north": "true"
+                        },
+                        "Name": "minecraft:red_mushroom_block"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "foliage_placer": {
+                      "radius": 2,
+                      "offset": 0,
+                      "type": "minecraft:acacia_foliage_placer"
+                    }
+                  },
+                  "type": "minecraft:tree"
+                },
+                "placement": [
+                  {
+                    "predicate": {
+                      "blocks": "minecraft:air",
+                      "type": "minecraft:matching_blocks"
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                  }
+                ]
+              },
+              {
+                "feature": {
+                  "config": {
+                    "state_provider": {
+                      "fallback": {
+                        "state": {
+                          "Name": "minecraft:air"
+                        },
+                        "type": "minecraft:simple_state_provider"
+                      },
+                      "rules": []
+                    },
+                    "target": {
+                      "blocks": "minecraft:red_mushroom_block",
+                      "type": "minecraft:matching_blocks"
+                    },
+                    "radius": 1,
+                    "half_height": 0
+                  },
+                  "type": "minecraft:disk"
+                },
+                "placement": [
+                  {
+                    "predicate": {
+                      "predicates": [
+                        {
+                          "blocks": "minecraft:mushroom_stem",
+                          "type": "minecraft:matching_blocks"
+                        },
+                        {
+                          "blocks": "minecraft:red_mushroom_block",
+                          "offset": [
+                            1,
+                            1,
+                            0
+                          ],
+                          "type": "minecraft:matching_blocks"
+                        }
+                      ],
+                      "type": "minecraft:all_of"
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                  },
+                  {
+                    "xz_spread": 0,
+                    "y_spread": 1,
+                    "type": "minecraft:random_offset"
+                  }
+                ]
+              },
+              {
+                "feature": {
+                  "config": {
+                    "can_place_on_ceiling": false,
+                    "can_place_on_wall": true,
+                    "chance_of_spreading": 0.0,
+                    "can_be_placed_on": "minecraft:mushroom_stem",
+                    "block": "minecraft:glow_lichen",
+                    "search_range": 1,
+                    "can_place_on_floor": false
+                  },
+                  "type": "minecraft:multiface_growth"
+                },
+                "placement": [
+                  {
+                    "predicate": {
+                      "predicates": [
+                        {
+                          "blocks": "minecraft:mushroom_stem",
+                          "type": "minecraft:matching_blocks"
+                        },
+                        {
+                          "predicates": [
+                            {
+                              "blocks": "minecraft:air",
+                              "offset": [
+                                1,
+                                1,
+                                0
+                              ],
+                              "type": "minecraft:matching_blocks"
+                            },
+                            {
+                              "blocks": "minecraft:air",
+                              "offset": [
+                                0,
+                                1,
+                                1
+                              ],
+                              "type": "minecraft:matching_blocks"
+                            },
+                            {
+                              "blocks": "minecraft:air",
+                              "offset": [
+                                -1,
+                                1,
+                                0
+                              ],
+                              "type": "minecraft:matching_blocks"
+                            },
+                            {
+                              "blocks": "minecraft:air",
+                              "offset": [
+                                0,
+                                1,
+                                -1
+                              ],
+                              "type": "minecraft:matching_blocks"
+                            }
+                          ],
+                          "type": "minecraft:all_of"
+                        }
+                      ],
+                      "type": "minecraft:all_of"
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                  },
+                  {
+                    "count": 6,
+                    "type": "minecraft:count"
+                  },
+                  {
+                    "xz_spread": {
+                      "value": {
+                        "min_inclusive": -1,
+                        "max_inclusive": 1
+                      },
+                      "type": "minecraft:uniform"
+                    },
+                    "y_spread": 1,
+                    "type": "minecraft:random_offset"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "minecraft:simple_random_selector"
+        },
+        "placement": [
+          {
+            "count": 48,
+            "type": "minecraft:count"
+          }
+        ]
+      }
+    ]
+  },
+  "type": "minecraft:simple_random_selector"
+}

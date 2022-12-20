@@ -1,0 +1,89 @@
+{
+  "config": {
+    "tries": 18,
+    "xz_spread": 6,
+    "y_spread": 8,
+    "feature": {
+      "feature": {
+        "config": {
+          "to_place": {
+            "state": {
+              "Properties": {
+                "persistent": "false",
+                "distance": "2",
+                "waterlogged": "false"
+              },
+              "Name": "minecraft:acacia_leaves"
+            },
+            "type": "minecraft:simple_state_provider"
+          }
+        },
+        "type": "minecraft:simple_block"
+      },
+      "placement": [
+        {
+          "predicate": {
+            "predicates": [
+              {
+                "type": "minecraft:replaceable"
+              },
+              {
+                "offset": [
+                  0,
+                  1,
+                  0
+                ],
+                "blocks": "minecraft:acacia_leaves",
+                "type": "minecraft:matching_blocks"
+              },
+              {
+                "predicates": [
+                  {
+                    "offset": [
+                      1,
+                      1,
+                      0
+                    ],
+                    "blocks": "minecraft:acacia_leaves",
+                    "type": "minecraft:matching_blocks"
+                  },
+                  {
+                    "offset": [
+                      0,
+                      1,
+                      1
+                    ],
+                    "blocks": "minecraft:acacia_leaves",
+                    "type": "minecraft:matching_blocks"
+                  },
+                  {
+                    "offset": [
+                      -1,
+                      1,
+                      0
+                    ],
+                    "blocks": "minecraft:acacia_leaves",
+                    "type": "minecraft:matching_blocks"
+                  },
+                  {
+                    "offset": [
+                      0,
+                      1,
+                      -1
+                    ],
+                    "blocks": "minecraft:acacia_leaves",
+                    "type": "minecraft:matching_blocks"
+                  }
+                ],
+                "type": "minecraft:any_of"
+              }
+            ],
+            "type": "minecraft:all_of"
+          },
+          "type": "minecraft:block_predicate_filter"
+        }
+      ]
+    }
+  },
+  "type": "minecraft:random_patch"
+}

@@ -1,0 +1,150 @@
+{
+  "feature": {
+    "config": {
+      "vegetation_chance": 0.6,
+      "xz_radius": 1,
+      "extra_edge_column_chance": 0.5,
+      "extra_bottom_block_chance": 0.75,
+      "vertical_range": 1,
+      "vegetation_feature": {
+        "feature": {
+          "config": {
+            "state_provider": {
+              "fallback": {
+                "state": {
+                  "Name": "minecraft:sandstone"
+                },
+                "type": "minecraft:simple_state_provider"
+              },
+              "rules": [
+                {
+                  "if_true": {
+                    "predicate": {
+                      "type": "minecraft:solid",
+                      "offset": [
+                        0,
+                        1,
+                        0
+                      ]
+                    },
+                    "type": "minecraft:not"
+                  },
+                  "then": {
+                    "entries": [
+                      {
+                        "data": {
+                          "Name": "minecraft:sand"
+                        },
+                        "weight": 2
+                      },
+                      {
+                        "data": {
+                          "Name": "minecraft:sandstone"
+                        },
+                        "weight": 2
+                      },
+                      {
+                        "data": {
+                          "Name": "minecraft:smooth_sandstone"
+                        },
+                        "weight": 3
+                      }
+                    ],
+                    "type": "minecraft:weighted_state_provider"
+                  }
+                }
+              ]
+            },
+            "target": {
+              "blocks": [
+                "minecraft:sand",
+                "minecraft:sandstone",
+                "minecraft:smooth_sandstone"
+              ],
+              "type": "minecraft:matching_blocks"
+            },
+            "radius": {
+              "type": "minecraft:uniform",
+              "value": {
+                "min_inclusive": 2,
+                "max_inclusive": 3
+              }
+            },
+            "half_height": 2
+          },
+          "type": "minecraft:disk"
+        },
+        "placement": [
+          {
+            "xz_spread": 0,
+            "y_spread": -1,
+            "type": "minecraft:random_offset"
+          }
+        ]
+      },
+      "surface": "floor",
+      "depth": 3,
+      "replaceable": "#arboria:sand",
+      "ground_state": {
+        "state": {
+          "Name": "minecraft:sandstone"
+        },
+        "type": "minecraft:simple_state_provider"
+      }
+    },
+    "type": "minecraft:vegetation_patch"
+  },
+  "placement": [
+    {
+      "chance": 4,
+      "type": "minecraft:rarity_filter"
+    },
+    {
+      "xz_spread": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 5,
+          "max_inclusive": 10
+        }
+      },
+      "y_spread": 0,
+      "type": "minecraft:random_offset"
+    },
+    {
+      "noise_to_count_ratio": 1,
+      "noise_factor": 320.0,
+      "noise_offset": 0.5,
+      "type": "minecraft:noise_based_count"
+    },
+    {
+      "noise_to_count_ratio": -1,
+      "noise_factor": 320.0,
+      "noise_offset": -0.4,
+      "type": "minecraft:noise_based_count"
+    },
+    {
+      "heightmap": "WORLD_SURFACE_WG",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "predicate": {
+        "blocks": "minecraft:sand",
+        "offset": [
+          0,
+          -1,
+          0
+        ],
+        "type": "minecraft:matching_blocks"
+      },
+      "type": "minecraft:block_predicate_filter"
+    },
+    {
+      "xz_spread": 0,
+      "y_spread": -1,
+      "type": "minecraft:random_offset"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        {
+          "feature": {
+            "feature": "arboria:spruce/no_moss/1",
+            "placement": []
+          },
+          "chance": 0.6
+        },
+        {
+          "feature": {
+            "feature": "arboria:spruce/no_moss/2",
+            "placement": []
+          },
+          "chance": 0.35
+        }
+      ],
+      "default": {
+        "feature": "arboria:spruce/no_moss/4",
+        "placement": []
+      }
+    },
+    "type": "minecraft:random_selector"
+  },
+  "placement": []
+}

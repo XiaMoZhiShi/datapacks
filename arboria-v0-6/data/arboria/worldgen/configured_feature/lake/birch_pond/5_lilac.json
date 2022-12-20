@@ -1,0 +1,540 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "config": {
+            "features": [
+              {
+                "feature": {
+                  "config": {
+                    "to_place": {
+                      "state": {
+                        "Name": "minecraft:grass"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    }
+                  },
+                  "type": "minecraft:simple_block"
+                },
+                "placement": [
+                  {
+                    "count": 3,
+                    "type": "minecraft:count"
+                  },
+                  {
+                    "xz_spread": {
+                      "type": "minecraft:uniform",
+                      "value": {
+                        "min_inclusive": -8,
+                        "max_inclusive": 8
+                      }
+                    },
+                    "y_spread": 0,
+                    "type": "minecraft:random_offset"
+                  },
+                  {
+                    "predicate": {
+                      "predicates": [
+                        {
+                          "blocks": "minecraft:air",
+                          "type": "minecraft:matching_blocks"
+                        },
+                        {
+                          "state": {
+                            "Name": "minecraft:grass"
+                          },
+                          "type": "minecraft:would_survive"
+                        }
+                      ],
+                      "type": "minecraft:all_of"
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                  }
+                ]
+              },
+              {
+                "feature": {
+                  "config": {
+                    "features": [
+                      {
+                        "feature": {
+                          "feature": {
+                            "config": {
+                              "state_provider": {
+                                "fallback": {
+                                  "state": {
+                                    "Name": "minecraft:clay"
+                                  },
+                                  "type": "minecraft:simple_state_provider"
+                                },
+                                "rules": []
+                              },
+                              "target": {
+                                "predicates": [
+                                  {
+                                    "blocks": "#arboria:dirt",
+                                    "type": "minecraft:matching_blocks"
+                                  },
+                                  {
+                                    "blocks": "#arboria:stone",
+                                    "type": "minecraft:matching_blocks"
+                                  }
+                                ],
+                                "type": "minecraft:any_of"
+                              },
+                              "radius": 2,
+                              "half_height": 1
+                            },
+                            "type": "minecraft:disk"
+                          },
+                          "placement": []
+                        },
+                        "chance": 0.35
+                      }
+                    ],
+                    "default": {
+                      "feature": {
+                        "config": {
+                          "state_provider": {
+                            "fallback": {
+                              "state": {
+                                "Name": "minecraft:gravel"
+                              },
+                              "type": "minecraft:simple_state_provider"
+                            },
+                            "rules": [
+                              {
+                                "if_true": {
+                                  "offset": [
+                                    0,
+                                    -1,
+                                    0
+                                  ],
+                                  "blocks": "minecraft:air",
+                                  "type": "minecraft:matching_blocks"
+                                },
+                                "then": {
+                                  "state": {
+                                    "Name": "minecraft:andesite"
+                                  },
+                                  "type": "minecraft:simple_state_provider"
+                                }
+                              }
+                            ]
+                          },
+                          "target": {
+                            "predicates": [
+                              {
+                                "blocks": "#arboria:dirt",
+                                "type": "minecraft:matching_blocks"
+                              },
+                              {
+                                "blocks": "#arboria:stone",
+                                "type": "minecraft:matching_blocks"
+                              }
+                            ],
+                            "type": "minecraft:any_of"
+                          },
+                          "radius": {
+                            "type": "minecraft:uniform",
+                            "value": {
+                              "min_inclusive": 1,
+                              "max_inclusive": 2
+                            }
+                          },
+                          "half_height": 1
+                        },
+                        "type": "minecraft:disk"
+                      },
+                      "placement": []
+                    }
+                  },
+                  "type": "minecraft:random_selector"
+                },
+                "placement": [
+                  {
+                    "xz_spread": {
+                      "type": "minecraft:uniform",
+                      "value": {
+                        "min_inclusive": -5,
+                        "max_inclusive": 5
+                      }
+                    },
+                    "y_spread": 0,
+                    "type": "minecraft:random_offset"
+                  },
+                  {
+                    "heightmap": "OCEAN_FLOOR",
+                    "type": "minecraft:heightmap"
+                  },
+                  {
+                    "predicate": {
+                      "predicates": [
+                        {
+                          "blocks": "minecraft:water",
+                          "type": "minecraft:matching_blocks"
+                        },
+                        {
+                          "offset": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "blocks": "minecraft:water",
+                          "type": "minecraft:matching_blocks"
+                        }
+                      ],
+                      "type": "minecraft:all_of"
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                  }
+                ]
+              },
+              {
+                "feature": {
+                  "config": {
+                    "layers": [
+                      {
+                        "height": {
+                          "type": "minecraft:uniform",
+                          "value": {
+                            "min_inclusive": 2,
+                            "max_inclusive": 4
+                          }
+                        },
+                        "provider": {
+                          "state": {
+                            "Properties": {
+                              "age": "0"
+                            },
+                            "Name": "minecraft:sugar_cane"
+                          },
+                          "type": "minecraft:simple_state_provider"
+                        }
+                      }
+                    ],
+                    "direction": "up",
+                    "allowed_placement": {
+                      "blocks": "minecraft:air",
+                      "type": "minecraft:matching_blocks"
+                    },
+                    "prioritize_tip": false
+                  },
+                  "type": "minecraft:block_column"
+                },
+                "placement": [
+                  {
+                    "xz_spread": {
+                      "type": "minecraft:uniform",
+                      "value": {
+                        "min_inclusive": -8,
+                        "max_inclusive": 8
+                      }
+                    },
+                    "y_spread": 0,
+                    "type": "minecraft:random_offset"
+                  },
+                  {
+                    "predicate": {
+                      "predicates": [
+                        {
+                          "blocks": "minecraft:air",
+                          "type": "minecraft:matching_blocks"
+                        },
+                        {
+                          "state": {
+                            "Properties": {
+                              "age": "0"
+                            },
+                            "Name": "minecraft:sugar_cane"
+                          },
+                          "type": "minecraft:would_survive"
+                        },
+                        {
+                          "predicates": [
+                            {
+                              "offset": [
+                                1,
+                                -1,
+                                0
+                              ],
+                              "blocks": "minecraft:water",
+                              "type": "minecraft:matching_blocks"
+                            },
+                            {
+                              "offset": [
+                                0,
+                                -1,
+                                1
+                              ],
+                              "blocks": "minecraft:water",
+                              "type": "minecraft:matching_blocks"
+                            },
+                            {
+                              "offset": [
+                                -1,
+                                -1,
+                                0
+                              ],
+                              "blocks": "minecraft:water",
+                              "type": "minecraft:matching_blocks"
+                            },
+                            {
+                              "offset": [
+                                0,
+                                -1,
+                                -1
+                              ],
+                              "blocks": "minecraft:water",
+                              "type": "minecraft:matching_blocks"
+                            }
+                          ],
+                          "type": "minecraft:any_of"
+                        }
+                      ],
+                      "type": "minecraft:all_of"
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                  }
+                ]
+              },
+              {
+                "feature": {
+                  "config": {
+                    "to_place": {
+                      "state": {
+                        "Name": "minecraft:seagrass"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    }
+                  },
+                  "type": "minecraft:simple_block"
+                },
+                "placement": [
+                  {
+                    "xz_spread": {
+                      "type": "minecraft:uniform",
+                      "value": {
+                        "min_inclusive": -7,
+                        "max_inclusive": 7
+                      }
+                    },
+                    "y_spread": 0,
+                    "type": "minecraft:random_offset"
+                  },
+                  {
+                    "heightmap": "OCEAN_FLOOR",
+                    "type": "minecraft:heightmap"
+                  },
+                  {
+                    "predicate": {
+                      "predicates": [
+                        {
+                          "blocks": "minecraft:water",
+                          "type": "minecraft:matching_blocks"
+                        },
+                        {
+                          "state": {
+                            "Name": "minecraft:seagrass"
+                          },
+                          "type": "minecraft:would_survive"
+                        }
+                      ],
+                      "type": "minecraft:all_of"
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                  }
+                ]
+              },
+              {
+                "feature": {
+                  "config": {
+                    "to_place": {
+                      "state": {
+                        "Properties": {
+                          "half": "lower"
+                        },
+                        "Name": "minecraft:lilac"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    }
+                  },
+                  "type": "minecraft:simple_block"
+                },
+                "placement": [
+                  {
+                    "chance": 2,
+                    "type": "minecraft:rarity_filter"
+                  },
+                  {
+                    "xz_spread": {
+                      "type": "minecraft:uniform",
+                      "value": {
+                        "min_inclusive": -7,
+                        "max_inclusive": 7
+                      }
+                    },
+                    "y_spread": 0,
+                    "type": "minecraft:random_offset"
+                  },
+                  {
+                    "predicate": {
+                      "predicates": [
+                        {
+                          "blocks": "#arboria:dirt",
+                          "offset": [
+                            0,
+                            -1,
+                            0
+                          ],
+                          "type": "minecraft:matching_blocks"
+                        },
+                        {
+                          "blocks": "minecraft:air",
+                          "type": "minecraft:matching_blocks"
+                        },
+                        {
+                          "blocks": "minecraft:air",
+                          "offset": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "type": "minecraft:matching_blocks"
+                        },
+                        {
+                          "predicates": [
+                            {
+                              "blocks": "minecraft:water",
+                              "offset": [
+                                3,
+                                -1,
+                                0
+                              ],
+                              "type": "minecraft:matching_blocks"
+                            },
+                            {
+                              "blocks": "minecraft:water",
+                              "offset": [
+                                0,
+                                -1,
+                                3
+                              ],
+                              "type": "minecraft:matching_blocks"
+                            },
+                            {
+                              "blocks": "minecraft:water",
+                              "offset": [
+                                -3,
+                                -1,
+                                0
+                              ],
+                              "type": "minecraft:matching_blocks"
+                            },
+                            {
+                              "blocks": "minecraft:water",
+                              "offset": [
+                                0,
+                                -1,
+                                -3
+                              ],
+                              "type": "minecraft:matching_blocks"
+                            }
+                          ],
+                          "type": "minecraft:any_of"
+                        }
+                      ],
+                      "type": "minecraft:all_of"
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                  }
+                ]
+              },
+              {
+                "feature": {
+                  "config": {
+                    "targets": [
+                      {
+                        "target": {
+                          "tag": "arboria:black_glazed_terracotta",
+                          "predicate_type": "minecraft:tag_match"
+                        },
+                        "state": {
+                          "Properties": {
+                            "level": "0"
+                          },
+                          "Name": "minecraft:water"
+                        }
+                      }
+                    ],
+                    "size": 24,
+                    "discard_chance_on_air_exposure": 0.0
+                  },
+                  "type": "minecraft:ore"
+                },
+                "placement": [
+                  {
+                    "count": 4,
+                    "type": "minecraft:count"
+                  },
+                  {
+                    "xz_spread": {
+                      "type": "minecraft:uniform",
+                      "value": {
+                        "min_inclusive": -7,
+                        "max_inclusive": 7
+                      }
+                    },
+                    "y_spread": -1,
+                    "type": "minecraft:random_offset"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "minecraft:simple_random_selector"
+        },
+        "placement": [
+          {
+            "count": 10,
+            "type": "minecraft:count"
+          }
+        ]
+      },
+      {
+        "feature": {
+          "config": {
+            "to_place": {
+              "state": {
+                "Name": "minecraft:air"
+              },
+              "type": "minecraft:simple_state_provider"
+            }
+          },
+          "type": "minecraft:simple_block"
+        },
+        "placement": [
+          {
+            "predicate": {
+              "blocks": "minecraft:yellow_glazed_terracotta",
+              "offset": [
+                0,
+                1,
+                0
+              ],
+              "type": "minecraft:matching_blocks"
+            },
+            "type": "minecraft:block_predicate_filter"
+          },
+          {
+            "xz_spread": 0,
+            "y_spread": 1,
+            "type": "minecraft:random_offset"
+          }
+        ]
+      }
+    ]
+  },
+  "type": "minecraft:simple_random_selector"
+}
